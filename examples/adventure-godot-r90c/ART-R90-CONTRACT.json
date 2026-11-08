@@ -1,0 +1,112 @@
+{
+  "assets": {
+    "assets/compass.png": "177d1d5a23a7f581179c1abfc93e527152d0e795a3b35103583904e8b41befa1",
+    "assets/elder_whitebeard.png": "ce23ee01aa5c31571e9a7795a947bdb481f972bf8675bd2b6c222003e7bd8779",
+    "assets/harbor_back.png": "2819226407fe2fd4c42667a46c2279a82069b643c3bf88a003755c6b2576b658",
+    "assets/harbor_front.png": "ad751feef8d1359237e26115041185c65fc311bd0f66755e6dca2a2a2dd61b19",
+    "assets/interface.png": "a579d0496691f5d4baed7d6fcd390f9d4b81fc86eae960a8c2953d84afa78d07",
+    "assets/lens.png": "e44048ca989610a31601d16267f2ceca973c063c1a61ac4e35e5c54525f32c70",
+    "assets/observatory_back.png": "a34833287a97d687f5b5f7559a19cd761f20fdfe63893c463c6e84a571caf581",
+    "assets/observatory_front.png": "b71462af50fc6ac30bff67a7f28d6cf5377569d369d6b2dade4b3c77f3ea0346",
+    "assets/workshop_back.png": "3cc6f881b553067f8ff79d33d2e546fee67cb5d2a77460f6133c1c78a749aab8",
+    "assets/workshop_front.png": "0c6e0efed57c8ddca5c1f46db9844561a4b81f42641fa11605453f72d7cbe421",
+    "assets/young_sailor.png": "dd65b448d4f896885bd12e5fae7f2bed1323311eefa31aeb5cebb77837feea2e",
+    "source/compass.ora": "df5e6652ef53a6e0999259bd9bf81bcc915a17f1f7aaf4d4fc5664375445a30a",
+    "source/elder_whitebeard.ora": "263f9ccdc335aa5d881187af6c00fb07a15b1c541d74747e95b3047775b43f34",
+    "source/harbor_back.ora": "ed8400d51f904830615f29e2a55b61dc8f7b158d4459eb0ad0f2fbdb6501481f",
+    "source/harbor_front.ora": "fed44d34982bbcf252dd8c6ae7860a7bcb058dc28364d16b8e7c576de3f55d8a",
+    "source/interface.ora": "e828f4442eb3593714e07fb612358c05f16c5a89b75a598150956e715e208698",
+    "source/lens.ora": "8de49943c35d4431529a7b03c8a9fc2c7a00057eb8e4a4e5b6fa85d85aedf20f",
+    "source/observatory_back.ora": "afd244db581be13ad9942e55b900e362f6799143824608fcfc79ffd9d8eb4f85",
+    "source/observatory_front.ora": "a0aba7bd215ec7cfd204b9de256d3b7dc4d2530e85aa3c5dbc9485a442aa3d81",
+    "source/workshop_back.ora": "fdf5c84ce34260bbea691ff93f95d9b3c74eafc8d83401064b5c6bfbc39e011c",
+    "source/workshop_front.ora": "4adc18591c7c9fcd4a3b6e474e61e06ede2385212c32086ed90805958a936564",
+    "source/young_sailor.ora": "2b94e7e8537351c82197c4dca6fc75f1d182c06ca253e93a11918126832492bc"
+  },
+  "fullScreen": [
+    320,
+    180
+  ],
+  "generator": "art/r90_illustrate.py",
+  "layers": {
+    "compass": [
+      "Artifact silhouette",
+      "Metalwork",
+      "Glass and enamel",
+      "Hand-painted reflected light"
+    ],
+    "elder_whitebeard": [
+      "Footsteps and silhouette",
+      "Coat and clothing",
+      "Skin, beard and hair",
+      "Expression, accessories and glints"
+    ],
+    "harbor_back": [
+      "Sky and water",
+      "Tavern and lighthouse",
+      "Ships and dock architecture",
+      "Hand-painted detail",
+      "Warm environmental lighting"
+    ],
+    "harbor_front": [
+      "Near pier silhouette",
+      "Ropes and fixtures",
+      "Lantern and highlights",
+      "Specular flecks"
+    ],
+    "interface": [
+      "Midnight purple panel",
+      "Engraved verb buttons",
+      "Inventory compartments",
+      "Brass edge details"
+    ],
+    "lens": [
+      "Artifact silhouette",
+      "Metalwork",
+      "Glass and enamel",
+      "Hand-painted reflected light"
+    ],
+    "observatory_back": [
+      "Sky and distant mountain range",
+      "Vault, stained windows and floor",
+      "Brass astronomy instruments",
+      "Hand-detailed map and star constellations",
+      "Glass and lamplight"
+    ],
+    "observatory_front": [
+      "Architectural near rail",
+      "Warm rails and gilding",
+      "Hanging star medallion",
+      "Light sparkle"
+    ],
+    "workshop_back": [
+      "Stone and dusk window",
+      "Timber and architectural structure",
+      "Books, devices and machinery",
+      "Gears and floor detail",
+      "Candle and brass highlights"
+    ],
+    "workshop_front": [
+      "Floor edge shadow",
+      "Chains and flooring",
+      "Small tools",
+      "Distant reflection"
+    ],
+    "young_sailor": [
+      "Footsteps and silhouette",
+      "Coat and clothing",
+      "Skin, beard and hair",
+      "Expression, accessories and glints"
+    ]
+  },
+  "notACompleteAutonomousGameGenerator": true,
+  "operationId": "AF.R90.ART-DIRECTION-169",
+  "revision": "R90C-16x9-JETTY-GROUNDED",
+  "sceneArea": [
+    320,
+    130
+  ],
+  "schema": 1,
+  "sourceSha256": "79781e8df8cc0a160d996eb6ea142c78ea7fec43bf99ebe00ac7b302d11be0bc",
+  "status": "TECHNICALLY_VERIFIED_HUMAN_ART_APPROVAL_PENDING"
+}
