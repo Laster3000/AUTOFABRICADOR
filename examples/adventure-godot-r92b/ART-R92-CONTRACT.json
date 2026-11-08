@@ -1,0 +1,235 @@
+{
+  "allApplicationsAIManufactureProven": false,
+  "artGenerator": "art/r92_polish.py",
+  "artGeneratorSHA256": "d59d0b4e0c6c5abdf044c085db5089d9c75fa8260fdd56bd147ee8d5ddc8fcea",
+  "artUserApproved": false,
+  "assets": [
+    {
+      "id": "harbor_back",
+      "layers": [
+        "Sky and water",
+        "Tavern and lighthouse",
+        "Ships and dock architecture",
+        "Hand-painted detail",
+        "Warm environmental lighting",
+        "Controlled material accents",
+        "Localised tiny highlights"
+      ],
+      "master": "source/harbor_back.ora",
+      "masterSHA256": "9f6b46272c2d3837dc113da741762a68f1f020ae2645cc92662def377c0126c2",
+      "png": "assets/harbor_back.png",
+      "pngSHA256": "9791a60789649357b6dd2ddf9cc783a520351fb92e2a48e5f31f798ad336bf7c",
+      "size": [
+        640,
+        290
+      ]
+    },
+    {
+      "id": "harbor_front",
+      "layers": [
+        "Near pier silhouette",
+        "Ropes and fixtures",
+        "Lantern and highlights",
+        "Specular flecks",
+        "Controlled material accents",
+        "Localised tiny highlights"
+      ],
+      "master": "source/harbor_front.ora",
+      "masterSHA256": "bec24c604806b90c33eb7ae008f999e67d759946b4e18d5f08a3e84be2ea8dc3",
+      "png": "assets/harbor_front.png",
+      "pngSHA256": "31748883883902a41113c7f434bc566738894f6f3e766a27650ada09dbda796c",
+      "size": [
+        640,
+        290
+      ]
+    },
+    {
+      "id": "workshop_back",
+      "layers": [
+        "Stone and dusk window",
+        "Timber and architectural structure",
+        "Books, devices and machinery",
+        "Gears and floor detail",
+        "Candle and brass highlights",
+        "Controlled material accents",
+        "Localised tiny highlights"
+      ],
+      "master": "source/workshop_back.ora",
+      "masterSHA256": "a039cca8e5d9f9f9c5733dfb445b33e1e14324883fa8957ed9689cc589ac5fbe",
+      "png": "assets/workshop_back.png",
+      "pngSHA256": "ec8a2fcb76bbfd1864677375ff0dd802ff68a60ec930d1612184adaf8093ccd5",
+      "size": [
+        640,
+        290
+      ]
+    },
+    {
+      "id": "workshop_front",
+      "layers": [
+        "Floor edge shadow",
+        "Chains and flooring",
+        "Small tools",
+        "Distant reflection",
+        "Controlled material accents",
+        "Localised tiny highlights"
+      ],
+      "master": "source/workshop_front.ora",
+      "masterSHA256": "e8431690bb55916301538d2500e54ef257fad8f2ba6a3bf83bedf6e8b2fe3136",
+      "png": "assets/workshop_front.png",
+      "pngSHA256": "c07bdc97d9bbb831abc6ffcd17d5efa384ddd33e3534496eda766f26454d8439",
+      "size": [
+        640,
+        290
+      ]
+    },
+    {
+      "id": "observatory_back",
+      "layers": [
+        "Sky and distant mountain range",
+        "Vault, stained windows and floor",
+        "Brass astronomy instruments",
+        "Hand-detailed map and star constellations",
+        "Glass and lamplight",
+        "Controlled material accents",
+        "Localised tiny highlights"
+      ],
+      "master": "source/observatory_back.ora",
+      "masterSHA256": "ed5aed9362435a3c17e2736e644703d46d3d9ea225ca8ee1f141a1f082704fc2",
+      "png": "assets/observatory_back.png",
+      "pngSHA256": "45db4255c29507130dbb129683d653000095ef6b45ab5b0ced1df7bd7270f6ca",
+      "size": [
+        640,
+        290
+      ]
+    },
+    {
+      "id": "observatory_front",
+      "layers": [
+        "Architectural near rail",
+        "Warm rails and gilding",
+        "Hanging star medallion",
+        "Light sparkle",
+        "Controlled material accents",
+        "Localised tiny highlights"
+      ],
+      "master": "source/observatory_front.ora",
+      "masterSHA256": "83059a57a58f11da90991cd8feb38ee152bae675ab0121228d1403a7c67405d2",
+      "png": "assets/observatory_front.png",
+      "pngSHA256": "6340392ba6aa9b865ea23712228738fb038119d33828560acda7e468c97a57ec",
+      "size": [
+        640,
+        290
+      ]
+    },
+    {
+      "id": "young_sailor",
+      "layers": [
+        "Silhouette feet & shadow",
+        "Asymmetric coat",
+        "Face, hands and nose",
+        "Hair / beard and fabric stitching",
+        "Independent expressions and reactions",
+        "Specular accents"
+      ],
+      "master": "source/young_sailor.ora",
+      "masterSHA256": "5e04282c3b99e539736330088e72fbba6191ed08a4b5fa0cb5246b151ae0b04d",
+      "png": "assets/young_sailor.png",
+      "pngSHA256": "b740c0823d1954c30c10a73d8440c816b0ddb71c671b6a1efe1e9bdaf1f57111",
+      "size": [
+        672,
+        96
+      ]
+    },
+    {
+      "id": "elder_whitebeard",
+      "layers": [
+        "Silhouette feet & shadow",
+        "Asymmetric coat",
+        "Face, hands and nose",
+        "Hair / beard and fabric stitching",
+        "Independent expressions and reactions",
+        "Specular accents"
+      ],
+      "master": "source/elder_whitebeard.ora",
+      "masterSHA256": "303ba4620a92284205042789dd9a24d53a0160407531963abfb94729375ccbb6",
+      "png": "assets/elder_whitebeard.png",
+      "pngSHA256": "ed595f8f0980c30a3e416ffea1d838662b625e99d5217b92ccb35ca5af6738ec",
+      "size": [
+        672,
+        96
+      ]
+    },
+    {
+      "id": "interface",
+      "layers": [
+        "Compact full-width backdrop",
+        "Verb and inventory surfaces",
+        "Tiny inset brass borders",
+        "Transparent effects",
+        "Transparent accent layer",
+        "Transparency edit mask"
+      ],
+      "master": "source/interface.ora",
+      "masterSHA256": "43d96d3e10b8e0310a47491206893e580de875d6e67ed4519b4bde418158a68f",
+      "png": "assets/interface.png",
+      "pngSHA256": "3dbc63b23cbfe219ddfb77897d14ba28f10a7bb971225a5ddf1467813ada2367",
+      "size": [
+        640,
+        70
+      ]
+    },
+    {
+      "id": "lens",
+      "layers": [
+        "Artifact silhouette",
+        "Metalwork",
+        "Glass and enamel",
+        "Hand-painted reflected light",
+        "Fine artifact contour",
+        "Jewelled glints"
+      ],
+      "master": "source/lens.ora",
+      "masterSHA256": "4e7eabce05c857a552749d81aee0b31304c57a8fb082b54fa80c1cc55adaef7b",
+      "png": "assets/lens.png",
+      "pngSHA256": "dcde6fffcdac5a9a047663299ac0b37e0090343f18979f9f481f64a40d0fb0ce",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "id": "compass",
+      "layers": [
+        "Artifact silhouette",
+        "Metalwork",
+        "Glass and enamel",
+        "Hand-painted reflected light",
+        "Fine artifact contour",
+        "Jewelled glints"
+      ],
+      "master": "source/compass.ora",
+      "masterSHA256": "6deb5b45cebcbaa66f9fd71cb96b0daddb731344abfb36a18d440c077a4994ab",
+      "png": "assets/compass.png",
+      "pngSHA256": "ac4340e0da8d39ee5cea96ea561c00dd8b5aa03b20cca89a44cad92911a078b8",
+      "size": [
+        32,
+        32
+      ]
+    }
+  ],
+  "editableLayersTotal": 69,
+  "native": [
+    640,
+    360
+  ],
+  "operationId": "AF.R92.ORIGINAL-CLEAN-ART-FROZEN",
+  "originalGameSource": "R91B_SHA_PINNED_BASE_ONLY",
+  "sceneHeight": 145,
+  "schema": 1,
+  "status": "CANDIDATE_UNAPPROVED",
+  "uiHeight": 35,
+  "window": [
+    1280,
+    720
+  ]
+}
