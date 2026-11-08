@@ -1,0 +1,72 @@
+name: R89E Aventura Godot 16x9 — reconstrucción y pruebas
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproducible-source-and-godot:
+    runs-on: windows-latest
+    timeout-minutes: 35
+    steps:
+      - name: Recuperar AUTOFABRICADOR
+        uses: actions/checkout@v4
+      - name: Python 3.12 para generación artística reproducible
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generar 11 PNG y 11 OpenRaster y validar sus 3 escenas
+        run: python examples/adventure-godot-r89e/ci_verify_art.py
+      - name: Descargar Godot oficial 4.6.3 y comprobar SHA-256
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $url = 'https://github.com/godotengine/godot/releases/download/4.6.3-stable/Godot_v4.6.3-stable_win64.exe.zip'
+          $zip = Join-Path $env:RUNNER_TEMP 'Godot_v4.6.3-stable_win64.exe.zip'
+          Invoke-WebRequest -Uri $url -OutFile $zip
+          $hash = (Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($hash -ne 'e39986a178d585ce7ac198fb8de6ea436366dc0cc00e594810c2e3e104c04b90') {
+            throw 'Godot SHA-256 inesperado'
+          }
+          $dest = Join-Path $env:RUNNER_TEMP 'godot-r89e'
+          Expand-Archive -LiteralPath $zip -DestinationPath $dest
+          "GODOT_R89E_DIR=$dest" | Out-File -FilePath $env:GITHUB_ENV -Append
+      - name: Importar proyecto original 16:9 en Godot
+        shell: pwsh
+        run: |
+          $exe = Join-Path $env:GODOT_R89E_DIR 'Godot_v4.6.3-stable_win64_console.exe'
+          $game = Join-Path $env:GITHUB_WORKSPACE 'examples/adventure-godot-r89e'
+          & $exe --headless --editor --path $game --quit
+          if ($LASTEXITCODE -ne 0) { throw 'Importación Godot fallida' }
+      - name: Probar 30 interacciones originales sin interfaz humana
+        shell: pwsh
+        run: |
+          $exe = Join-Path $env:GODOT_R89E_DIR 'Godot_v4.6.3-stable_win64_console.exe'
+          $game = Join-Path $env:GITHUB_WORKSPACE 'examples/adventure-godot-r89e'
+          & $exe --headless --path $game --script 'res://qa/standalone_owner_test.gd'
+          if ($LASTEXITCODE -ne 0) { throw 'Pruebas de juego fallidas' }
+          $receipt = Get-Content (Join-Path $game 'qa/R89C-GODOT-OWNER-READBACK.json') -Raw | ConvertFrom-Json
+          if ($receipt.status -ne 'PASS_SCOPED_THREE_SCENE_STANDALONE_GODOT_OWNER' -or
+              $receipt.checks.Count -ne 30 -or
+              @($receipt.checks | Where-Object { -not $_.pass }).Count -ne 0) {
+            throw 'El oráculo original de 30 casos no pasó'
+          }
+      - name: Guardar evidencias y fuentes gráficas reconstruidas
+        uses: actions/upload-artifact@v4
+        with:
+          name: R89E-GODOT-169-SOURCES-QA-NO-FONTS
+          path: |
+            examples/adventure-godot-r89e/*.gd
+            examples/adventure-godot-r89e/*.tscn
+            examples/adventure-godot-r89e/*.godot
+            examples/adventure-godot-r89e/*.json
+            examples/adventure-godot-r89e/*.md
+            examples/adventure-godot-r89e/assets/*.png
+            examples/adventure-godot-r89e/source/*.ora
+            examples/adventure-godot-r89e/art/*.py
+            examples/adventure-godot-r89e/ai/*.json
+            examples/adventure-godot-r89e/qa/*.gd
+            examples/adventure-godot-r89e/qa/*.json
+          retention-days: 30
+          if-no-files-found: error
