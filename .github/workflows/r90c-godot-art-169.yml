@@ -1,0 +1,82 @@
+name: R90C — aventura gráfica 16:9, arte reproducible y Godot QA
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproducible-game:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - name: Recuperar código del AUTOFABRICADOR
+        uses: actions/checkout@v4
+      - name: Preparar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Pillow solo para construir los PNG y OpenRaster
+        shell: pwsh
+        run: |
+          python -m pip install --disable-pip-version-check -r examples/adventure-godot-r90c/requirements-r90-art.txt
+      - name: Generar 11 PNG y 11 maestros OpenRaster con hashes fijados
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $game = Join-Path $env:GITHUB_WORKSPACE 'examples/adventure-godot-r90c'
+          $env:R90_ART_OUT = Join-Path $env:RUNNER_TEMP 'r90c-rebuilt-assets'
+          python (Join-Path $game 'art/r90_illustrate.py')
+          if ($LASTEXITCODE -ne 0) { throw 'Generador artístico R90C fallido' }
+          New-Item -ItemType Directory -Path (Join-Path $game 'assets') -Force | Out-Null
+          New-Item -ItemType Directory -Path (Join-Path $game 'source') -Force | Out-Null
+          Copy-Item (Join-Path $env:R90_ART_OUT 'assets/*.png') (Join-Path $game 'assets')
+          Copy-Item (Join-Path $env:R90_ART_OUT 'source/*.ora') (Join-Path $game 'source')
+          python (Join-Path $game 'ci_verify_art.py')
+          if ($LASTEXITCODE -ne 0) { throw 'No se reproduce SHA de 22 recursos o falla un contrato 16:9' }
+      - name: Descargar y verificar Godot 4.6.3 oficial
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $url = 'https://github.com/godotengine/godot/releases/download/4.6.3-stable/Godot_v4.6.3-stable_win64.exe.zip'
+          $zip = Join-Path $env:RUNNER_TEMP 'godot-4.6.3-stable.zip'
+          Invoke-WebRequest -Uri $url -OutFile $zip
+          $hash = (Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($hash -ne 'e39986a178d585ce7ac198fb8de6ea436366dc0cc00e594810c2e3e104c04b90') {
+            throw 'SHA-256 oficial de Godot no coincide'
+          }
+          $dir = Join-Path $env:RUNNER_TEMP 'godot-4.6.3-r90c'
+          Expand-Archive -LiteralPath $zip -DestinationPath $dir
+          "R90C_GODOT_DIR=$dir" | Out-File -FilePath $env:GITHUB_ENV -Append
+      - name: Importar los tres escenarios originales
+        shell: pwsh
+        run: |
+          $exe = Join-Path $env:R90C_GODOT_DIR 'Godot_v4.6.3-stable_win64_console.exe'
+          $game = Join-Path $env:GITHUB_WORKSPACE 'examples/adventure-godot-r90c'
+          & $exe --headless --editor --path $game --quit
+          if ($LASTEXITCODE -ne 0) { throw 'Godot no puede importar este proyecto' }
+      - name: Ejecutar 35 comprobaciones jugables originales
+        shell: pwsh
+        run: |
+          $exe = Join-Path $env:R90C_GODOT_DIR 'Godot_v4.6.3-stable_win64_console.exe'
+          $game = Join-Path $env:GITHUB_WORKSPACE 'examples/adventure-godot-r90c'
+          & $exe --headless --path $game --script 'res://qa/owner_test_r90.gd'
+          if ($LASTEXITCODE -ne 0) { throw 'Juego no superó pruebas de Godot' }
+          $receipt = Join-Path $game 'qa/R90-GODOT-OWNER-READBACK.json'
+          if (-not (Test-Path -LiteralPath $receipt)) { throw 'Recibo del propietario ausente' }
+          $data = Get-Content -LiteralPath $receipt -Raw | ConvertFrom-Json
+          $failures = @($data.checks | Where-Object { -not $_.pass })
+          if ($data.status -ne 'PASS_SCOPED_THREE_SCENE_STANDALONE_GODOT_OWNER' -or
+              $data.checks.Count -ne 35 -or $failures.Count -ne 0) {
+            throw 'Falló la aceptación de 35 condiciones originales'
+          }
+      - name: Guardar recursos artísticos editables y evidencias
+        uses: actions/upload-artifact@v4
+        with:
+          name: R90C-GODOT-169-ART-OWNER-EVIDENCE
+          path: |
+            examples/adventure-godot-r90c/assets/*.png
+            examples/adventure-godot-r90c/source/*.ora
+            examples/adventure-godot-r90c/qa/R90-GODOT-OWNER-READBACK.json
+          retention-days: 30
+          if-no-files-found: error
