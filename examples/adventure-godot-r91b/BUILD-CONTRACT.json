@@ -1,0 +1,43 @@
+{
+  "artHumanApproval": false,
+  "artHumanApproved": false,
+  "artPackageAcceptedProfessionally": false,
+  "artisticAssets": 11,
+  "aspect": "16:9",
+  "assets": 11,
+  "backgroundsReworked": 3,
+  "characterSpriteSheetsReworked": 2,
+  "deterministicArt": true,
+  "engine": "Godot 4.6.3 stable pinned",
+  "frameByFrameAnimationsActuallyRendered": true,
+  "fullAutonomousAIFactory": false,
+  "fullGeneralLocalAIAutoBuildProven": false,
+  "hoverDiscoveryInterface": true,
+  "humanVisualAcceptance": false,
+  "identicalIndependentBuilds": 2,
+  "localAiNarrativeSha256": "090d971aa52aaf57bc2a37936fa5573a6482f6ec9cd84dd5715fdee76a3c3526",
+  "nativeRender": [
+    640,
+    360
+  ],
+  "newGenerativeArtPipeline": "art/r91_hd_art.py",
+  "newGeneratorSha256": "79781e8df8cc0a160d996eb6ea142c78ea7fec43bf99ebe00ac7b302d11be0bc",
+  "pixeloramaEditor": "portable external, not required for running this game",
+  "popochiuEditorAddon": "verified in original dev project, not included in self-contained runtime",
+  "presentation": [
+    1280,
+    720
+  ],
+  "previousR90CRemainsRestorable": true,
+  "revision": "R91B-HD-NAV-169-PORTABLE-CANDIDATE",
+  "sceneNavigationAudit": "adventure-nav-audit",
+  "scenes": 3,
+  "schema": 1,
+  "semanticEditableLayersRange": [
+    4,
+    5
+  ],
+  "sourceAiFullGameBuildAccepted": false,
+  "twoNewIndependentArtBuildsSameSHA": true,
+  "walkmesh": "AStarGrid2D 2px, scene polygons plus obstacles, bounds and depth"
+}
