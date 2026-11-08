@@ -29,9 +29,12 @@ jobs:
           python examples/adventure-godot-r90c/art/r90_illustrate.py
           if ($LASTEXITCODE -ne 0) { throw 'Generación original R90C fallida' }
           $env:R91_SOURCE_ROOT=$source
-          $env:R91_ART_OUT=$game
+          $env:R91_ART_OUT=Join-Path $env:RUNNER_TEMP 'r91b-generated-art'
           python (Join-Path $game 'art/r91_hd_art.py')
           if ($LASTEXITCODE -ne 0) { throw 'Generación HD R91B fallida' }
+          New-Item -ItemType Directory -Force -Path (Join-Path $game 'assets'),(Join-Path $game 'source') | Out-Null
+          Copy-Item (Join-Path $env:R91_ART_OUT 'assets/*.png') (Join-Path $game 'assets')
+          Copy-Item (Join-Path $env:R91_ART_OUT 'source/*.ora') (Join-Path $game 'source')
           python (Join-Path $game 'ci_verify_art.py')
           if ($LASTEXITCODE -ne 0) { throw '22 PNG/ORA o 3 nav contratos no reproducibles' }
       - name: Descargar Godot 4.6.3 oficial anclado SHA
