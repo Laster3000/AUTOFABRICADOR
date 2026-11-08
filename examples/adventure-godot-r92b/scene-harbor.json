@@ -1,0 +1,369 @@
+{
+  "assets": [
+    {
+      "frame": null,
+      "id": "harbor_back",
+      "kind": "background",
+      "master": "source/harbor_back.ora",
+      "masterSHA256": "9f6b46272c2d3837dc113da741762a68f1f020ae2645cc92662def377c0126c2",
+      "png": "assets/harbor_back.png",
+      "pngSHA256": "9791a60789649357b6dd2ddf9cc783a520351fb92e2a48e5f31f798ad336bf7c"
+    },
+    {
+      "frame": null,
+      "id": "interface",
+      "kind": "ui",
+      "master": "source/interface.ora",
+      "masterSHA256": "43d96d3e10b8e0310a47491206893e580de875d6e67ed4519b4bde418158a68f",
+      "png": "assets/interface.png",
+      "pngSHA256": "3dbc63b23cbfe219ddfb77897d14ba28f10a7bb971225a5ddf1467813ada2367"
+    },
+    {
+      "frame": {
+        "count": 14,
+        "height": 96,
+        "width": 48
+      },
+      "id": "young_sailor",
+      "kind": "character",
+      "master": "source/young_sailor.ora",
+      "masterSHA256": "5e04282c3b99e539736330088e72fbba6191ed08a4b5fa0cb5246b151ae0b04d",
+      "png": "assets/young_sailor.png",
+      "pngSHA256": "b740c0823d1954c30c10a73d8440c816b0ddb71c671b6a1efe1e9bdaf1f57111"
+    },
+    {
+      "frame": {
+        "count": 14,
+        "height": 96,
+        "width": 48
+      },
+      "id": "elder_whitebeard",
+      "kind": "character",
+      "master": "source/elder_whitebeard.ora",
+      "masterSHA256": "303ba4620a92284205042789dd9a24d53a0160407531963abfb94729375ccbb6",
+      "png": "assets/elder_whitebeard.png",
+      "pngSHA256": "ed595f8f0980c30a3e416ffea1d838662b625e99d5217b92ccb35ca5af6738ec"
+    },
+    {
+      "frame": {
+        "count": 1,
+        "height": 32,
+        "width": 32
+      },
+      "id": "lens",
+      "kind": "object",
+      "master": "source/lens.ora",
+      "masterSHA256": "4e7eabce05c857a552749d81aee0b31304c57a8fb082b54fa80c1cc55adaef7b",
+      "png": "assets/lens.png",
+      "pngSHA256": "dcde6fffcdac5a9a047663299ac0b37e0090343f18979f9f481f64a40d0fb0ce"
+    },
+    {
+      "frame": {
+        "count": 1,
+        "height": 32,
+        "width": 32
+      },
+      "id": "compass",
+      "kind": "object",
+      "master": "source/compass.ora",
+      "masterSHA256": "6deb5b45cebcbaa66f9fd71cb96b0daddb731344abfb36a18d440c077a4994ab",
+      "png": "assets/compass.png",
+      "pngSHA256": "ac4340e0da8d39ee5cea96ea561c00dd8b5aa03b20cca89a44cad92911a078b8"
+    },
+    {
+      "frame": null,
+      "id": "harbor_front",
+      "kind": "foreground",
+      "master": "source/harbor_front.ora",
+      "masterSHA256": "bec24c604806b90c33eb7ae008f999e67d759946b4e18d5f08a3e84be2ea8dc3",
+      "png": "assets/harbor_front.png",
+      "pngSHA256": "31748883883902a41113c7f434bc566738894f6f3e766a27650ada09dbda796c"
+    }
+  ],
+  "characters": [
+    {
+      "animations": {
+        "idle": [
+          0,
+          1
+        ],
+        "look": [
+          8
+        ],
+        "pick": [
+          9
+        ],
+        "react": [
+          12,
+          13
+        ],
+        "talk": [
+          6,
+          7
+        ],
+        "use": [
+          10,
+          11
+        ],
+        "walk": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "asset": "young_sailor",
+      "baselineY": 112,
+      "id": "young_sailor",
+      "pivot": [
+        12,
+        47
+      ]
+    },
+    {
+      "animations": {
+        "idle": [
+          0,
+          1
+        ],
+        "look": [
+          8
+        ],
+        "pick": [
+          9
+        ],
+        "react": [
+          12,
+          13
+        ],
+        "talk": [
+          6,
+          7
+        ],
+        "use": [
+          10,
+          11
+        ],
+        "walk": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "asset": "elder_whitebeard",
+      "baselineY": 112,
+      "id": "elder_whitebeard",
+      "pivot": [
+        12,
+        47
+      ]
+    }
+  ],
+  "interfaceHeight": 70,
+  "logicalInteractionCanvas": [
+    320,
+    180
+  ],
+  "navigationContract": "navigation_r91.json",
+  "profile": {
+    "aspect": "16:9",
+    "canvas": [
+      640,
+      360
+    ],
+    "pixelArt": true,
+    "presentation": [
+      1280,
+      720
+    ],
+    "renderScale": 2,
+    "sampling": "nearest",
+    "sceneHeight": 290,
+    "startMode": "manual"
+  },
+  "revision": "R92-COMPACT-UI-NEAREST-PIXEL",
+  "scene": {
+    "background": "harbor_back",
+    "hotspots": [
+      {
+        "feedback": "Una lente cubierta de salitre.",
+        "id": "lens_pickup",
+        "name": "Lente de laton",
+        "polygon": [
+          [
+            98,
+            96
+          ],
+          [
+            114,
+            96
+          ],
+          [
+            114,
+            112
+          ],
+          [
+            98,
+            112
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "TAKE",
+          "USE"
+        ],
+        "walkTo": [
+          114,
+          116
+        ]
+      },
+      {
+        "feedback": "El guardafaro observa el mar.",
+        "id": "elder",
+        "name": "Anciano de barba blanca",
+        "polygon": [
+          [
+            158,
+            66
+          ],
+          [
+            178,
+            66
+          ],
+          [
+            178,
+            122
+          ],
+          [
+            158,
+            122
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "TALK",
+          "GIVE"
+        ],
+        "walkTo": [
+          150,
+          112
+        ]
+      },
+      {
+        "feedback": "Una puerta da al taller del puerto.",
+        "id": "tavern_door",
+        "name": "Puerta del taller",
+        "polygon": [
+          [
+            53,
+            74
+          ],
+          [
+            70,
+            74
+          ],
+          [
+            70,
+            116
+          ],
+          [
+            53,
+            116
+          ]
+        ],
+        "verbs": [
+          "WALK",
+          "OPEN",
+          "LOOK"
+        ],
+        "walkTo": [
+          74,
+          115
+        ]
+      },
+      {
+        "feedback": "El faro lleva tiempo apagado.",
+        "id": "lighthouse",
+        "name": "Faro de Bruma",
+        "polygon": [
+          [
+            271,
+            38
+          ],
+          [
+            303,
+            38
+          ],
+          [
+            303,
+            111
+          ],
+          [
+            271,
+            111
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "USE"
+        ],
+        "walkTo": [
+          247,
+          112
+        ]
+      }
+    ],
+    "id": "harbor",
+    "playerStart": [
+      45,
+      116
+    ],
+    "walkable": [
+      [
+        14,
+        108
+      ],
+      [
+        70,
+        108
+      ],
+      [
+        142,
+        108
+      ],
+      [
+        208,
+        109
+      ],
+      [
+        306,
+        106
+      ],
+      [
+        306,
+        126
+      ],
+      [
+        14,
+        126
+      ]
+    ]
+  },
+  "schema": 1,
+  "ui": {
+    "asset": "interface",
+    "fontPx": 7,
+    "inventorySlots": 6,
+    "minTargetPx": 12,
+    "verbs": [
+      "WALK",
+      "LOOK",
+      "TAKE",
+      "USE",
+      "TALK",
+      "OPEN",
+      "GIVE"
+    ]
+  }
+}
