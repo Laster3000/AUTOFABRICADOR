@@ -1,0 +1,98 @@
+name: R92B - aventura pixel art HD 16:9 y acciones sin bloqueo
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  art-navigation-and-finite-state:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - name: Fuentes públicas del AUTOFABRICADOR
+        uses: actions/checkout@v4
+      - name: Python 3.12 para reconstrucción artística
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pillow 12 solo para construcción artística
+        run: python -m pip install --disable-pip-version-check -r examples/adventure-godot-r92b/requirements-r91-art.txt
+      - name: Reconstruir orígenes R90C, R91B y arte final R92B por SHA
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          $game=Join-Path $env:GITHUB_WORKSPACE 'examples/adventure-godot-r92b'
+          $r90=Join-Path $env:RUNNER_TEMP 'R90C-Art'
+          $r91=Join-Path $env:RUNNER_TEMP 'R91B-Art'
+          $r92=Join-Path $env:RUNNER_TEMP 'R92B-Art'
+          $env:R90_ART_OUT=$r90
+          python examples/adventure-godot-r90c/art/r90_illustrate.py
+          if ($LASTEXITCODE -ne 0) { throw 'R90C no generó los recursos originales' }
+          $env:R91_SOURCE_ROOT=$r90
+          $env:R91_ART_OUT=$r91
+          python examples/adventure-godot-r91b/art/r91_hd_art.py
+          if ($LASTEXITCODE -ne 0) { throw 'R91B no reconstruyó 11 ORA anteriores' }
+          New-Item -ItemType Directory -Force (Join-Path $game 'art/base_r91/source') | Out-Null
+          Copy-Item (Join-Path $r91 'source/*.ora') (Join-Path $game 'art/base_r91/source')
+          $env:AF_R92_ART_OUT=$r92
+          python (Join-Path $game 'art/r92_polish.py')
+          if ($LASTEXITCODE -ne 0) { throw 'Generador R92B no pasó' }
+          New-Item -ItemType Directory -Force (Join-Path $game 'assets'),(Join-Path $game 'source') | Out-Null
+          Copy-Item (Join-Path $r92 'assets/*.png') (Join-Path $game 'assets')
+          Copy-Item (Join-Path $r92 'source/*.ora') (Join-Path $game 'source')
+          python (Join-Path $game 'ci_verify_art.py')
+          if ($LASTEXITCODE -ne 0) { throw '22 PNG/ORA no coinciden con SHA o navega mal' }
+      - name: Descargar Godot 4.6.3 oficial y comprobar SHA-256
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          $url='https://github.com/godotengine/godot/releases/download/4.6.3-stable/Godot_v4.6.3-stable_win64.exe.zip'
+          $zip=Join-Path $env:RUNNER_TEMP 'Godot-4.6.3.zip'
+          Invoke-WebRequest -Uri $url -OutFile $zip
+          $sha=(Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($sha -ne 'e39986a178d585ce7ac198fb8de6ea436366dc0cc00e594810c2e3e104c04b90') {
+            throw 'Godot 4.6.3 release SHA-256 no coincide'
+          }
+          $folder=Join-Path $env:RUNNER_TEMP 'Godot-R92B'
+          Expand-Archive -LiteralPath $zip -DestinationPath $folder
+          "R92_GODOT=$folder" | Out-File -FilePath $env:GITHUB_ENV -Append
+      - name: Importar 3 escenas en Godot sin interfaz
+        shell: pwsh
+        run: |
+          $godot=Join-Path $env:R92_GODOT 'Godot_v4.6.3-stable_win64_console.exe'
+          $game=Join-Path $env:GITHUB_WORKSPACE 'examples/adventure-godot-r92b'
+          & $godot --headless --editor --path $game --quit
+          if ($LASTEXITCODE -ne 0) { throw 'Falló la importación Godot de R92B' }
+      - name: Ejecutar 35 controles jugables, 207 de navegación y 49 de estados
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          $godot=Join-Path $env:R92_GODOT 'Godot_v4.6.3-stable_win64_console.exe'
+          $game=Join-Path $env:GITHUB_WORKSPACE 'examples/adventure-godot-r92b'
+          $suites=@(
+            @{script='res://qa/owner_test_r92.gd'; receipt='qa/R92-GODOT-OWNER-READBACK.json'; expected=35; status='PASS_SCOPED_THREE_SCENE_STANDALONE_GODOT_OWNER'},
+            @{script='res://qa/nav_owner_r91.gd'; receipt='qa/R91-NAV-OWNER-READBACK.json'; expected=207; status='PASS_R91_NAV_WALKBOX_ANTI_CLIP'},
+            @{script='res://qa/state_owner_r92.gd'; receipt='qa/R92-STATE-OWNER-READBACK.json'; expected=49; status='PASS_R92_ACTIONS_IDEMPOTENT_AND_UI'}
+          )
+          foreach($suite in $suites) {
+            & $godot --headless --path $game --script $suite.script
+            if ($LASTEXITCODE -ne 0) { throw ('Godot owner falló: '+$suite.script) }
+            $path=Join-Path $game $suite.receipt
+            if (!(Test-Path -LiteralPath $path)) { throw ('Sin recibo: '+$path) }
+            $doc=Get-Content -LiteralPath $path -Raw | ConvertFrom-Json
+            if ($doc.status -ne $suite.status -or $doc.checks.Count -ne $suite.expected -or
+                @($doc.checks | Where-Object { -not $_.pass }).Count -ne 0) {
+              throw ('Recibo original no aceptado: '+$path)
+            }
+          }
+      - name: Guardar arte editable y recibos originales
+        uses: actions/upload-artifact@v4
+        with:
+          name: AUTOFABRICADOR-R92B-ORIGINAL-ART-NAV-STATE
+          path: |
+            examples/adventure-godot-r92b/assets/*.png
+            examples/adventure-godot-r92b/source/*.ora
+            examples/adventure-godot-r92b/qa/*-READBACK.json
+          retention-days: 30
+          if-no-files-found: error
