@@ -1,0 +1,354 @@
+{
+  "assets": [
+    {
+      "frame": null,
+      "id": "interface",
+      "kind": "ui",
+      "master": "source/interface.ora",
+      "masterSHA256": "0bd8ae8442d1f5e2a384c0941d29c1db02f78d914e75aa84d602492c64a8d513",
+      "png": "assets/interface.png",
+      "pngSHA256": "8ce86a4b0e984412c8194eda1cde2a7177ca9d5fc9461f4d960223cb22dbf7a2"
+    },
+    {
+      "frame": {
+        "count": 14,
+        "height": 96,
+        "width": 48
+      },
+      "id": "young_sailor",
+      "kind": "character",
+      "master": "source/young_sailor.ora",
+      "masterSHA256": "9e17ae9f53a2decc1dd9e36486e4a3010768858e7d6d84c54c80e2d1ecd701c2",
+      "png": "assets/young_sailor.png",
+      "pngSHA256": "d4e1f822eb9adcc486cd6c2b0dd362dd1c64d0f90719b6d6bc2c1ce515d5dee3"
+    },
+    {
+      "frame": {
+        "count": 14,
+        "height": 96,
+        "width": 48
+      },
+      "id": "elder_whitebeard",
+      "kind": "character",
+      "master": "source/elder_whitebeard.ora",
+      "masterSHA256": "79cad7fe20c87038d77d37673ed9fc9d4a3885aae61d7897ed9407e8c20d359a",
+      "png": "assets/elder_whitebeard.png",
+      "pngSHA256": "5ff0bf2d2446820d18aa45448c9a181e0445f8ca99be60f969c45a04b7606a5f"
+    },
+    {
+      "frame": {
+        "count": 1,
+        "height": 32,
+        "width": 32
+      },
+      "id": "lens",
+      "kind": "object",
+      "master": "source/lens.ora",
+      "masterSHA256": "2c81fb5b4401890ec8c42832500310f20816f18139894f994422c70430b7b9e6",
+      "png": "assets/lens.png",
+      "pngSHA256": "2796dc409e0a84d5e3efbe080b3bcbdd1369d3ad15029e70fe7f409a5a586ca6"
+    },
+    {
+      "frame": {
+        "count": 1,
+        "height": 32,
+        "width": 32
+      },
+      "id": "compass",
+      "kind": "object",
+      "master": "source/compass.ora",
+      "masterSHA256": "4c3e3d93f4372ff50d2cf4ddc8ce6bc5006a8904dcc5e6c7637c07508660674b",
+      "png": "assets/compass.png",
+      "pngSHA256": "f94b44d599e0576e20d6c7dfda2e7deef75fa35477c6b8b9aba90ba940478cd4"
+    },
+    {
+      "frame": null,
+      "id": "observatory_back",
+      "kind": "background",
+      "master": "source/observatory_back.ora",
+      "masterSHA256": "a49ae8e11f077f91c0d8fdbddd262116fb5a94274d9947dc65d740cc4cf1bd58",
+      "png": "assets/observatory_back.png",
+      "pngSHA256": "3966d1cbeac3b6c33ae3e7fa1a091d61ab7710b2822aac8c51606ea56988a569"
+    },
+    {
+      "frame": null,
+      "id": "observatory_front",
+      "kind": "foreground",
+      "master": "source/observatory_front.ora",
+      "masterSHA256": "b841668a5e53fcd40aa5bb6fcec21473d02ce1a7b36d0751e61cb86e26650a49",
+      "png": "assets/observatory_front.png",
+      "pngSHA256": "6fd8e0564ea07c8ff7b1d2af2c3f4a1af1820134992f3adabb7a945545f5fd79"
+    }
+  ],
+  "characters": [
+    {
+      "animations": {
+        "idle": [
+          0,
+          1
+        ],
+        "look": [
+          8
+        ],
+        "pick": [
+          9
+        ],
+        "react": [
+          12,
+          13
+        ],
+        "talk": [
+          6,
+          7
+        ],
+        "use": [
+          10,
+          11
+        ],
+        "walk": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "asset": "young_sailor",
+      "baselineY": 112,
+      "id": "young_sailor",
+      "pivot": [
+        12,
+        47
+      ]
+    },
+    {
+      "animations": {
+        "idle": [
+          0,
+          1
+        ],
+        "look": [
+          8
+        ],
+        "pick": [
+          9
+        ],
+        "react": [
+          12,
+          13
+        ],
+        "talk": [
+          6,
+          7
+        ],
+        "use": [
+          10,
+          11
+        ],
+        "walk": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "asset": "elder_whitebeard",
+      "baselineY": 112,
+      "id": "elder_whitebeard",
+      "pivot": [
+        12,
+        47
+      ]
+    }
+  ],
+  "logicalInteractionCanvas": [
+    320,
+    180
+  ],
+  "navigationContract": "navigation_r91.json",
+  "profile": {
+    "aspect": "16:9",
+    "canvas": [
+      640,
+      360
+    ],
+    "pixelArt": true,
+    "presentation": [
+      1280,
+      720
+    ],
+    "renderScale": 2,
+    "sampling": "nearest",
+    "sceneHeight": 260,
+    "startMode": "manual"
+  },
+  "scene": {
+    "background": "observatory_back",
+    "hotspots": [
+      {
+        "feedback": "El tubo de bronce apunta hacia la constelacion perdida.",
+        "id": "telescope",
+        "name": "Telescopio de bronce",
+        "polygon": [
+          [
+            160,
+            62
+          ],
+          [
+            203,
+            62
+          ],
+          [
+            203,
+            88
+          ],
+          [
+            160,
+            88
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "USE"
+        ],
+        "walkTo": [
+          161,
+          113
+        ]
+      },
+      {
+        "feedback": "Un pergamino de estrellas gastado por los inviernos.",
+        "id": "star_chart",
+        "name": "Carta celeste",
+        "polygon": [
+          [
+            224,
+            92
+          ],
+          [
+            276,
+            92
+          ],
+          [
+            276,
+            108
+          ],
+          [
+            224,
+            108
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "TAKE",
+          "USE"
+        ],
+        "walkTo": [
+          235,
+          113
+        ]
+      },
+      {
+        "feedback": "Escaleras de vuelta al taller.",
+        "id": "back_stairs",
+        "name": "Escalera al taller",
+        "polygon": [
+          [
+            17,
+            67
+          ],
+          [
+            46,
+            67
+          ],
+          [
+            46,
+            122
+          ],
+          [
+            17,
+            122
+          ]
+        ],
+        "verbs": [
+          "WALK",
+          "OPEN",
+          "LOOK"
+        ],
+        "walkTo": [
+          50,
+          114
+        ]
+      },
+      {
+        "feedback": "Los puntos luminosos se unen formando un camino secreto.",
+        "id": "constellations",
+        "name": "Cielo enmarcado",
+        "polygon": [
+          [
+            85,
+            17
+          ],
+          [
+            150,
+            17
+          ],
+          [
+            150,
+            76
+          ],
+          [
+            85,
+            76
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "USE"
+        ],
+        "walkTo": [
+          121,
+          108
+        ]
+      }
+    ],
+    "id": "old_observatory",
+    "playerStart": [
+      45,
+      113
+    ],
+    "walkable": [
+      [
+        14,
+        103
+      ],
+      [
+        306,
+        103
+      ],
+      [
+        306,
+        126
+      ],
+      [
+        14,
+        126
+      ]
+    ]
+  },
+  "schema": 1,
+  "ui": {
+    "asset": "interface",
+    "fontPx": 7,
+    "inventorySlots": 6,
+    "minTargetPx": 12,
+    "verbs": [
+      "WALK",
+      "LOOK",
+      "TAKE",
+      "USE",
+      "TALK",
+      "OPEN",
+      "GIVE"
+    ]
+  }
+}
