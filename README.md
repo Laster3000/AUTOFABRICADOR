@@ -1,5 +1,15 @@
 # AUTOFABRICADOR
 
+## Prioridad vigente: fabrica de aplicaciones y direccion artistica (R87)
+
+AUTOFABRICADOR es el proyecto principal. MMC7 esta suspendido. Para aventuras clasicas, la calidad visual y la experiencia son una condicion independiente de la aprobacion funcional: la referencia es la estetica VGA de los noventa con personajes originales, no copias de sprites protegidos. El nuevo control **R87** audita PNG y maestros OpenRaster, hojas de animacion, interaccion y escena 320x200 con hashes, pero **NO aprueba automaticamente la calidad artistica ni implica juego completo**.
+
+- [Contrato visual R86](design/ADVENTURE-VGA-VISUAL-UX-CONTRACT-R86.md)
+- [Catalogo investigado e integracion R87](design/R87-ADVENTURE-REPOSITORIES-IMPLEMENTATION.md)
+- [Modulo first-party R87](development/autofab/adventure_visual_gate.py) y [pruebas R87](development/tests/test_adventure_visual_gate_r87.py)
+
+La integracion original en el ordenador se ha probado y restaurado; Godot, Popochiu y Pixelorama son candidatos externos aun sin instalacion comprobada. No confundir componentes aceptados con una fabrica universal ACTIVE.
+
 Proyecto experimental de **factoría local de ingeniería de software asistida por IA**. Este repositorio es **público** para compartir código, documentación y facilitar la colaboración.
 
 ## Estado real
