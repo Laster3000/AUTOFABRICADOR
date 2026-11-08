@@ -1,0 +1,29 @@
+name: Aventura 16x9 - reconstruccion portable R88B
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Recuperar fuentes
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar arte original y maestros OpenRaster
+        run: python examples/adventure-169-r88b/art/generate_assets.py
+      - name: Validar 16:9 y empaquetar candidato
+        run: python examples/adventure-169-r88b/art/ci_build.py
+      - name: Publicar paquete de origen portable
+        uses: actions/upload-artifact@v4
+        with:
+          name: LA-LUZ-DE-BRUMA-R88B-16x9-SOURCE-CANDIDATE
+          path: examples/adventure-169-r88b/DIST/LA-LUZ-DE-BRUMA-16x9-R88B-SOURCE-REBUILD.zip
+          if-no-files-found: error
+          retention-days: 30
