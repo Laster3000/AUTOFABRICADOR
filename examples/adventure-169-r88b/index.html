@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La Luz de Bruma — aventura 16:9</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="shell" aria-label="La Luz de Bruma">
+  <section id="game-frame">
+    <canvas id="game" width="320" height="180" tabindex="0" aria-label="Aventura panorámica: puerto y taller"></canvas>
+    <div id="dialog" class="hidden" role="dialog" aria-label="Conversación con el guardafaro"></div>
+    <div id="ending" class="hidden" role="dialog" aria-label="Final del capítulo"></div>
+    <div id="error" class="hidden" role="alert"></div>
+  </section>
+  <nav id="actions" aria-label="Controles de partida">
+    <button id="btn-save" type="button">Guardar</button>
+    <button id="btn-load" type="button">Cargar</button>
+    <button id="btn-new" type="button">Nueva partida</button>
+    <button id="btn-fullscreen" type="button">Pantalla completa</button>
+    <span class="keyboard">1–5: verbos · Espacio: continuar texto</span>
+  </nav>
+</main>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
