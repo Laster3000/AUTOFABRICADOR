@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "atUtc": "2026-11-08T15:55:09.174039+00:00",
+  "status": "PASS_PINNED_R75_MODEL_SOURCE_COPIED_NOT_EXECUTED",
+  "originalOwnerCasesAndHoldoutsRemainUnchanged": true,
+  "sources": [
+    {
+      "path": "logic-2d-r75.js",
+      "sha": "20ff069b2506c99d9c74d9cc804169d99f548baa1adbe5da17bfb77934350412",
+      "kind": "original-model-R75-accepted"
+    },
+    {
+      "path": "logic-3d-r75.js",
+      "sha": "aeeff001662f47210319c5fcc28ec6409088209441f7f433466ec8152575d124",
+      "kind": "original-model-R75-accepted"
+    },
+    {
+      "path": "icon-192.png",
+      "sha": "4b83e3ea79111cad6415479b42d9d799dae50e73a75330548259112501f09a68",
+      "kind": "trusted-first-party-static-icon"
+    },
+    {
+      "path": "icon-512.png",
+      "sha": "8073804c3c89b8cf447c7ac6bf492c1c89676dd44369f29710aca836f100a90b",
+      "kind": "trusted-first-party-static-icon"
+    },
+    {
+      "path": "index.html",
+      "sha": "9e4b255a2ccf037a582d05347cc1224a82fc7493548b24d022b4f79ccd43ee4b",
+      "kind": "first-party-reviewed-template"
+    },
+    {
+      "path": "app.css",
+      "sha": "0c078b96d2ae2526910000c2059dee1879bc6e6a5fdc6c886a6d4b858e8380bd",
+      "kind": "first-party-reviewed-template"
+    },
+    {
+      "path": "app.js",
+      "sha": "ca8f40e3f792cf786b5f7329d68504761d9c260f780bf5157511c7e3ac2d368f",
+      "kind": "first-party-reviewed-template"
+    },
+    {
+      "path": "server.py",
+      "sha": "2883ad50919d7e38b1fc956940586ab9e0f41363ee534a5611be858a284f80e1",
+      "kind": "first-party-reviewed-template"
+    },
+    {
+      "path": "game2d.js",
+      "sha": "cecd0541e6dba587c023f8f5e2d2cad73135764ad9f41c43fad831a72e6e70e6",
+      "kind": "first-party-reviewed-template"
+    },
+    {
+      "path": "game3d.js",
+      "sha": "ed2a564c35964b014bfd679bc47a278d4799b0c5e5a845f6a4a4eca30080b0df",
+      "kind": "first-party-reviewed-template"
+    },
+    {
+      "path": "service-worker.js",
+      "sha": "671cc6fb08fdb2e055ca88289899ee27f463b0163ac434646f830f39fb2e8337",
+      "kind": "first-party-reviewed-template"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "sha": "999a6ea6560473ade9bb4918c0d4da3c9bddf4140b17d86126c101b831cd7d3c",
+      "kind": "first-party-reviewed-template"
+    }
+  ],
+  "originalR75ArchivesNotModified": true
+}

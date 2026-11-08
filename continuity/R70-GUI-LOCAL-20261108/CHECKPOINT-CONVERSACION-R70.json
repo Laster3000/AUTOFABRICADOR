@@ -1,0 +1,13 @@
+{
+  "conversationId": "MMC7-LOCAL-CHAT-R70-20261108-ONEBLOCK-ALIAS",
+  "conversationIdType": "LOCAL_ALIAS_NOT_NATIVE",
+  "coverage": "PARTIAL_ACCESSIBLE_ONLY",
+  "literalUserSegment": {
+    "kind": "LITERAL",
+    "role": "user",
+    "text": "hazlo en un solo bloque"
+  },
+  "schema": 1,
+  "summary": "R70 original 7B new GUI source, owner first guest 7/13, Qwen35 9B new repair, second original guest 13/13, portable ZIP physical restore; no autonomous universal E2E.",
+  "summaryKind": "RESUMEN_NOT_LITERAL"
+}

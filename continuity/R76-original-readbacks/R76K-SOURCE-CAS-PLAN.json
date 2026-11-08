@@ -1,0 +1,85 @@
+{
+  "R75RootsUnchangedExceptScopedNewCLI": true,
+  "atUtc": "2026-11-08T16:11:44.343963+00:00",
+  "changes": [
+    {
+      "afterSHA": "4b8e77207e512cc29723b9378fb95d5e492f9cc3abfd8a4ecf819556b08a72bc",
+      "beforeSHA": null,
+      "dest": "C:\\AF-PORTABLE\\autofab\\reference_suite_r76.py",
+      "preimage": null,
+      "rel": "autofab/reference_suite_r76.py",
+      "root": "C:\\AF-PORTABLE",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\STAGING\\AF-PORTABLE\\autofab\\reference_suite_r76.py"
+    },
+    {
+      "afterSHA": "c0f6c2f2879bb70ed1ff393ec16dc851f23350bca223efd06087ebd274a70adb",
+      "beforeSHA": null,
+      "dest": "C:\\AF-PORTABLE\\tests\\test_reference_suite_r76.py",
+      "preimage": null,
+      "rel": "tests/test_reference_suite_r76.py",
+      "root": "C:\\AF-PORTABLE",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\STAGING\\AF-PORTABLE\\tests\\test_reference_suite_r76.py"
+    },
+    {
+      "afterSHA": "80a1eabc202926a1690df840732899bce2f015f65b0d86efe1e82e3413c359e6",
+      "beforeSHA": null,
+      "dest": "C:\\AF-PORTABLE\\TEMPLATES\\R76\\AUTOFABRICADOR-R76-REFERENCE-SUITE-CANDIDATE.zip",
+      "preimage": null,
+      "rel": "TEMPLATES/R76/AUTOFABRICADOR-R76-REFERENCE-SUITE-CANDIDATE.zip",
+      "root": "C:\\AF-PORTABLE",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\STAGING\\AF-PORTABLE\\TEMPLATES\\R76\\AUTOFABRICADOR-R76-REFERENCE-SUITE-CANDIDATE.zip"
+    },
+    {
+      "afterSHA": "97df214b9e9eca0fe317f62790a4e231914f58c7962c7febe9444110f221aac3",
+      "beforeSHA": "3cf3dafc920d6b2406fc9ccc52da30ec8d1276a0703fcc05ee33b543a92238b6",
+      "dest": "C:\\AF-PORTABLE\\autofabricador.py",
+      "preimage": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\PREIMAGES\\AF-PORTABLE\\autofabricador.py",
+      "rel": "autofabricador.py",
+      "root": "C:\\AF-PORTABLE",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\STAGING\\AF-PORTABLE\\autofabricador.py"
+    },
+    {
+      "afterSHA": "4b8e77207e512cc29723b9378fb95d5e492f9cc3abfd8a4ecf819556b08a72bc",
+      "beforeSHA": null,
+      "dest": "C:\\AUTOFABRICADOR\\autofab\\reference_suite_r76.py",
+      "preimage": null,
+      "rel": "autofab/reference_suite_r76.py",
+      "root": "C:\\AUTOFABRICADOR",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\STAGING\\AUTOFABRICADOR\\autofab\\reference_suite_r76.py"
+    },
+    {
+      "afterSHA": "c0f6c2f2879bb70ed1ff393ec16dc851f23350bca223efd06087ebd274a70adb",
+      "beforeSHA": null,
+      "dest": "C:\\AUTOFABRICADOR\\tests\\test_reference_suite_r76.py",
+      "preimage": null,
+      "rel": "tests/test_reference_suite_r76.py",
+      "root": "C:\\AUTOFABRICADOR",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\STAGING\\AUTOFABRICADOR\\tests\\test_reference_suite_r76.py"
+    },
+    {
+      "afterSHA": "80a1eabc202926a1690df840732899bce2f015f65b0d86efe1e82e3413c359e6",
+      "beforeSHA": null,
+      "dest": "C:\\AUTOFABRICADOR\\TEMPLATES\\R76\\AUTOFABRICADOR-R76-REFERENCE-SUITE-CANDIDATE.zip",
+      "preimage": null,
+      "rel": "TEMPLATES/R76/AUTOFABRICADOR-R76-REFERENCE-SUITE-CANDIDATE.zip",
+      "root": "C:\\AUTOFABRICADOR",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\STAGING\\AUTOFABRICADOR\\TEMPLATES\\R76\\AUTOFABRICADOR-R76-REFERENCE-SUITE-CANDIDATE.zip"
+    },
+    {
+      "afterSHA": "97df214b9e9eca0fe317f62790a4e231914f58c7962c7febe9444110f221aac3",
+      "beforeSHA": "3cf3dafc920d6b2406fc9ccc52da30ec8d1276a0703fcc05ee33b543a92238b6",
+      "dest": "C:\\AUTOFABRICADOR\\autofabricador.py",
+      "preimage": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\PREIMAGES\\AUTOFABRICADOR\\autofabricador.py",
+      "rel": "autofabricador.py",
+      "root": "C:\\AUTOFABRICADOR",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\STAGING\\AUTOFABRICADOR\\autofabricador.py"
+    }
+  ],
+  "fullProductRestorePoint": false,
+  "noMMCNoFNoBOOTNoMODELNoWindowsService": true,
+  "operationId": "AF.R76K.TWO-CANDIDATE-ROOTS-REFERENCE-APP-CAS.20261108",
+  "originalReleasePreimageSHA": "ea7e5a70c5a7b207adec1bd474481f29c7674ab1ff6bee5adf4154f5b0233e40",
+  "schema": 1,
+  "sourcePreimageRestoreRehearsed": true,
+  "sourceRefProductZipSHA": "80a1eabc202926a1690df840732899bce2f015f65b0d86efe1e82e3413c359e6"
+}

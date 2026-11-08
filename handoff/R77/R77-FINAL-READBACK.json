@@ -1,0 +1,28 @@
+{
+  "C": "C:\\AUTOFABRICADOR\\CONTINUIDAD\\R77-HANDOFF-ARQUITECTURA-20261108",
+  "CManifestSHA": "c5edf50749bdae9ab4182d9502c0e4d30876bfec79a69d921ff9b79e8f71f987",
+  "D": "D:\\AUTOFABRICADOR-RESCATE\\R77-HANDOFF-ARQUITECTURA-20261108",
+  "DManifestSHA": "c5edf50749bdae9ab4182d9502c0e4d30876bfec79a69d921ff9b79e8f71f987",
+  "R76ManifestSHAUnchanged": "6deb52fa2a9d4f89c47bf578502b7874fc52137b2ac8a141849a75cd13cdab60",
+  "R77NewFactoryFeaturesInstalled": false,
+  "atUtc": "2026-11-08T16:27:51.357713+00:00",
+  "handoffBytesRestoreRehearsed": true,
+  "handoffSHA": "a6c9eb192618f8e8466c8d247450910132e7842a9f704cbf7b3e870e0dc35927",
+  "mirrors": {
+    "HANDOFF-A-OTRA-IA-R77.md": "a6c9eb192618f8e8466c8d247450910132e7842a9f704cbf7b3e870e0dc35927",
+    "LEEME-PRIMERO-R77.md": "87e4bd81c42250f5c0d178669e771d42d9424cc1e82b964c3dd0809b3c2ffb4c",
+    "MANIFEST-R77.json": "c5edf50749bdae9ab4182d9502c0e4d30876bfec79a69d921ff9b79e8f71f987",
+    "R77-CHAT-CHECKPOINT.json": "cdb5aff280dd1f87e97dec164a286660491a04914067ac5e048ae2c9beac262b",
+    "R77-PROJECT-CHECKPOINT.json": "733ed835001406728874b4c942b8b54bb8613c3216bbb0efb21bd7091e57ed1d"
+  },
+  "nextAction": "Other IA: G0 real readback of R76 and original agents; one unified engineering cycle with new, hidden-owner E2E app generation, portable restoration, and explicit blockers. Do not mark whole factory universal from a reference suite.",
+  "noMMCNoFNoBootProd": true,
+  "operationId": "AF.R77.DOCUMENT-ARCHITECTURE-FREEZE.20261108",
+  "originalActiveFileSHAUnchanged": "ea7e5a70c5a7b207adec1bd474481f29c7674ab1ff6bee5adf4154f5b0233e40",
+  "productRollBackPoint": false,
+  "schema": 1,
+  "status": "PASS_DOCUMENT_HANDOFF_DUAL_MIRROR_ZIP_AND_RESTORE_REHEARSAL",
+  "zipCRCandFileSHA": "PASS",
+  "zipPath": "D:\\AUTOFABRICADOR-RESCATE\\R77-HANDOFF-ARQUITECTURA-20261108\\AUTOFABRICADOR-R77-HANDOFF-PARA-OTRA-IA.zip",
+  "zipSHA": "a52823663a7775e5f247cbbcfe31332f3f01aceec0e93fc13437c3560c6419ff"
+}

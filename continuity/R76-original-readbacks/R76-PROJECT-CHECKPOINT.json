@@ -1,0 +1,157 @@
+{
+  "M1toM6": {
+    "M1": {
+      "evidence": "Source suite, verified R75 model logic, repaired API, native APK source",
+      "status": "PASS"
+    },
+    "M2": {
+      "evidence": "First-party factory commands integrated in two candidate roots with SHA CAS",
+      "status": "PASS"
+    },
+    "M3": {
+      "evidence": "R76 source 24 HTTP+27 browser, restored 24+27, real Qwen 9B authenticated API, 53 WASI, 29 Android logic, original regressions 507 and 490",
+      "status": "PASS"
+    },
+    "M4": {
+      "evidence": "No protected Host/PROD/BOOT installation authorised or performed",
+      "status": "NOT_APPLICABLE"
+    },
+    "M5": {
+      "evidence": "R76 reference suite ZIP source+Android debug APK SHA restored 29/29, original factory exports both roots, no startup",
+      "status": "PASS"
+    },
+    "M6": {
+      "evidence": "Universal arbitrary-app capability, Android device, second physical PC and full embedded runtime remain unverified",
+      "status": "BLOCKED"
+    }
+  },
+  "R75LkgSHA": "795aa499b97de0fe2ad7d12395f49e0ba5cddd87eee953faddce629956a2bf60",
+  "R76G0Sha": "2d4524c46fc5be35ca4df5cd55638b6c9b1d3d837629acc659c2b55250c62969",
+  "chatSaturationInternal": "DESCONOCIDA",
+  "deliverables": {
+    "androidAPK": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\bin\\Debug\\net11.0-android\\com.autofabricador.r76labyrinth-Signed.apk",
+    "androidAPKSha": "ce33408272e14db655cb3137b7f568755b5dc4c59e8a109b35b9f47020e0295a",
+    "factoryExports": {
+      "C:\\AF-PORTABLE": {
+        "appExportPath": "C:\\AF-PORTABLE\\apps\\AF-R76-REFERENCE-SUITE-80a1eabc202926a1.zip",
+        "deliveryStatus": "PASS_EXPORTED_BOUND_REFERENCE_NOT_ACTIVE",
+        "receiptSHA": "aa1fd649425f24afd67162f5118c9b1b76756bd413ea1da1053dab6cb2ce9130",
+        "sourceArchiveSHA": "80a1eabc202926a1690df840732899bce2f015f65b0d86efe1e82e3413c359e6"
+      },
+      "C:\\AUTOFABRICADOR": {
+        "appExportPath": "C:\\AUTOFABRICADOR\\apps\\AF-R76-REFERENCE-SUITE-80a1eabc202926a1.zip",
+        "deliveryStatus": "PASS_EXPORTED_BOUND_REFERENCE_NOT_ACTIVE",
+        "receiptSHA": "32ae814f0a6a744d211bfbe59b47bb0f2752422fbeb327e042659751736d6cd1",
+        "sourceArchiveSHA": "80a1eabc202926a1690df840732899bce2f015f65b0d86efe1e82e3413c359e6"
+      }
+    },
+    "fullFactoryRestorePoint": false,
+    "integratedArchive": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\PACKAGES\\AUTOFABRICADOR-R76-REFERENCE-SUITE-CANDIDATE.zip",
+    "integratedArchiveSHA": "80a1eabc202926a1690df840732899bce2f015f65b0d86efe1e82e3413c359e6",
+    "referenceProgramRestore": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\RESTORED-R76-APPLICATION",
+    "sourcePreimagesRehearsed": true
+  },
+  "evidenceSHA": {
+    "android": "2e3af68ec36e8315144e2d9abcd40d5eff51f9b3a4421dfe3121e307b1b5f963",
+    "androidLogic": "15a70dab9e13b4333cc49ec5bc0ba828369b4883f5f458c279d2c99537c6509e",
+    "apiRepair": "78d6dced9e39968b3b95176b6aa7dce4bcb28ad4324832a3222ea96b250e7a5e",
+    "browserRestored": "8bf6e9cfdff82c6b057324b12301e4030bd6b9914bb5d3b676430800ddf92ee1",
+    "browserSource": "641ed706f18ec30459a3e0508cdd4dcca78723709face3fd4e097a3061fcf79c",
+    "realAIGPU": "215a2c1812e71f559e24d1c7a3d8f267b67a620350d0f7ea493f9f860436e1c3",
+    "regression": "3ecbba0375637446cff01e164f52446e7eaae15678cb0f4763d5242377311242",
+    "restoration": "a797f7d8db705d62e6ae8484ddb863899faf67da748e84d73622babcc49a075f",
+    "sourceCAS": "2641b84a7139d151b18b718dcbe10f63ed1c2d989991a8e39e33d6d0d1d15841"
+  },
+  "features": {
+    "2DGameCanvasModelLogic": "PASS_E2E",
+    "3DInteractiveWebGL2SceneWithModelProjection": "PASS_E2E",
+    "androidCsharpDebugSignedAPK": "PASS_BUILD_DEVICE_BLOCKED",
+    "firstPartyHTTP_SQLite_CSRF_Auth": "PASS_E2E",
+    "fullUniversalFactory": "BLOCKED",
+    "localQwen35_9B_AuthenticatedHTTP": "PASS_E2E",
+    "repairedModelApi": "PASS_WASI_53"
+  },
+  "functionalId": "AF.FACTORY",
+  "generalFactoryActive": false,
+  "nextAction": "E2E instalar y ejecutar APK en dispositivo o emulador Android autorizado; verificar la suite y restaurar el ZIP en segundo PC Windows fisico; crear motor first-party seguro para fabricar nuevos proyectos open-domain con pruebas independientes de un servidor, juegos y apps Android, evitando afirmar completitud universal sin evidencia.",
+  "objectiveId": "autofabricador-independent-reusable-local-ai-factory-20261107",
+  "operationId": "AF.R76M.FINAL-ORIGINAL-REFERENCE-DELIVERY-20261108",
+  "results": {
+    "androidBuildExit": 0,
+    "androidLogicTests": 29,
+    "androidSigner": "v2_v3_debug_verified_no_release",
+    "apiWasiTests": 53,
+    "devRootRegressionTests": 490,
+    "originalBrowserTests": 27,
+    "originalHTTPTests": 24,
+    "packageRestoredBytes": 29,
+    "portableRootRegressionTests": 507,
+    "restoredBrowserTests": 27,
+    "restoredHTTPTests": 24,
+    "standaloneModelHTTPReal": true
+  },
+  "revisionId": "R76-FULLAPP-INTEGRATION-CANDIDATE",
+  "safety": {
+    "fullProductRollbackPoint": false,
+    "liveModels": {
+      "C:\\AF-PORTABLE": {
+        "models": {
+          "cpu": "NOT_STARTED",
+          "cuda7b": "NOT_STARTED",
+          "cuda9b": "NOT_STARTED"
+        },
+        "pendingQueue": 0,
+        "supervisor": "STOPPED"
+      },
+      "C:\\AUTOFABRICADOR": {
+        "models": {
+          "cpu": "NOT_STARTED",
+          "cuda7b": "NOT_STARTED",
+          "cuda9b": "NOT_STARTED"
+        },
+        "pendingQueue": 0,
+        "supervisor": "STOPPED"
+      }
+    },
+    "noF": true,
+    "noMMC": true,
+    "noRootBOOTProdModification": true,
+    "oldOriginalR76ModelAIStagnatedStillNotSUCCEEDED": true,
+    "originalR75LKGUnchanged": true,
+    "originalR75UnknownAndR76StagnationNotReplayed": true,
+    "releaseFileUnchangedSHA": "ea7e5a70c5a7b207adec1bd474481f29c7674ab1ff6bee5adf4154f5b0233e40",
+    "sourceRestorePointRehearsed": true,
+    "windowsSandboxSessions": [],
+    "windowsStartupDisabled": true
+  },
+  "schema": 1,
+  "state": "PASS_BOUNDED_REFERENCE_FIVE_FAMILIES_NOT_UNIVERSAL",
+  "timeUTC": "2026-11-08T16:14:41.803586+00:00",
+  "unverified": [
+    {
+      "category": "GENERAL_AUTONOMOUS_FACTORY",
+      "status": "BLOCKED",
+      "why": "R76 is a first-party bounded reference integration, not arbitrary prompt-to-native-app fabrication. No universal owner E2E."
+    },
+    {
+      "category": "ANDROID_DEVICE_E2E",
+      "status": "BLOCKED",
+      "why": "Debug-signed APK compiled, but ADB reported no connected emulator or physical device."
+    },
+    {
+      "category": "SECOND_PHYSICAL_WINDOWS_PC",
+      "status": "BLOCKED",
+      "why": "No independent second physical Windows PC hardware/runtime/graphics verification."
+    },
+    {
+      "category": "FULL_STANDALONE_PYTHON_GPU_BACKEND",
+      "status": "BLOCKED",
+      "why": "ZIP excludes Python runtime and Qwen GGUF/backend bytes; preinstalled compatible tools required."
+    },
+    {
+      "category": "ANDROID_RELEASE_SIGNING",
+      "status": "BLOCKED",
+      "why": "Only developer debug APK with v2/v3 signing, not a publication signing trust chain."
+    }
+  ]
+}

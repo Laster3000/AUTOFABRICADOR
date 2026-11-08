@@ -1,0 +1,58 @@
+{
+  "allArchiveMembersRestoredAndShaMatched": true,
+  "archiveMembers": 1965,
+  "atUtc": "2026-11-08T13:22:31.608323+00:00",
+  "correctedIndependentGuestAttempt": {
+    "failed": 0,
+    "pass": 13
+  },
+  "finalProductQualification": "CANDIDATE_NOT_ACTIVE_NOT_UNIVERSAL_FACTORY",
+  "firstModelStoreSha": "ca7f3def77edac7ab66f9c7be9a4cb6d53d238dd68a59e5b66e2be812a3d125f",
+  "fullPortableArchiveSha": "62221eb638ec7602c2c902824b558b028ed1a12826fb9e7ade12c77f20c4497f",
+  "fullPortableBytes": 14699108,
+  "functionalId": "AF.FACTORY",
+  "milestonesScoped": {
+    "M1": "PASS_SCOPED_SOURCE_2_MODULES_BY_LOCAL_7B",
+    "M2": "PASS_SCOPED_9B_REPAIRED_GUI_SQLITE",
+    "M3": "PASS_SCOPED_13_OF_13_GUEST_ORIGINAL_CASES",
+    "M4": "NOT_APPLICABLE_NO_PROTECTED_HOST_COMMIT",
+    "M5": "PASS_SCOPED_PORTABLE_ZIP_NOT_HOST_INSTALL",
+    "M6": "PASS_SCOPED_RESTORE_AND_GUEST_ON_SAME_PC_NOT_SECOND_HOST"
+  },
+  "modelProviderStates": {
+    "cpu": "NOT_STARTED",
+    "cuda7b": "NOT_STARTED",
+    "cuda9b": "NOT_STARTED"
+  },
+  "nextAction": "Integrar ruta R70 de fabricacion grafica en supervisor original sin crear nueva fabrica, con pruebas ocultas y recuperacion interrumpida, auditando interfaz y datos; despues validar instalacion portable en otro Windows fisico con recibo independiente.",
+  "noGeneratedCodeExecutedOnHost": true,
+  "noOtherPhysicalPCValidation": true,
+  "notGeneralAutonomyProved": true,
+  "notNativeMonolithicExe": true,
+  "objectiveId": "autofabricador-independent-reusable-local-ai-factory-20261107",
+  "operationIds": [
+    "AF.R70.GUI.1.ONCE",
+    "AF.R70.GUI.2.ONCE",
+    "AF.R70B.QWEN35-9B-CUDA.OWNER-FEEDBACK-SOURCE-REPAIR-ONCE.20261108",
+    "AF.R70C.OWNER-PORTABLE-CANDIDATE-AND-GUEST-E2E.20261108"
+  ],
+  "originalAppCodeSha": "fd805d38f285a86c678722e54944a579de0ff99ceda655727d835f0f4260dd10",
+  "originalGuestSha": "f391d41fdbdd4cdfdc98ccf08333f7ed160501c89a2b715dc07794b959b1aee2",
+  "originalIndependentGuestAttempt": {
+    "failed": 6,
+    "pass": 7
+  },
+  "originalOwnerTestSha": "87b8566bc7310d050fc74acf71f1b7b5668b426a7c241aacc2175f4bb1425189",
+  "originalReleaseStatus": "AUTOFABRICADOR-0.9.17-CANDIDATE_NOT_ACTIVE",
+  "originalRootProductionUntouched": true,
+  "originalWindowsAutostartRemainDisabled": "READBACK_PENDING",
+  "ownerSha": "27feeda96d23d00fb3b69b5c564c8d4967a2c6c86ffb22199655a18cac1ae2b3",
+  "projectCheckpointNotFullProductRestorePoint": true,
+  "recoveryReference": "D:\\AUTOFABRICADOR-RESCATE\\R70-PRUEBA-AUTONOMA-GUI-20261108",
+  "repairedModelStoreSha": "882cf7c81c611810332a1aecc8e282270f329a930aedf5fcef458404138e620b",
+  "revisionId": "R70-GUI-LOCAL-AUTONOMOUS-BOUNDED-OWNER-PROBE",
+  "sandboxGuestOutputIsUnsignedUntrusted": true,
+  "schema": 1,
+  "secondGuestSha": "61a5fe026a29b4c8938fb3544b130c90cbc27eac06d90cead02f8357466a0352",
+  "sourceRepairReceiptSha": "c0cba52f9d6ba840a10b9b9869d601946d24ae3fc609ba1017b5dd6ec589171a"
+}

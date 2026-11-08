@@ -1,0 +1,91 @@
+{
+  "M1toM6": {
+    "M1": "NOT_STARTED_R77_ONLY_PLAN",
+    "M2": "NOT_STARTED_R77_ONLY_PLAN",
+    "M3": "NOT_STARTED_R77_ONLY_PLAN",
+    "M4": "NOT_APPLICABLE_NO_PROTECTED_EFFECT",
+    "M5": "PASS_DOCUMENT_HANDOFF_NOT_PRODUCT_INSTALL",
+    "M6": "PASS_DOCUMENT_BYTE_READBACK_NOT_PRODUCT_E2E"
+  },
+  "R76FinalReceiptSHA": "ca65e47cd745d4485adabb6f2f6641c10cb1c1162c1a0e7b04288adf4adb5a0e",
+  "R76M1toM6": {
+    "M1": "PASS_SCOPED",
+    "M2": "PASS_SCOPED",
+    "M3": "PASS_SCOPED",
+    "M4": "NOT_APPLICABLE",
+    "M5": "PASS_SCOPED",
+    "M6": "BLOCKED_UNIVERSAL_AND_OTHER_DEVICE"
+  },
+  "R76ManifestSHA": "6deb52fa2a9d4f89c47bf578502b7874fc52137b2ac8a141849a75cd13cdab60",
+  "activeReleaseRecordPreimageSHA": "ea7e5a70c5a7b207adec1bd474481f29c7674ab1ff6bee5adf4154f5b0233e40",
+  "architecture": {
+    "acceptanceFamilies": [
+      "WINDOWS_NATIVE_APP",
+      "WEB_FULLSTACK",
+      "GAME_2D",
+      "GAME_3D",
+      "ANDROID_NATIVE",
+      "INTEGRATED_AI",
+      "EVOLVE_EXISTING_PROJECT",
+      "PORTABLE_SECOND_ENV",
+      "SECURITY_ADVERSARIAL",
+      "FAULT_RECOVERY"
+    ],
+    "motorNames": [
+      "INTERPRETAR_Y_DISENAR",
+      "PLANIFICAR_Y_ORQUESTAR",
+      "FABRICAR",
+      "VERIFICAR_Y_REPARAR",
+      "EMPAQUETAR_Y_ENTREGAR",
+      "MANTENER_Y_EVOLUCIONAR"
+    ],
+    "priorityP0": [
+      "CONTRACTS_REQUIREMENTS",
+      "PERSISTENT_ORCHESTRATOR",
+      "INDEPENDENT_BLACKBOX_ORACLES",
+      "CAUSAL_SELF_REPAIR",
+      "ISOLATED_TOOLCHAINS",
+      "AGENT_SECURITY",
+      "PROVENANCE_AND_RECOVERABLE_CONTEXT",
+      "INTEGRAL_PACKAGING"
+    ],
+    "priorityP1": [
+      "REUSE_CAS_COMPONENT_LIBRARY",
+      "MODULAR_VISUAL_EDITOR",
+      "MODEL_GPU_RESOURCE_MANAGER",
+      "EVOLUTION_MIGRATIONS",
+      "AUTHENTICATED_CONTROL_CENTER",
+      "SBOM_LICENSE_PROVENANCE"
+    ],
+    "priorityP2": [
+      "PLUGIN_SDK_ABI",
+      "SAFE_CLEANUP_RETENTION"
+    ]
+  },
+  "atUtc": "2026-11-08T16:27:51.301334+00:00",
+  "canonicalSources": {
+    "R76ReadFirst": "C:\\AUTOFABRICADOR\\CONTINUIDAD\\R76-FULLAPP-INTEGRATION-20261108\\LEEME-PRIMERO-R76.md",
+    "develop": "C:\\AUTOFABRICADOR",
+    "portable": "C:\\AF-PORTABLE",
+    "rescue": "D:\\AUTOFABRICADOR-RESCATE"
+  },
+  "evidenceScope": "R76 predecessor manifest verified; no new build or functional E2E",
+  "functionalId": "AF.FACTORY",
+  "handoffSHA": "a6c9eb192618f8e8466c8d247450910132e7842a9f704cbf7b3e870e0dc35927",
+  "nextAction": "Other IA: G0 real readback of R76 and original agents; one unified engineering cycle with new, hidden-owner E2E app generation, portable restoration, and explicit blockers. Do not mark whole factory universal from a reference suite.",
+  "objectiveId": "autofabricador-independent-reusable-local-ai-factory-20261107",
+  "operationId": "AF.R77.DOCUMENT-ARCHITECTURE-FREEZE.20261108",
+  "revisionId": "R77-HANDOFF-ARQUITECTURA-20261108",
+  "safety": {
+    "noAutomaticWinStartup": true,
+    "noBootProdCurrentRoot": true,
+    "noCloudThirdPartyUpload": true,
+    "noF": true,
+    "noMMC": true,
+    "noModelTasks": true,
+    "noOriginalR76Modified": true,
+    "noUniversalClaim": true
+  },
+  "schema": 1,
+  "state": "RECORDED_ARCHITECTURE_NOT_IMPLEMENTED"
+}

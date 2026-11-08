@@ -1,0 +1,12 @@
+{
+  "HFailure404Confirmed": true,
+  "HOriginalReceiptSHA": "7d7650305dff610ea74e9f1d86e7b67989eb93aec2b6fd154adc6d186e38d801",
+  "afterServerSHA": "926261a630fbe4e74c7d870deae4614fbbdac0c2acd2ab3cc667aaf9c2f4791e",
+  "beforeServerSHA": "2883ad50919d7e38b1fc956940586ab9e0f41363ee534a5611be858a284f80e1",
+  "modelApiJS_SHA": "4c02da570012293726767ae21360456beafb68ccfecabfbec641080e7788a663",
+  "newBrowserQA_SHA": "86540b4f93e0d631b2536c098965c11477509f84df4c474f1d16730568a98a57",
+  "newRunnerSHA": "36f49b5d804484f934eb49ef4ba3ae9bee1ac894fd9a13d86653fbde94a78a5f",
+  "operationId": "AF.R76I.FIRSTPARTY-STATIC-WHITELIST-CAS.20261108",
+  "originalR75JobStagnatedAndNotReplayed": true,
+  "schema": 1
+}

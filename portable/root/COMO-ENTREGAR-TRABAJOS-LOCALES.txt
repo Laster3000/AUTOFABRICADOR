@@ -1,0 +1,234 @@
+AUTOFABRICADOR - ENTREGAR UN TRABAJO LOCAL - 2026-11-08
+
+OBJETIVO
+Entregar un trabajo al programa. Sus agentes internos usan IA CUDA7B local,
+con el supervisor ORIGINAL. ChatGPT no tiene que dirigir cada paso.
+
+USO
+1. Crea un archivo nuevo .json en C:\AUTOFABRICADOR\ENTRADAS
+2. Describe el trabajo libremente en "goal" y especifica "exportName".
+3. Incluye 5-80 ejemplos de entrada ("args") y resultado esperado ("expected").
+   Estos criterios SON DEL PROPIETARIO, antes de que la IA genere codigo.
+4. Arrastra el archivo sobre ENTREGAR-TRABAJO-LOCAL.cmd
+5. Usa ESTADO-AGENTES-LOCALES.cmd o:
+   python -B C:\AUTOFABRICADOR\autofabricador.py order-status OJ-XXXXXXXXXXXXXXXX
+6. En la modalidad por defecto WASI+Chrome, el ZIP entregable se guarda en:
+   C:\AUTOFABRICADOR\repoexports\AF-REPO-RJ-XXXXXXXXXXXXXXXX.zip
+   Verifica la ruta y SHA exactas con order-status OJ-XXXXXXXXXXXXXXXX.
+   La modalidad alternativa wasi-native usa factoryexports\FC-...
+
+ESTRUCTURA DE ENCARGO (ejemplo solo informativo; no se envia automaticamente)
+{
+  "schema": 1,
+  "language": "javascript",
+  "goal": "Crea una funcion local que reciba un numero y devuelva su triple.",
+  "exportName": "calculateTriple",
+  "acceptance": [
+    {"args": [0], "expected": 0},
+    {"args": [1], "expected": 3},
+    {"args": [2], "expected": 6},
+    {"args": [-1], "expected": -3},
+    {"args": [10], "expected": 30}
+  ]
+}
+La funcion se crea dentro de dos modulos JavaScript ESM y se valida dentro
+de WASI sin ficheros ni red del Host. Esta version es un contrato ACOTADO
+para funciones puras JS (no instala cualquier programa nativo o React/npm).
+La modalidad predeterminada es WASI + Chrome offline; ambas realizan
+aceptacion independiente. No requiere Windows Sandbox ni permisos elevados.
+El ZIP contiene una aplicacion web portable; abre index.html localmente.
+Se puede escoger --acceptance-mode wasi-native solo si Windows Sandbox
+puede ejecutarse legalmente; la salida guest de esta VM no esta autenticada.
+El sistema genera dos modulos y un ZIP portable con prueba independiente.
+
+SI FALTAN PRUEBAS
+El encargo queda BLOQUEADO, sin llamar a la IA. Es imposible considerar
+correcto un encargo sin criterios del propietario. El sistema no inventa
+una falsa aceptacion usando la propia respuesta del modelo.
+
+AUTONOMIA LOCAL
+En la sesion Windows de 'laste', Task Scheduler tiene:
+\AUTOFABRICADOR\AUTOFABRICADOR-AGENTES-LOCALES
+El Task Scheduler arranca al inicio de sesion el supervisor ORIGINAL,
+con su cola, recibos y STOP/recuperacion. No es servicio Windows SCM.
+La demostracion STOP+RESTART+PID/BIRTH esta verificada. El arranque tras
+un REINICIO FISICO de Windows no se ha comprobado todavia.
+
+PARAR
+Ejecuta PARAR-AGENTES-LOCALES.cmd. La tarea de inicio permanece instalada
+para volver a arrancar al iniciar la siguiente sesion; no hay replay de
+operaciones SUCCEEDED ni UNKNOWN.
+
+RESTRICCIONES
+No se ejecuta codigo generado sin aislamiento. No hay acceso a MMC.
+No se usa la unidad F. Los recibos, copias y manifiestos se archivan en
+C:\AUTOFABRICADOR\CONTINUIDAD\INTEGRACION-GPU-AGENTES-20261108
+D:\AUTOFABRICADOR-RESCATE\INTEGRACION-GPU-AGENTES-20261108
+
+ESTADO DEL PRODUCTO
+El original 0.9.17 sigue CANDIDATE_NOT_ACTIVE; todo codigo nuevo es
+fuente candidata probada, sin promocion a instalacion universal.
+
+------------------------------------------------------
+NUEVA RUTA PARA NO ESCRIBIR PRUEBAS MANUALMENTE (2026-11-08)
+
+PASO A - IDEA en lenguaje natural
+Pon un archivo .txt en C:\AUTOFABRICADOR\ENTRADAS.
+Arrastralo sobre PROPONER-IDEA-LOCAL.cmd, sin abrir ChatGPT.
+El AGENTE CUDA7B local propone un contrato de reglas declarativas
+en C:\AUTOFABRICADOR\proposals\OP-...\DRAFT-UNTRUSTED.json.
+Esta propuesta es de IA y NO ESTA APROBADA. No ejecuta codigo generado.
+
+PASO B - REVISION INDEPENDIENTE
+Abre ese contrato, comprueba que la regla expresa exactamente lo
+que se pretende conseguir, corrige lo que no este bien y copia el
+JSON revisado a C:\AUTOFABRICADOR\ENTRADAS\mi_contrato.json.
+Copiarlo despues de revisarlo es una declaracion explicita del
+propietario sobre el comportamiento esperado; la IA no puede aprobarlo.
+No funciona para todas las aplicaciones desde una frase.
+
+PASO C - EJECUCION INTERNA AUTONOMA
+Arrastra ese contrato .json sobre ENTREGAR-CONTRATO-LOCAL.cmd.
+El codigo fuente es creado con CUDA7B, y el sistema ORIGINAL
+deriva de 5 a 80 casos deterministas de los tipos de entrada y
+de la expresion de referencia CONGELADA ANTES DE LA INFERENCIA.
+Las expectativas se calculan con el evaluador propio, NO con el
+modelo que escribe el codigo. La fabrica original ejecuta sus
+pruebas WASI y Chrome sin red y produce un ZIP portable en
+C:\AUTOFABRICADOR\repoexports.
+Puedes seguir la cadena con ESTADO-CONTRATO-LOCAL.cmd OC-xxxxxxxxxxxxxxxx.
+No reintentar un trabajo UNKNOWN ni SUCCEEDED.
+
+SCHEMA DE CONTRATO: 7 claves exactas
+ schema=1, language="javascript", goal=texto, exportName=identificador,
+ argTypes=[numero/texto/booleano], oracle=arbol de expresiones, maxCases=64.
+Tipos admitidos (en ingles): number, integer, text, boolean.
+El oraculo es un arbol de objetos, nunca codigo ejecutable:
+ {"op":"arg","index":0}
+ {"op":"const","value":3}
+ {"op":"mul","args":[{"op":"arg","index":0},{"op":"const","value":3}]}
+Se pueden combinar add, sub, mul, div, nonnegative, abs, floor, ceil,
+min, max, clamp, if, eq, lt, lte, gt, gte, and, or, not,
+trim, upper, lower, collapse_space_hyphen, length, string, concat.
+El evaluador rechaza expresiones no permitidas, infinidades y
+sobrepasos, sin ejecutar JS/Python generado por IA para saber
+si los resultados eran los correctos.
+
+ARRANQUE DESPUES DE REINICIO FISICO DE WINDOWS
+La tarea de usuario de Windows esta instalada y se probo STOP/restart.
+Se ha fijado una BASELINE original del arranque de 2026-11-08.
+Despues de REINICIAR DE VERDAD Windows y entrar en sesion de
+LASTER\laste, ejecuta COMPROBAR-REINICIO-WINDOWS.cmd.
+Valida la hora de un NUEVO arranque, la tarea ScheduledTask,
+PID+fecha nacimiento del ejecutor, y hashes de SUCCEEDED.
+Antes de reiniciar informa PENDING_REAL_WINDOWS_REBOOT_NOT_PERFORMED.
+NO se ha reiniciado este ordenador desde ChatGPT; no se borra
+trabajo abierto ni se pierde la conexion de forma forzada.
+La comprobacion no ejecuta trabajos, nunca inventa PASS.
+
+ESTADO Y LIMITES
+El contrato de muestra del proyecto es un EJEMPLO creado para
+probar el sistema, NO una especificacion que el usuario haya dado.
+La IA puede proponer un oraculo, pero no lo convierte en prueba
+independiente hasta que el propietario lo haya validado.
+No se garantiza codigo arbitrario, nativo, React, npm, sistemas
+completos o aplicaciones sin contratos verificables.
+0.9.17 sigue CANDIDATE_NOT_ACTIVE; no modificar MMC ni F.
+
+
+------------------------------------------------------
+R60 - VENTANA UNICA LOCAL (08/11/2026)
+
+Haz doble clic en:
+ C:\AUTOFABRICADOR\ABRIR-AUTOFABRICADOR-LOCAL.cmd
+
+La ventana local permite:
+ 1. Escribir en un recuadro lo que quieres que fabrique en LOCAL.
+ 2. Pulsar "Proponer con IA local" (modelo CUDA7B original en GPU).
+ 3. Leer y corregir el contrato de reglas antes de permitir efectos.
+ 4. Pulsar "Revisado: entregar" y confirmar SI realmente has
+    comprobado la semantica. Es una validacion de propietario, nunca
+    autovalidacion del modelo.
+ 5. Ver estado de ejecucion original, 5-80 casos derivados ANTES
+    del modelo, pruebas aisladas WASI y Chrome y resultado ZIP.
+
+No es necesario ChatGPT entre esos pasos. Los agentes que
+preparan, generan y comprueban el resultado pertenecen al
+AUTOFABRICADOR original y funcionan localmente.
+
+Importante: el modelo no puede aprobar un contrato que el mismo
+ha redactado. Si no comprendes la regla o el programa pedido no
+cabe en los contratos actualmente admitidos, NO confirmes.
+El sistema no promete fabricar por ahora cualquier programa
+nativo, web compleja o repositorio arbitrario a partir de texto.
+
+ARRANQUE Y RECUPERACION REAL
+El supervisor original incorpora ahora un observador de
+ARRANQUE REAL al iniciar el trabajador de Task Scheduler.
+Comprueba la fecha original de arranque de Windows antes de
+certificar nada. Si el equipo se reinicia de verdad en el
+futuro, ejecuta la comprobacion automaticamente en el mismo
+ejecutor y guarda recibos nuevos en C: y D:. No crea otra
+tarea/servicio, no relanza antiguos SUCCEEDED/UNKNOWN y no
+reinicia Windows por su cuenta. Hasta un reinicio verdadero,
+M6 sigue BLOQUEADO en la parte de arranque fisico.
+Tambien puedes usar COMPROBAR-REINICIO-WINDOWS.cmd manualmente.
+
+El archivo original de trabajo nunca se sobrescribe: se identifica
+por SHA de los bytes. Los intentos UNKNOWN tienen que ser
+reconciliados; no se reenvian a ciegas.
+
+
+-------------------------------------------------------
+R61 - ENTREGAR SOLO UNA FRASE EN LOCAL (8 noviembre 2026)
+
+RUTA AUTONOMA, SOLO PARA ORDENES INEQUIVOCAS
+1. Haz doble clic en:
+   C:\AUTOFABRICADOR\ABRIR-AUTOFABRICADOR-LOCAL.cmd
+2. Escribe un trabajo en el cuadro de texto. Por ejemplo:
+   Crea un programa local que calcule el triple de un número.
+3. Pulsa "Encargar automaticamente".
+4. No necesitas crear contrato, escribir pruebas ni autorizar microacciones.
+   El catalogo determinista interno decide si comprende TODA la orden.
+   Genera expectativas independientes ANTES de llamar a la IA local.
+   El supervisor ORIGINAL llama a CUDA7B, compila, repara hasta el limite,
+   valida en WASI y Chrome offline y entrega ZIP portable con SHA.
+5. Pulsa Estado del trabajo para ver la cadena original.
+
+Tambien se puede arrastrar un .txt colocado en ENTRADAS sobre:
+ C:\AUTOFABRICADOR\ENCARGAR-AUTOMATICAMENTE-LOCAL.cmd
+Consultar un trabajo:
+ python -B C:\AUTOFABRICADOR\autofabricador.py auto-goal-status AG-...
+
+EJEMPLOS DE FRASES COMPLETAS QUE EL CATALOGO RECONOCE:
+ - Calcula el triple de un numero.
+ - Calcula el doble de un numero.
+ - Calcula el valor absoluto de un numero.
+ - Convierte un texto a mayusculas.
+ - Normaliza codigos de envio.
+ - Calcula el total de un pedido multiplicando precio por unidades con
+   negativos a cero y maximo 100.
+
+El programa NO descarta ni ignora clausulas adicionales. Si la frase
+incluye otro comportamiento, se BLOQUEA antes de llamar al modelo.
+Son solo seis tipos de reglas; NO es una fabrica universal.
+Se reconoce la frase completa, con algunas variantes gramaticales
+y acentos, no cualquier proyecto a partir de lenguaje libre.
+
+SI LA ORDEN NO ESTA CUBIERTA:
+Se devuelve BLOCKED_UNRECOGNIZED_GOAL_INDEPENDENT_ORACLE_MISSING.
+Para trabajos nuevos, usa el boton "Proponer con IA local" (borrador
+no aprobado) y una revision independiente posterior. No hay aceptacion
+falsa basada en las pruebas inventadas por el propio modelo.
+
+NO REPLAY:
+Entregas SUCCEEDED, UNKNOWN y tareas de resultado incierto solo se
+leen por sus operaciones originales. No se relanzan a ciegas.
+No se ejecuta codigo de IA sin aislamiento. No se hacen instalaciones
+de Host, SCM ni cambios en MMC. La unidad F: no se utiliza.
+
+VERSION:
+R61 es codigo fuente candidato integrado en instalacion de trabajo
+local; el release anterior 0.9.17 sigue CANDIDATE_NOT_ACTIVE.
+La recuperacion tras reinicio fisico requiere un nuevo arranque real
+de Windows para poder declararse probado.

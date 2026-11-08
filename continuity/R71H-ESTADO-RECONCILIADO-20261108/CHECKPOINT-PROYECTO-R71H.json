@@ -1,0 +1,84 @@
+{
+  "LKGSourceAndOldPackageR69NotOverwritten": true,
+  "M1": "PASS_SCOPED_SOURCE_INTEGRATED",
+  "M2": "PASS_SCOPED_ORIGINAL_QUEUE_MANUAL_AND_CAS",
+  "M3": "PASS_473_REGRESSIONS_AND_7_WSB_MOCK_AND_PREMODEL_RESUME; BLOCKED_FULL_NEW_GUI_OWNER_E2E",
+  "M4": "NOT_APPLICABLE_NO_PROTECTED_INSTALL_OR_USER_AUTHORIZATION",
+  "M5": "PENDING_NO_NEW_FACTORY_RELEASE_ACCEPTED",
+  "M6": "BLOCKED_NO_NEW_R71_GUI_ACCEPTANCE_OR_SECOND_PHYSICAL_PC",
+  "TaskSchedulerAutostartDisabled": true,
+  "WindowsSandboxOfficialSessions": [],
+  "WindowsSandboxOriginalNewNativeGuestQA": "BLOCKED_NO_FINAL_PASS",
+  "WindowsSandboxRemoteClients": [],
+  "atUtc": "2026-11-08T14:01:55.694342+00:00",
+  "chatSaturationInternal": "DESCONOCIDA",
+  "evidence": {
+    "confirmedWindowsGuestInteractiveError": "136fc6910d33a7da5e912936624539bb8bd43e66488b37d01126411e9e2fe9d7",
+    "explicitGuestCAS": "5004a1a7529c8892666a27804bd0a59ae566ad81fc7515eecd25cb9512766350",
+    "lkgSourceReuse": "3fc2cc48c449ab4f3245b86fe62118d8291fa3c1e22f53e418cbff2a97587967",
+    "officialOriginalSandboxStopReceipt": "cac88ac8c326bd0fe15ebfe1b4d4dfb31336ed3b48dc508723e4451d632a041a",
+    "officialWSBLifecycleMock7": "45409443a6818cac6b12f09ba52528300a24a6e874a6b8533be17ce5e115c3ed",
+    "officialWsbLifecycleCAS": "91f75894b6e7dec2b8c69e8025030c1caebfaf46ccb0aabc8bbf09bb9c731832",
+    "postR71HRegression": "df22aae3f0f761944c99a5fe331d5071ec547c5a503a1a2d3b3cae19deb7ba7a",
+    "regressionLog": "9a8e937d53eeec919be12c8405e217b7f9fa7c2eb97f9f03c8dbfce27bbc8718",
+    "safePremodelResumeE2E": "e433c102be41912c2ba11df29da8dea4e4b965a575f284a5148a30a226628362",
+    "safeResumeCAS": "fb3a52e3d81b9d9cf61d61621e8014319e3897a3f37b3e64b0e22eac9b511cd6",
+    "sourceIntegration": "2585d8500465bb35b09fb831af52240cb2ee4ed6b08e1d29efc31d70bf89d63c",
+    "sourceRegression15": "a82c4aedbfcdcbfab424802eae9a6235cf202c1472e3c8213ef3a454c7c81f31"
+  },
+  "functionalId": "AF.FACTORY",
+  "nextAction": "Fix isolated guest original executor context using a new scoped first-party WSB System session or authenticated user session; prove original owner 13/13 and ZIP restore with a new id (no retry UNKNOWN). Then test general unseen complex GUI tasks and another physical Windows computer before final release. Never change boot/service/MMC without original protected procedure.",
+  "noMMCNoFNoBootOrWindowsHostServiceEffects": true,
+  "noReplayUnknown": true,
+  "objectiveId": "autofabricador-independent-reusable-local-ai-factory-20261107",
+  "observedRootCause": "Windows Sandbox sporadic LogonCommand omission. Explicit WSB exec as ExistingLogin returned original guest code 0x80070520 no interactive guest logon. No replay and no Host execution.",
+  "operationId": "AF.R71H.FINAL-BOUNDED-READBACK-AND-CONTINUITY.20261108",
+  "originalAcceptedR70DifferentJob": "13/13 accepted in Windows Sandbox; not R71 original accepted",
+  "originalFrozenOwnersRemainingIntact": true,
+  "originalJobStates": {
+    "GI-86492cd9a03e4731": "UNKNOWN_NO_REPLAY",
+    "GI-8b82b82d08414467": "UNKNOWN_NO_REPLAY",
+    "GI-988d852f290d499e": "UNKNOWN_NO_REPLAY",
+    "GI-a1071fc0b8974e30": "UNKNOWN_NO_REPLAY",
+    "GI-db8d165b31f44a13": "UNKNOWN_NO_REPLAY",
+    "GI-ddc39ac807694d19": "UNKNOWN_NO_REPLAY"
+  },
+  "originalModelLeases": {
+    "C:\\AF-PORTABLE": {
+      "cpu": "NOT_STARTED",
+      "cuda7b": "NOT_STARTED",
+      "cuda9b": "NOT_STARTED"
+    },
+    "C:\\AUTOFABRICADOR": {
+      "cpu": "NOT_STARTED",
+      "cuda7b": "NOT_STARTED",
+      "cuda9b": "NOT_STARTED"
+    }
+  },
+  "originalQueuePending": 0,
+  "originalSourceRegression": {
+    "originalLogSha": "9a8e937d53eeec919be12c8405e217b7f9fa7c2eb97f9f03c8dbfce27bbc8718",
+    "skipped": 25,
+    "status": "PASS",
+    "tests": 473
+  },
+  "originalSupervisorState": "STOPPED",
+  "productFullRestorePointVerified": false,
+  "realSafePremodelResume": {
+    "scope": "before-model, same queue ID",
+    "status": "PASS"
+  },
+  "releaseId": "AUTOFABRICADOR-0.9.17-CANDIDATE_NOT_ACTIVE",
+  "schema": 1,
+  "scope": "INVENTORY_TKINTER_SQLITE_ONLY_NOT_GENERAL_APP_FACTORY",
+  "sourceSHA": {
+    "C:\\AF-PORTABLE\\autofab\\gui_pipeline.py": "cdff3174c5c5b1371bdf894bce74921ffeec12031abb136fe0b7bd3f04b9c00e",
+    "C:\\AF-PORTABLE\\autofab\\supervisor.py": "6c51f760f970129331aa012846fe0479dd68ff53c0469378e0ac60897d9188c1",
+    "C:\\AF-PORTABLE\\autofabricador.py": "2e1fdba76da0998c9da1e913654ee793e5e4c218b0ae5cbb5d87d3a4fc3e8343",
+    "C:\\AUTOFABRICADOR\\autofab\\gui_pipeline.py": "cdff3174c5c5b1371bdf894bce74921ffeec12031abb136fe0b7bd3f04b9c00e",
+    "C:\\AUTOFABRICADOR\\autofab\\supervisor.py": "6c51f760f970129331aa012846fe0479dd68ff53c0469378e0ac60897d9188c1",
+    "C:\\AUTOFABRICADOR\\autofabricador.py": "2e1fdba76da0998c9da1e913654ee793e5e4c218b0ae5cbb5d87d3a4fc3e8343"
+  },
+  "status": "CANDIDATE_NOT_ACTIVE_DO_NOT_PROMOTE",
+  "workDone": "GUI task integrated into original CLI and supervisor, original CUDA source-generation and SHA-pinned R70 reuse, bounded Sandbox owner verifier and WSB official stop, safe before-model supervisor STOP/resume."
+}

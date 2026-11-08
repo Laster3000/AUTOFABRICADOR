@@ -1,0 +1,427 @@
+{
+  "M1": "PASS_SOURCE_FAMILY_ROUTER",
+  "M2": "PASS_ONLY_BOUNDED_ORIGINAL_OWNER_PIPELINES",
+  "M3": "PASS_SCOPED_DIAGNOSTIC_AND_REGRESSIONS",
+  "M4": "NOT_APPLICABLE_NO_PROTECTED_INSTALL",
+  "M5": "PASS_SOURCE_DELTA_AND_ACCEPTED_BOUNDED_APP_ZIPS",
+  "M6": "BLOCKED_GENERAL_FAMILIES_AND_SECOND_PHYSICAL_WINDOWS_PC",
+  "R74LKGManifestSHA": "b276c3984617e2bed679dc5f4c039c0bdf3fc6e518cd19ba466905190a074d89",
+  "atUtc": "2026-11-08T15:47:55.559804+00:00",
+  "chatSaturationInternal": "DESCONOCIDA",
+  "functionalId": "AF.FACTORY",
+  "generalFactoryActive": false,
+  "jobs": {
+    "acceptedOwnerCases": 92,
+    "allOriginalAttemptHistories": [
+      {
+        "approved": true,
+        "archive": {
+          "fileCount": 10,
+          "originalZIP": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-47a21768a96e4393.zip",
+          "originalZIPSHA": "cf2229dfcb9331f061e3eba52c3bc94940f0226299452cb6e16ddde816d793f9",
+          "restoredFileSHA": {
+            "BROWSER-RECEIPT.json": "7e776127cc692dc45a75021175eb26503e88838e607ba86fd2a46548d446fa60",
+            "MANIFEST.json": "1d841916e8c016edcd6ee17e9d528f56d645a71d2b7b451ceee0ba2783f049ca",
+            "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+            "controller.js": "af903fca693539520b0c78f9ca11651343b215b44377a4aa05de1f2666681452",
+            "index.html": "d8f5523d12e281d0d7607a91dc6f8c2764ee3619269297f1311d82da31a9176c",
+            "logic.js": "20ff069b2506c99d9c74d9cc804169d99f548baa1adbe5da17bfb77934350412",
+            "package.json": "f2180c75fb3018270e500d4e432082f8ab3f199b5dc0588c5af2ef96c0911797",
+            "src/index.js": "dabbd59539fc4244ed69f3a96a5a452a2fe8ba8385d66eeda47e250e4a54a074",
+            "src/rules.js": "3fdee7bbfdbbcc06e42ec915f173289ac15b1574b32d5ae4ad61722a9089703a",
+            "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+          },
+          "restoredRoot": "D:\\AUTOFABRICADOR-RESCATE\\R75-FAMILIAS-ARQUITECTURA-20261108\\RESTORED-APP-ARCHIVES\\game-2d-rules-OJ-71709cc324f2011c",
+          "status": "PASS_SHA_RESTORED_BYTES_NOT_EXECUTED_ON_HOST"
+        },
+        "family": "game-2d-rules",
+        "orderId": "OJ-71709cc324f2011c",
+        "originalOwnerSHA": "71709cc324f2011c96fa3b1a7bcbd3d452cece48024266817ad7c4e5ff8bfa6d",
+        "originalQueueId": "SQ-fbf79c75a5b2468d",
+        "originalQueueSHA": "a12035e6404f991a2da9cd4e6ff17c480bf44abeb3bf57bc1330af26c3c17358",
+        "originalQueueStatus": "SUCCEEDED",
+        "originalRepoStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+        "ownerCaseCount": 22,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": false,
+        "workflowId": "FC-27ee2e977b1a4254"
+      },
+      {
+        "approved": true,
+        "archive": {
+          "fileCount": 10,
+          "originalZIP": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-3d7ce50e579b4318.zip",
+          "originalZIPSHA": "cb76a6781d1c888e862311cf440a484cc319abd7296beb38e26ce9b983c8d292",
+          "restoredFileSHA": {
+            "BROWSER-RECEIPT.json": "7dda3335eb824d4058aaef6f5a0c5a4e8b5299d675ba9a7a1c064ff56cb5ae9a",
+            "MANIFEST.json": "d5d305cb8a1acbe301cf63d72418c849b2ac1b8c7a33c89ebd8456697c46d44e",
+            "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+            "controller.js": "c146324a4d02b03923d85b1e53a4f877357e948465b8b76fc80492041dfd1382",
+            "index.html": "ac332ee77b8710382dbf103010bac87c5a1b132f98afa6201eefd8c79e3e81db",
+            "logic.js": "aeeff001662f47210319c5fcc28ec6409088209441f7f433466ec8152575d124",
+            "package.json": "525264bd7733e6135fb5d7597e21865408fbf1aed185217dabe87be3d38ee40b",
+            "src/index.js": "954b3e6eea3ca0c00ef3fa50b28a769cac1a2094d08c136fcd4d276e1697ee27",
+            "src/rules.js": "ec545d030f4cee0c4bc73c24b657e8a46bc59086e5f04973416bdf558592fc8b",
+            "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+          },
+          "restoredRoot": "D:\\AUTOFABRICADOR-RESCATE\\R75-FAMILIAS-ARQUITECTURA-20261108\\RESTORED-APP-ARCHIVES\\game-3d-math-OJ-61336a3a27449635",
+          "status": "PASS_SHA_RESTORED_BYTES_NOT_EXECUTED_ON_HOST"
+        },
+        "family": "game-3d-math",
+        "orderId": "OJ-61336a3a27449635",
+        "originalOwnerSHA": "61336a3a27449635b87816701ddbbf75bb44a71f75a4efe0d3cc0efcff08f84a",
+        "originalQueueId": "SQ-388cebf894c64cf5",
+        "originalQueueSHA": "0d0a70072ef410240c36cde58a944b09bf29a18ee67e7b3dfabefdf97c331b0d",
+        "originalQueueStatus": "SUCCEEDED",
+        "originalRepoStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+        "ownerCaseCount": 22,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": false,
+        "workflowId": "FC-e1560a2d2a4841b3"
+      },
+      {
+        "approved": false,
+        "archive": null,
+        "family": "api-route-logic",
+        "orderId": "OJ-4364d39ecc55bd92",
+        "originalOwnerSHA": "4364d39ecc55bd9216f9e4ac2a21bd5aaced1202c3e2dc136eb2dd020f35382c",
+        "originalQueueId": "SQ-03a80a7f0663471c",
+        "originalQueueSHA": "5da4875d615d36b8f053c38fbb80f76e0b7eeeb96ce8a6ba838d4c001cc48e63",
+        "originalQueueStatus": "UNKNOWN",
+        "originalRepoStatus": "UNKNOWN",
+        "ownerCaseCount": 22,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": true,
+        "workflowId": "FC-90e4f03528b6463f"
+      },
+      {
+        "approved": false,
+        "archive": null,
+        "family": "agent-decision-logic",
+        "orderId": "OJ-477936e19037cd9e",
+        "originalOwnerSHA": "477936e19037cd9e81ddc0ac70b22ab524a03fa0949aae6ad2cf0759a8f1eedc",
+        "originalQueueId": "SQ-1ddfd250f256445f",
+        "originalQueueSHA": "e5315bbd803c3e6eda5eefeec3a4275e7a10bc68d20f412513c1103062ccf2e5",
+        "originalQueueStatus": "UNKNOWN",
+        "originalRepoStatus": "FAILED_REPO",
+        "ownerCaseCount": 22,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": true,
+        "workflowId": "FC-522ac7c6018740ac"
+      },
+      {
+        "approved": true,
+        "archive": {
+          "fileCount": 10,
+          "originalZIP": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-842dded7b68c4192.zip",
+          "originalZIPSHA": "299a198c7a5bbd3a9171f06042719caa12a67d5eed9ed413d3cabd052ec7b601",
+          "restoredFileSHA": {
+            "BROWSER-RECEIPT.json": "3d10e08653eba5d7d57c1ec11a01438a5a5932643f35d3fea8a66b01d1a16d99",
+            "MANIFEST.json": "ab52248e7496b73094d0edfde3bc69d27deb6dcf9991f2ab3191c1abc7ab5d22",
+            "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+            "controller.js": "54d4580201d2c4578b85b6eb85e0a8840fade02c0b0101403215d17b9f532eb3",
+            "index.html": "a0eb583a4a18e50b34e2ea2c2b9ab6b15bdc08eb6146268e57373d9983d30319",
+            "logic.js": "cfa846af9dc43f1c91e76d23a398dd28735a04a5c850a55c261ebfef87984d6f",
+            "package.json": "a7921ad9397b7ea7ece27274126151edab9417f100bc73e8bb8ee4a3a930b809",
+            "src/index.js": "e14e9c89daf71e4ee5ab0f7f6b89183d57a0fdcf79502437f2dad13442472cc2",
+            "src/rules.js": "22d67e320205737cd89c3e56ccb287a1e0062b645f273d033bd29a2f38abcca8",
+            "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+          },
+          "restoredRoot": "D:\\AUTOFABRICADOR-RESCATE\\R75-FAMILIAS-ARQUITECTURA-20261108\\RESTORED-APP-ARCHIVES\\api-route-logic-OJ-f4e785c61e47f9ec",
+          "status": "PASS_SHA_RESTORED_BYTES_NOT_EXECUTED_ON_HOST"
+        },
+        "family": "api-route-logic",
+        "orderId": "OJ-f4e785c61e47f9ec",
+        "originalOwnerSHA": "f4e785c61e47f9ece0c493ecfa47735f874468019ca23a52d25a5edc37d42779",
+        "originalQueueId": "SQ-fd010b926d014a58",
+        "originalQueueSHA": "74d0c283c30e85bd33af636e22b92b4c11fd7a3f41e509466a154f77a92c2911",
+        "originalQueueStatus": "SUCCEEDED",
+        "originalRepoStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+        "ownerCaseCount": 24,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": false,
+        "workflowId": "FC-3b7785e230074a97"
+      },
+      {
+        "approved": true,
+        "archive": {
+          "fileCount": 10,
+          "originalZIP": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-5474edc89bf24a80.zip",
+          "originalZIPSHA": "301ba6fdacc3c87ab8f2927f8bb38ceb8f825e7f79c98bef7741b48640f6c3e3",
+          "restoredFileSHA": {
+            "BROWSER-RECEIPT.json": "489ce840e757096631c682a359ac5d92c8f2fb38a5903e8b4d1e168e0f9c9cc9",
+            "MANIFEST.json": "d2684e1e4304658ff37c07212a9ea6ac6170c2f070ccfc24b723591dc845307e",
+            "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+            "controller.js": "f200c0318f3b1a95ad63bd61797e6d8f703d47a3cbf8dc86441241da5b2f9d78",
+            "index.html": "a193dbb71025177160ed0c7b0cce71def032086b54c759cdd88dca3c1979c175",
+            "logic.js": "df9d74f21ccb65efcd703775c54370cefe4652114565d70304b964008b6c098e",
+            "package.json": "d4140ea7886e2aab7865eb0eeedc048c205f76e9ed9aefb84c09023f3fff4bc1",
+            "src/index.js": "57f27ee8e527a4ce88af9493652b653c64ca43d0087c40a704ace9bff5de40e9",
+            "src/rules.js": "eef133c7cf49a2b89802fe201d07ba254c17228c29e9cdcbcc0388d63a9f2d0e",
+            "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+          },
+          "restoredRoot": "D:\\AUTOFABRICADOR-RESCATE\\R75-FAMILIAS-ARQUITECTURA-20261108\\RESTORED-APP-ARCHIVES\\agent-decision-logic-OJ-7d7a7ca9b80af961",
+          "status": "PASS_SHA_RESTORED_BYTES_NOT_EXECUTED_ON_HOST"
+        },
+        "family": "agent-decision-logic",
+        "orderId": "OJ-7d7a7ca9b80af961",
+        "originalOwnerSHA": "7d7a7ca9b80af96168d9de96ceb1f3b567fcfa307b142e87fd952df6d9deaa31",
+        "originalQueueId": "SQ-4d73e8c5d33b4787",
+        "originalQueueSHA": "f11d9996b14770e034b9b9ee9ff1a0a8e2f37145d6e61fd181c934dd39b8cb2b",
+        "originalQueueStatus": "SUCCEEDED",
+        "originalRepoStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+        "ownerCaseCount": 24,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": false,
+        "workflowId": "FC-aadae305a3584cbd"
+      }
+    ],
+    "archiveSHAReadbackRestored": 4,
+    "originalSubmitted": 6,
+    "selected": {
+      "agent-decision-logic": {
+        "approved": true,
+        "archive": {
+          "fileCount": 10,
+          "originalZIP": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-5474edc89bf24a80.zip",
+          "originalZIPSHA": "301ba6fdacc3c87ab8f2927f8bb38ceb8f825e7f79c98bef7741b48640f6c3e3",
+          "restoredFileSHA": {
+            "BROWSER-RECEIPT.json": "489ce840e757096631c682a359ac5d92c8f2fb38a5903e8b4d1e168e0f9c9cc9",
+            "MANIFEST.json": "d2684e1e4304658ff37c07212a9ea6ac6170c2f070ccfc24b723591dc845307e",
+            "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+            "controller.js": "f200c0318f3b1a95ad63bd61797e6d8f703d47a3cbf8dc86441241da5b2f9d78",
+            "index.html": "a193dbb71025177160ed0c7b0cce71def032086b54c759cdd88dca3c1979c175",
+            "logic.js": "df9d74f21ccb65efcd703775c54370cefe4652114565d70304b964008b6c098e",
+            "package.json": "d4140ea7886e2aab7865eb0eeedc048c205f76e9ed9aefb84c09023f3fff4bc1",
+            "src/index.js": "57f27ee8e527a4ce88af9493652b653c64ca43d0087c40a704ace9bff5de40e9",
+            "src/rules.js": "eef133c7cf49a2b89802fe201d07ba254c17228c29e9cdcbcc0388d63a9f2d0e",
+            "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+          },
+          "restoredRoot": "D:\\AUTOFABRICADOR-RESCATE\\R75-FAMILIAS-ARQUITECTURA-20261108\\RESTORED-APP-ARCHIVES\\agent-decision-logic-OJ-7d7a7ca9b80af961",
+          "status": "PASS_SHA_RESTORED_BYTES_NOT_EXECUTED_ON_HOST"
+        },
+        "family": "agent-decision-logic",
+        "orderId": "OJ-7d7a7ca9b80af961",
+        "originalOwnerSHA": "7d7a7ca9b80af96168d9de96ceb1f3b567fcfa307b142e87fd952df6d9deaa31",
+        "originalQueueId": "SQ-4d73e8c5d33b4787",
+        "originalQueueSHA": "f11d9996b14770e034b9b9ee9ff1a0a8e2f37145d6e61fd181c934dd39b8cb2b",
+        "originalQueueStatus": "SUCCEEDED",
+        "originalRepoStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+        "ownerCaseCount": 24,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": false,
+        "workflowId": "FC-aadae305a3584cbd"
+      },
+      "api-route-logic": {
+        "approved": true,
+        "archive": {
+          "fileCount": 10,
+          "originalZIP": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-842dded7b68c4192.zip",
+          "originalZIPSHA": "299a198c7a5bbd3a9171f06042719caa12a67d5eed9ed413d3cabd052ec7b601",
+          "restoredFileSHA": {
+            "BROWSER-RECEIPT.json": "3d10e08653eba5d7d57c1ec11a01438a5a5932643f35d3fea8a66b01d1a16d99",
+            "MANIFEST.json": "ab52248e7496b73094d0edfde3bc69d27deb6dcf9991f2ab3191c1abc7ab5d22",
+            "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+            "controller.js": "54d4580201d2c4578b85b6eb85e0a8840fade02c0b0101403215d17b9f532eb3",
+            "index.html": "a0eb583a4a18e50b34e2ea2c2b9ab6b15bdc08eb6146268e57373d9983d30319",
+            "logic.js": "cfa846af9dc43f1c91e76d23a398dd28735a04a5c850a55c261ebfef87984d6f",
+            "package.json": "a7921ad9397b7ea7ece27274126151edab9417f100bc73e8bb8ee4a3a930b809",
+            "src/index.js": "e14e9c89daf71e4ee5ab0f7f6b89183d57a0fdcf79502437f2dad13442472cc2",
+            "src/rules.js": "22d67e320205737cd89c3e56ccb287a1e0062b645f273d033bd29a2f38abcca8",
+            "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+          },
+          "restoredRoot": "D:\\AUTOFABRICADOR-RESCATE\\R75-FAMILIAS-ARQUITECTURA-20261108\\RESTORED-APP-ARCHIVES\\api-route-logic-OJ-f4e785c61e47f9ec",
+          "status": "PASS_SHA_RESTORED_BYTES_NOT_EXECUTED_ON_HOST"
+        },
+        "family": "api-route-logic",
+        "orderId": "OJ-f4e785c61e47f9ec",
+        "originalOwnerSHA": "f4e785c61e47f9ece0c493ecfa47735f874468019ca23a52d25a5edc37d42779",
+        "originalQueueId": "SQ-fd010b926d014a58",
+        "originalQueueSHA": "74d0c283c30e85bd33af636e22b92b4c11fd7a3f41e509466a154f77a92c2911",
+        "originalQueueStatus": "SUCCEEDED",
+        "originalRepoStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+        "ownerCaseCount": 24,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": false,
+        "workflowId": "FC-3b7785e230074a97"
+      },
+      "game-2d-rules": {
+        "approved": true,
+        "archive": {
+          "fileCount": 10,
+          "originalZIP": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-47a21768a96e4393.zip",
+          "originalZIPSHA": "cf2229dfcb9331f061e3eba52c3bc94940f0226299452cb6e16ddde816d793f9",
+          "restoredFileSHA": {
+            "BROWSER-RECEIPT.json": "7e776127cc692dc45a75021175eb26503e88838e607ba86fd2a46548d446fa60",
+            "MANIFEST.json": "1d841916e8c016edcd6ee17e9d528f56d645a71d2b7b451ceee0ba2783f049ca",
+            "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+            "controller.js": "af903fca693539520b0c78f9ca11651343b215b44377a4aa05de1f2666681452",
+            "index.html": "d8f5523d12e281d0d7607a91dc6f8c2764ee3619269297f1311d82da31a9176c",
+            "logic.js": "20ff069b2506c99d9c74d9cc804169d99f548baa1adbe5da17bfb77934350412",
+            "package.json": "f2180c75fb3018270e500d4e432082f8ab3f199b5dc0588c5af2ef96c0911797",
+            "src/index.js": "dabbd59539fc4244ed69f3a96a5a452a2fe8ba8385d66eeda47e250e4a54a074",
+            "src/rules.js": "3fdee7bbfdbbcc06e42ec915f173289ac15b1574b32d5ae4ad61722a9089703a",
+            "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+          },
+          "restoredRoot": "D:\\AUTOFABRICADOR-RESCATE\\R75-FAMILIAS-ARQUITECTURA-20261108\\RESTORED-APP-ARCHIVES\\game-2d-rules-OJ-71709cc324f2011c",
+          "status": "PASS_SHA_RESTORED_BYTES_NOT_EXECUTED_ON_HOST"
+        },
+        "family": "game-2d-rules",
+        "orderId": "OJ-71709cc324f2011c",
+        "originalOwnerSHA": "71709cc324f2011c96fa3b1a7bcbd3d452cece48024266817ad7c4e5ff8bfa6d",
+        "originalQueueId": "SQ-fbf79c75a5b2468d",
+        "originalQueueSHA": "a12035e6404f991a2da9cd4e6ff17c480bf44abeb3bf57bc1330af26c3c17358",
+        "originalQueueStatus": "SUCCEEDED",
+        "originalRepoStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+        "ownerCaseCount": 22,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": false,
+        "workflowId": "FC-27ee2e977b1a4254"
+      },
+      "game-3d-math": {
+        "approved": true,
+        "archive": {
+          "fileCount": 10,
+          "originalZIP": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-3d7ce50e579b4318.zip",
+          "originalZIPSHA": "cb76a6781d1c888e862311cf440a484cc319abd7296beb38e26ce9b983c8d292",
+          "restoredFileSHA": {
+            "BROWSER-RECEIPT.json": "7dda3335eb824d4058aaef6f5a0c5a4e8b5299d675ba9a7a1c064ff56cb5ae9a",
+            "MANIFEST.json": "d5d305cb8a1acbe301cf63d72418c849b2ac1b8c7a33c89ebd8456697c46d44e",
+            "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+            "controller.js": "c146324a4d02b03923d85b1e53a4f877357e948465b8b76fc80492041dfd1382",
+            "index.html": "ac332ee77b8710382dbf103010bac87c5a1b132f98afa6201eefd8c79e3e81db",
+            "logic.js": "aeeff001662f47210319c5fcc28ec6409088209441f7f433466ec8152575d124",
+            "package.json": "525264bd7733e6135fb5d7597e21865408fbf1aed185217dabe87be3d38ee40b",
+            "src/index.js": "954b3e6eea3ca0c00ef3fa50b28a769cac1a2094d08c136fcd4d276e1697ee27",
+            "src/rules.js": "ec545d030f4cee0c4bc73c24b657e8a46bc59086e5f04973416bdf558592fc8b",
+            "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+          },
+          "restoredRoot": "D:\\AUTOFABRICADOR-RESCATE\\R75-FAMILIAS-ARQUITECTURA-20261108\\RESTORED-APP-ARCHIVES\\game-3d-math-OJ-61336a3a27449635",
+          "status": "PASS_SHA_RESTORED_BYTES_NOT_EXECUTED_ON_HOST"
+        },
+        "family": "game-3d-math",
+        "orderId": "OJ-61336a3a27449635",
+        "originalOwnerSHA": "61336a3a27449635b87816701ddbbf75bb44a71f75a4efe0d3cc0efcff08f84a",
+        "originalQueueId": "SQ-388cebf894c64cf5",
+        "originalQueueSHA": "0d0a70072ef410240c36cde58a944b09bf29a18ee67e7b3dfabefdf97c331b0d",
+        "originalQueueStatus": "SUCCEEDED",
+        "originalRepoStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+        "ownerCaseCount": 22,
+        "sourceNoUnrestrictedHostExecution": true,
+        "unknownNotReplayed": false,
+        "workflowId": "FC-e1560a2d2a4841b3"
+      }
+    },
+    "selectedAccepted": 4,
+    "selectedFamilyCount": 4
+  },
+  "missingOrUnverified": [
+    {
+      "family": "web-fullstack",
+      "missing": "AI-authored isolated HTTP+database+auth server, state/persistence/concurrency oracle and full deployment",
+      "priority": "P0"
+    },
+    {
+      "family": "game-2d",
+      "missing": "AI-generated renderer with assets, full collision/physics, 2D visual acceptance and interactive scene",
+      "priority": "P0"
+    },
+    {
+      "family": "game-3d",
+      "missing": "WebGL3D meshes/shaders/camera, physics, render/performance and native interaction owner QA",
+      "priority": "P0"
+    },
+    {
+      "family": "android",
+      "missing": "original Android SDK, JDK/Gradle, APK signing, instrumented emulator/device owner acceptance",
+      "priority": "P0"
+    },
+    {
+      "family": "ai-integrated",
+      "missing": "app-level local-model service, privacy policy, error handling, streaming/token budget and reproducible owner cases",
+      "priority": "P0"
+    },
+    {
+      "family": "portable-physical-device",
+      "missing": "second physical Windows PC, independent graphics/driver/runtime SHA and app restore/readback",
+      "priority": "P1"
+    },
+    {
+      "family": "additional-language-toolchains",
+      "missing": "pinned Java/Android, Rust, build system, dependency isolation and standalone E2E contracts",
+      "priority": "P1"
+    }
+  ],
+  "nextAction": "Build first-party isolated HTTP/persistence owner contracts and truly interactive 2D/3D renderer+physics owner E2E, and Android SDK/device plus app-level LLM provider owner. Complete each platform as separate pinned ABI/recovery package and test on physical other PC before promoting general release. Do not replay UNKNOWN or STAGNATED original R75 jobs.",
+  "objectiveId": "autofabricador-independent-reusable-local-ai-factory-20261107",
+  "operationId": "AF.R75.RECONCILE-4-FAMILY-ORIGINAL-E2E.20261108",
+  "regressions": {
+    "allKnownRegressionFailures": 0,
+    "originalRCReconciledSHA": "3f511e3d4046e8cf5daaa9a6e33a1ca86fd74a01ebd76ab3d0643de3b38b553e",
+    "originalRoot": 478,
+    "originalRootExit": 0,
+    "portableOriginal": 495,
+    "portableSkipped": 24
+  },
+  "revisionId": "R75-FAMILIES-ADMISSION-AND-BOUNDED-E2E",
+  "router": {
+    "blockedFamilies": 5,
+    "notClaimingUniversalApp": true,
+    "originalPlanSHA": "4ae7442027e4334854b737751731e93e5919a705c044d82622d177238848d8c5",
+    "routes": 8,
+    "status": "PASS_SOURCE_CAS",
+    "unitTestsAdded": 22
+  },
+  "safety": {
+    "R74OriginalUnknownNeverReplayed": true,
+    "R75OriginalUnknownNeverReplayed": true,
+    "WindowsAutostartDisabled": true,
+    "live": {
+      "C:\\AF-PORTABLE": {
+        "modelStates": {
+          "cpu": "NOT_STARTED",
+          "cuda7b": "NOT_STARTED",
+          "cuda9b": "NOT_STARTED"
+        },
+        "pendingQueue": 0,
+        "supervisor": "STOPPED"
+      },
+      "C:\\AUTOFABRICADOR": {
+        "modelStates": {
+          "cpu": "NOT_STARTED",
+          "cuda7b": "NOT_STARTED",
+          "cuda9b": "NOT_STARTED"
+        },
+        "pendingQueue": 0,
+        "supervisor": "STOPPED"
+      }
+    },
+    "noHostUnrestrictedCodegenExecution": true,
+    "noMMCNoFNoBOOT": true,
+    "originalReleaseStillCandidate": true,
+    "sandboxSessions": []
+  },
+  "schema": 1,
+  "sourceOnlyDelta": {
+    "SHA": "e93a4ff681e28afe00434791be3ce658ec62fcaf0c696e3dd4e18b7cb511d729",
+    "fullFactoryRestorePoint": false,
+    "notFullPortableFactory": true,
+    "restorePass": true
+  },
+  "status": "PASS_BOUNDED_FOUR_FAMILIES",
+  "toolchainG0SHA": "5c7b0bf12ae777ed1d40575af6388636d6218436639eb3b7310d9ef3e960d15c",
+  "trustedBrowserRenderer": {
+    "canvas2D": true,
+    "notModelGeneratedGame": true,
+    "originalReadbackSHA": "2523971fa324b6252478e0b6a6b6f71495e607ebc1c7ab112be59064314582d5",
+    "status": "PASS_CANVAS2D_AND_WEBGL2_RENDERER_READINESS",
+    "webgl2": true
+  },
+  "unseenOwnerTests": {
+    "casesPassed": 76,
+    "modelCalls": 0,
+    "originalReadbackSHA": "e8532deb156e3d52fd45f1750d6f1567c2bdd5dd615088934dc41f79e58ee562",
+    "selectedSourceOnlyWasi": true,
+    "status": "PASS_ALL_FOUR"
+  }
+}

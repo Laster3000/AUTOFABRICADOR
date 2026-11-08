@@ -1,0 +1,22 @@
+{
+  "name": "AUTOFABRICADOR R76 · Suite local",
+  "short_name": "AF R76",
+  "description": "Aplicaciones locales de referencia, funcionamiento sin nube",
+  "start_url": "/#game2d",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a1320",
+  "theme_color": "#0e1726",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

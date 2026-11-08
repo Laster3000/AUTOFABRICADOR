@@ -1,0 +1,290 @@
+{
+  "M1": "PASS_SCOPED_SOURCE_PATCH",
+  "M2": "PASS_ORIGINAL_FACTORY_PORTABLE_GPU9B_QUEUE",
+  "M3": "PASS_9_UNIT_AND_FULL_REGRESSION_SCOPED_E2E",
+  "M4": "NOT_APPLICABLE_NO_PROTECTED_INSTALL",
+  "M5": "PASS_SCOPED_PROGRAM_EXPORTS",
+  "M6": "BLOCKED_UNIVERSAL_AND_SECOND_PHYSICAL_PC_NOT_VERIFIED",
+  "R74AllSubmittedJobsAccepted": 3,
+  "R74AppArchivesRestored": 3,
+  "R74DifferentialTargetJobs": 3,
+  "R74EReplacedUnknownShippingWithNewOwnerSHA": "6e35f251ad0c0d97e880e8b2a5e9e0267d85bd5ab45d8c0e4b25ee27d8d784fc",
+  "R74IndependentCases": 118,
+  "R74IndependentUnseenHoldouts": {
+    "count": 54,
+    "modelWasNotShownTheseTests": true,
+    "newModelCalls": 0,
+    "originalReadbackSHA": "121402775c1c4f34ee634aec65342bb9470c0c0ed5ac15f9ccfd4147834711f5",
+    "passed": 54
+  },
+  "R74NewIndependentOwnerJobs": 6,
+  "R74NonThinkingSmoke": {
+    "receiptSHA": "7fc5f2090083783ecf5ed486c6801741ec96366dde738ce2a3cb83fd1f598b7c",
+    "status": "PASS_REAL_QWEN35_9B_Q4_JSON_SSE"
+  },
+  "R74SourceRegression": {
+    "count": 473,
+    "logSha": "572085aae99a63c434f6f1d1113e982f95a5733a5c3dd21900e0ee45e23e2f1e",
+    "originalRegressionReceiptSHA": "f438412d0269ad1ecffbc31901af5d71896e23d46c8a3f14622490244727e83a",
+    "skipped": 24,
+    "status": "PASS"
+  },
+  "R74TargetNewJobsAccepted": 3,
+  "R74UnitTests": {
+    "count": 9,
+    "sha": "044ab91530cf3591d748bd6bf3c296763c1069c64578ffaa366794fb59505d8a",
+    "status": "PASS"
+  },
+  "atUtc": "2026-11-08T15:18:40.809639+00:00",
+  "chatSaturationInternal": "DESCONOCIDA",
+  "functionalId": "AF.FACTORY",
+  "generalFactoryActive": false,
+  "historicalR73ManifestSHA": "0a36a1f9e0ed10af0027f29f15368ce6c38d9ee9fbc929488f59c9b344987db3",
+  "model": {
+    "backendSha": "1f9255ec205dea8e2cfab37ad3a295da712d1fe5579e091f96de266149a560cd",
+    "modelSha": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+    "provider": "cuda9b",
+    "root": "C:\\AF-PORTABLE",
+    "startupRamFreeMiB": 9903
+  },
+  "nextAction": "Expand original first-party owner contracts and isolated toolchains for other app families. Do not replay R73 failed/UNKNOWN jobs; use independently new owner operations after source revision. Verify on a second physical Windows PC before universal promotion.",
+  "objectiveId": "autofabricador-independent-reusable-local-ai-factory-20261107",
+  "operationId": "AF.R74F.SAFE-RECEIPT-READBACK-FINAL.20261108",
+  "originalR73NewPassOf3": 0,
+  "originalWorkResults": [
+    {
+      "name": "shipment",
+      "oldR73OriginalJobsNeverReplayed": true,
+      "originalFactoryStatus": "FAILED_REPO",
+      "originalFactoryWorkflow": "FC-ebf55442cc734159",
+      "originalFailureReceipts": [],
+      "originalIndependentOwnerCases": 18,
+      "originalInputSHA": "c22b93360fa5d6cca75385e0bc121b97504e5ec323ecaaea523450328cd8a708",
+      "originalModelAttempts": 3,
+      "originalOrder": "OJ-c22b93360fa5d6cc",
+      "originalOwnerAccepted": false,
+      "originalProgram": null,
+      "originalQueueId": "SQ-a00cedad211c4213",
+      "originalQueueSHA": "a682ac936e5c7eb297aa2334177372b3c24a31808829b6532fd1a48d33a7157c",
+      "originalQueueStatus": "UNKNOWN",
+      "originalRepoId": "RJ-8747d538f25f4beb",
+      "originalRepoStatus": "FAILED_MODEL_FORMAT",
+      "schema": 1,
+      "timeUtc": "2026-11-08T15:16:19.700305+00:00"
+    },
+    {
+      "name": "reorder",
+      "oldR73OriginalJobsNeverReplayed": true,
+      "originalFactoryStatus": "STOPPED_SAFE_BOUNDARY",
+      "originalFactoryWorkflow": "FC-8dcae1d18ecc4adb",
+      "originalFailureReceipts": [],
+      "originalIndependentOwnerCases": 19,
+      "originalInputSHA": "90409eeb12968acb63a607ac38fc39f76342f6a1d016c58aad5f71321ae3650b",
+      "originalModelAttempts": 0,
+      "originalOrder": "OJ-90409eeb12968acb",
+      "originalOwnerAccepted": false,
+      "originalProgram": null,
+      "originalQueueId": "SQ-e4552ccaa8f448ef",
+      "originalQueueSHA": "be95b29aa87a2c31defd5446f0387a167b944f122d8941760257bcebbfc242d2",
+      "originalQueueStatus": "STOPPED",
+      "originalRepoId": "RJ-ebfe86a1e98d4024",
+      "originalRepoStatus": "STOPPED_PRE_INTENT",
+      "schema": 1,
+      "timeUtc": "2026-11-08T15:16:19.717452+00:00"
+    },
+    {
+      "name": "normalize",
+      "oldR73OriginalJobsNeverReplayed": true,
+      "originalFactoryStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+      "originalFactoryWorkflow": "FC-fd87309ac1f04545",
+      "originalFailureReceipts": [
+        {
+          "compilerError": "",
+          "id": "A-01-owner.json",
+          "ownerCaseCount": null,
+          "receiptSHA": "df1b6685c0188489b4ed02818e0e023a6ca21f4fd5ab186491863f381cba3728",
+          "status": "PASS"
+        }
+      ],
+      "originalIndependentOwnerCases": 19,
+      "originalInputSHA": "97a55c030b412740e9a35d4bd8acd0d19a7b2c79ba0cc9b563e17d0edcb62d44",
+      "originalModelAttempts": 1,
+      "originalOrder": "OJ-97a55c030b412740",
+      "originalOwnerAccepted": true,
+      "originalProgram": {
+        "fileCount": 10,
+        "originalArchive": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-921d03c3d8ef4a93.zip",
+        "originalArchiveSHA": "7cf9457e64abcdc2097d095195f1f5083cbd0a5173898486d19d255b024eb877",
+        "restoredBytesSHA": {
+          "BROWSER-RECEIPT.json": "18e86425240be08a82ee29277991bc2039881a2d08b5ef3ade9665b0207e934e",
+          "MANIFEST.json": "c7552e5527a2368f51ebe6044229220e8c7f49809c147f1bc588e77c4a5f3175",
+          "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+          "controller.js": "6097da64c0409f58ebb12d00bdb75cfc11bf5de199ec1125f6a1db8e4a0552fd",
+          "index.html": "c3083d30eff0866a7ce2a51adc69d753fcfb1128ebad5fb79405602187a4a83a",
+          "logic.js": "b0484790504b508b93b585f02f1a0f0693dc0d2351670c83f4b63bdf6b561d95",
+          "package.json": "e81372cc65af01dc0adb4a3167ad7a2f57191a1b9140f17500a5d7b2296ca004",
+          "src/index.js": "51e93b744e98b2001361eef4815dd30b92141a1609df0ec0c96fe55dae4308a4",
+          "src/rules.js": "1b46d85ff97bf08659ec9126032dc299e6353e0a5ee5a34bb062c9abb4dace90",
+          "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+        },
+        "restoredPath": "D:\\AUTOFABRICADOR-RESCATE\\R74-REPAIR-NEW-JOBS-20261108\\PORTABLE-RESTORE\\normalize",
+        "status": "PASS_BYTES_RESTORED_NOT_EXECUTED_ON_HOST"
+      },
+      "originalQueueId": "SQ-fd238cba42214152",
+      "originalQueueSHA": "e1b38620d7b317be783626d72987fcbca8aa0f438c29890c2b2a0280944ddd6e",
+      "originalQueueStatus": "SUCCEEDED",
+      "originalRepoId": "RJ-921d03c3d8ef4a93",
+      "originalRepoStatus": "PASS",
+      "schema": 1,
+      "timeUtc": "2026-11-08T15:16:42.647124+00:00"
+    },
+    {
+      "name": "r74d-shipping",
+      "oldR73OriginalJobsNeverReplayed": true,
+      "originalFactoryStatus": "REPO_MODEL_WASI_INTENT",
+      "originalFactoryWorkflow": "FC-64c7b1ef47cb4ed4",
+      "originalFailureReceipts": [],
+      "originalIndependentOwnerCases": 20,
+      "originalInputSHA": "44b23a8395e4c0d45a3f208d07d0f8920faae5fe98977b93a53d12c880c916bd",
+      "originalModelAttempts": 0,
+      "originalOrder": "OJ-44b23a8395e4c0d4",
+      "originalOwnerAccepted": false,
+      "originalProgram": null,
+      "originalQueueId": "SQ-c12b2eed7f464f2e",
+      "originalQueueSHA": "1a171b0c0eb98e6e1ef1607a2ab36d97f08d230ab14d036e7c9c8194b32ef49d",
+      "originalQueueStatus": "UNKNOWN",
+      "originalRepoId": "RJ-08643452852247b5",
+      "originalRepoStatus": "PENDING",
+      "schema": 1,
+      "timeUtc": "2026-11-08T15:16:42.660387+00:00"
+    },
+    {
+      "name": "r74d-reorder",
+      "oldR73OriginalJobsNeverReplayed": true,
+      "originalFactoryStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+      "originalFactoryWorkflow": "FC-b48f0f4fc22b433e",
+      "originalFailureReceipts": [
+        {
+          "compilerError": "",
+          "id": "A-01-owner.json",
+          "ownerCaseCount": null,
+          "receiptSHA": "fdea8b9c6ce226bcee862b2f1f4c8bcfbcd77a62c3faa833cf734dcc87dc2fee",
+          "status": "PASS"
+        }
+      ],
+      "originalIndependentOwnerCases": 20,
+      "originalInputSHA": "7eb92b34c4b74d3b2ac0e1e9cc7020c159a0021e6dfccbf4ec37ed19ab9dbd8b",
+      "originalModelAttempts": 1,
+      "originalOrder": "OJ-7eb92b34c4b74d3b",
+      "originalOwnerAccepted": true,
+      "originalProgram": {
+        "fileCount": 10,
+        "originalArchive": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-aba1d48e081441d5.zip",
+        "originalArchiveSHA": "14fea7bc54ee82c6344b3d0a238e7d93cff98034c4e0cef1516e802c757ffef7",
+        "restoredBytesSHA": {
+          "BROWSER-RECEIPT.json": "253726919cb754f801294fcef4b7dbdd004859682367d2719bbd2ff1e66b7e8b",
+          "MANIFEST.json": "7d055a626c834e02fa780954f6700952eff0a1efed0a79ff234baf3880ef590e",
+          "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+          "controller.js": "0111ab3757437cdabb00b6c5f266e0bcbfd25d2aa6ad1cee36a0720ae40f1bea",
+          "index.html": "d1580cad73fb2e26c968187fab04577d6067d3db20cad3621adcdfe48977ebc7",
+          "logic.js": "088c8d61e9b0a859452d977c1acd5ed65ded418a6783c00367ae0e16a4d13923",
+          "package.json": "5dd6d1bcd083493c9c24fbcbf3a3b80c08b28e13e924c8def1f537f5d587784f",
+          "src/index.js": "9fac3566db5bc89e329238cebb04abf95c87f87ffda585277ce4b25efc7947f3",
+          "src/rules.js": "2eb97d747aee5ae421555dce565a7b7282b447f836b1029ba3d7a494dd09b06b",
+          "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+        },
+        "restoredPath": "D:\\AUTOFABRICADOR-RESCATE\\R74-REPAIR-NEW-JOBS-20261108\\PORTABLE-RESTORE\\r74d-reorder",
+        "status": "PASS_BYTES_RESTORED_NOT_EXECUTED_ON_HOST"
+      },
+      "originalQueueId": "SQ-2a5ad14600ea420f",
+      "originalQueueSHA": "68886b6640579a8c4d1d4dd55de1f05924676dd83866e2baf5ac54b94561ee33",
+      "originalQueueStatus": "SUCCEEDED",
+      "originalRepoId": "RJ-aba1d48e081441d5",
+      "originalRepoStatus": "PASS",
+      "schema": 1,
+      "timeUtc": "2026-11-08T15:17:04.669043+00:00"
+    },
+    {
+      "name": "r74e-shipping",
+      "oldR73OriginalJobsNeverReplayed": true,
+      "originalFactoryStatus": "PASS_SCOPED_WASI_BROWSER_OFFLINE",
+      "originalFactoryWorkflow": "FC-a3a70e2058964ca9",
+      "originalFailureReceipts": [
+        {
+          "compilerError": "",
+          "id": "A-01-owner.json",
+          "ownerCaseCount": null,
+          "receiptSHA": "332b262207cac7d088aa5343c80687a104ba9401459ad3ebf5d455d1deacf103",
+          "status": "PASS"
+        }
+      ],
+      "originalIndependentOwnerCases": 22,
+      "originalInputSHA": "9d46d9a08b52c99fe98d42352582db150a35757e91a58f26c410164337d5d8ed",
+      "originalModelAttempts": 1,
+      "originalOrder": "OJ-9d46d9a08b52c99f",
+      "originalOwnerAccepted": true,
+      "originalProgram": {
+        "fileCount": 10,
+        "originalArchive": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-ac256efb38c047b3.zip",
+        "originalArchiveSHA": "f66bc04e62434baa92b72904fe020cdf8519fd401607941a2f2dc7df2cb2482c",
+        "restoredBytesSHA": {
+          "BROWSER-RECEIPT.json": "ca3a38a4ae36d408890fe5e96652fff2afcf6e6f0353c0082fe1951ec48759f6",
+          "MANIFEST.json": "79998d4b6f1803261a03e45f8303f12d12b1f13077ddf8b86585c972c0a16483",
+          "README.txt": "46920a4f16e38fd52ec07fc5e4227e93d17a632bde38eebae7257c13a0165411",
+          "controller.js": "100f1336b28f5d21e087c5c61fb9fe12938ba313f746c5247e7da6fdfbe1bc5a",
+          "index.html": "2164ec10a7e7c009532626ae98757a54dfe031be58a1b58ef07dd9bccba7b7b9",
+          "logic.js": "3bed7de41d88beaabe284945bf610a19ddb6dcd3743120ae43ed14556d34b90e",
+          "package.json": "b6884459204463a5ef1f421d288e55b984ab9f4cccda21e3ae9d6c8773664940",
+          "src/index.js": "c2c5a79698cc68d3065f5f308f34c14d0afc003ac75232d701e813d1776776cd",
+          "src/rules.js": "ef98f87067861a6a85a04f4798efbcf9d05fa7607d336dab61aa29a28eefa64e",
+          "styles.css": "28b5eef4fb6317df2a3352b28b49658c883b1015b0c17720b65c8bd31449d91d"
+        },
+        "restoredPath": "D:\\AUTOFABRICADOR-RESCATE\\R74-REPAIR-NEW-JOBS-20261108\\PORTABLE-RESTORE\\r74e-shipping",
+        "status": "PASS_BYTES_RESTORED_NOT_EXECUTED_ON_HOST"
+      },
+      "originalQueueId": "SQ-a0e377405c1a4683",
+      "originalQueueSHA": "a9da0f05b2c37a293faf8e30a8606e79522e90720eff9dd9c87a80b6973021f1",
+      "originalQueueStatus": "SUCCEEDED",
+      "originalRepoId": "RJ-ac256efb38c047b3",
+      "originalRepoStatus": "PASS",
+      "schema": 1,
+      "timeUtc": "2026-11-08T15:17:24.894684+00:00"
+    }
+  ],
+  "preimages": {
+    "R74BCAS": "ef71db6d80c93d058bb95a714f514e80930df675adb8d4df3b639cd4df9a59e5",
+    "R74CAS": "8a65111a5619d033b553344383c53f190d8f3e061e8bbf265c7a43e8583ad0ae",
+    "R74CCAS": "fa189962907de8b1eb4f6a248fbf9c64b825bd81da655900a64c5d8707f95fa0",
+    "fullProductRestorePoint": false,
+    "restoreSourceBytesRehearsed": true
+  },
+  "remaining": [
+    "General app families Android, games 2D/3D, web fullstack still lack original independent owner contracts/toolchains",
+    "One physical other Windows host remains untested",
+    "Repair of unseen tasks incomplete when a job does not PASS"
+  ],
+  "revisionId": "R74-NEW-CODE-AND-QWEN35-9B-Q4",
+  "safety": {
+    "WindowsAutorunTaskDisabled": true,
+    "WindowsSandboxSessions": [],
+    "modelsStopped": {
+      "C:\\AF-PORTABLE": {
+        "cpu": "NOT_STARTED",
+        "cuda7b": "NOT_STARTED",
+        "cuda9b": "NOT_STARTED"
+      },
+      "C:\\AUTOFABRICADOR": {
+        "cpu": "NOT_STARTED",
+        "cuda7b": "NOT_STARTED",
+        "cuda9b": "NOT_STARTED"
+      }
+    },
+    "noGeneratedCodeHostRun": true,
+    "noMMCNoFNoWindowsBOOTChange": true,
+    "oldUnknownOriginalJobsNeverReplayed": true,
+    "originalQueuePending": 0,
+    "supervisorsStopped": true
+  },
+  "schema": 1,
+  "status": "PASS_BOUNDED_REPAIRS"
+}

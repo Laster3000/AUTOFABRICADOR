@@ -1,0 +1,18 @@
+{
+  "R74EFrozenOwnerSHA": "6e35f251ad0c0d97e880e8b2a5e9e0267d85bd5ab45d8c0e4b25ee27d8d784fc",
+  "atUtc": "2026-11-08T15:18:40.809639+00:00",
+  "casBSHA": "ef71db6d80c93d058bb95a714f514e80930df675adb8d4df3b639cd4df9a59e5",
+  "casCSHA": "fa189962907de8b1eb4f6a248fbf9c64b825bd81da655900a64c5d8707f95fa0",
+  "casSHA": "8a65111a5619d033b553344383c53f190d8f3e061e8bbf265c7a43e8583ad0ae",
+  "chatSHA": "7af302ac428d2919c81a2f6a0605a2adfed61d9207904f1fdb6932af96c3442e",
+  "independentHoldoutSHA": "121402775c1c4f34ee634aec65342bb9470c0c0ed5ac15f9ccfd4147834711f5",
+  "nonThinkingOriginalSmokeSHA": "7fc5f2090083783ecf5ed486c6801741ec96366dde738ce2a3cb83fd1f598b7c",
+  "projectSHA": "f4bc2d3795b15163e4d2941474526e1c41dc4b17ecaba3d9dd368a08bcb1a418",
+  "readmeSHA": "a65b2e8dfed2457ac1c43c0ea0d0482e7ade17dcaf357cf5ea37c17d5b48b5e8",
+  "regressionSHA": "f438412d0269ad1ecffbc31901af5d71896e23d46c8a3f14622490244727e83a",
+  "schema": 1,
+  "status": "PASS_BOUNDED_REPAIRS",
+  "unitSHA": "044ab91530cf3591d748bd6bf3c296763c1069c64578ffaa366794fb59505d8a",
+  "universalNotActive": true,
+  "unknownJobsNotReplayed": true
+}

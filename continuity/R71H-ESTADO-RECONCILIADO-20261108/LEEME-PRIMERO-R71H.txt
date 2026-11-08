@@ -1,0 +1,10 @@
+AUTOFABRICADOR R71H | VERIFICACION ACOTADA | 2026-11-08
+No es producto final. Sigue CANDIDATE_NOT_ACTIVE.
+R71 integra factory GUI INVENTORY/TKINTER/SQLITE en supervisor original.
+Prueba fuente 15/15, motor original 473 PASS (25 OMITIDOS), recuperacion antes-modelo E2E misma cola PASS.
+WSB oficial: sesiones detenidas por UUID, 7 pruebas propias PASS.
+Aceptacion nativa del NUEVO trabajo R71: NO PASS; Windows Sandbox ExistingLogin devolvio 0x80070520.
+Ninguno de seis intentos originales UNKNOWN se ha repetido. R70 anterior conserva 13/13 pero no equivale a R71.
+Supervisor STOP, modelos cerrados, tarea de inicio Windows deshabilitada. No MMC, no F.
+Fuente, recibos, preimagenes y pruebas: D:\AUTOFABRICADOR-RESCATE\R71-INTEGRACION-GUI-SUPERVISOR-20261108
+NEXT_ACTION: Fix isolated guest original executor context using a new scoped first-party WSB System session or authenticated user session; prove original owner 13/13 and ZIP restore with a new id (no retry UNKNOWN). Then test general unseen complex GUI tasks and another physical Windows computer before final release. Never change boot/service/MMC without original protected procedure.

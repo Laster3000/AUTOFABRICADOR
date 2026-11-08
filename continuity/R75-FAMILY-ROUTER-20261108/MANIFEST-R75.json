@@ -1,0 +1,18 @@
+{
+  "atUtc": "2026-11-08T15:47:55.559804+00:00",
+  "browserProofSHA": "2523971fa324b6252478e0b6a6b6f71495e607ebc1c7ab112be59064314582d5",
+  "casSourceReceiptSHA": "0c256e6c29865abebdd4f35f016a6f53f4ead8b15cfedf3953c295d0ec261e1a",
+  "chatSHA": "3ccfa4a48564e2028cf859e3e231618c8d96c1b0db75ccca9fd11eff66260b57",
+  "frozenOwnerOriginalSHA": "2e864ee771699b526052a40cbf7fec4770caf632f13e6125e86a3581104146e6",
+  "hiddenReadbackSHA": "e8532deb156e3d52fd45f1750d6f1567c2bdd5dd615088934dc41f79e58ee562",
+  "projectSHA": "531e5ffdb0396c8731512e16f1ab41d65ccc3834c1942603baf842e507286910",
+  "readmeSHA": "6f1d0d70ad7a524d1377ac25821ffd1d37960599064e8f7eb3451d6eff692c27",
+  "regressionOriginalSHA": "3f511e3d4046e8cf5daaa9a6e33a1ca86fd74a01ebd76ab3d0643de3b38b553e",
+  "regressionPortableLogSHA": "81a72bd1ab3b446057441fe66a4e1dfb090be31df61f8d30ad740108b4ecf2c1",
+  "repairedNewOwnersSHA": "16ebefde8892da9c9efd8adb55ca559d755c1fc4bc1caba69a54c4d6dbf22d35",
+  "schema": 1,
+  "sourceOriginalReleaseUnchangedSHA": "ea7e5a70c5a7b207adec1bd474481f29c7674ab1ff6bee5adf4154f5b0233e40",
+  "sourcePatchSHA": "e93a4ff681e28afe00434791be3ce658ec62fcaf0c696e3dd4e18b7cb511d729",
+  "status": "PASS_BOUNDED_FOUR_FAMILIES",
+  "universalFactoryNotActivated": true
+}

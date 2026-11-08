@@ -1,0 +1,16 @@
+{
+  "R76PredecessorManifestSHA": "6deb52fa2a9d4f89c47bf578502b7874fc52137b2ac8a141849a75cd13cdab60",
+  "activeReleasePreimageSHA": "ea7e5a70c5a7b207adec1bd474481f29c7674ab1ff6bee5adf4154f5b0233e40",
+  "atUtc": "2026-11-08T16:27:51.301334+00:00",
+  "chatCheckpointSHA": "cdb5aff280dd1f87e97dec164a286660491a04914067ac5e048ae2c9beac262b",
+  "handoffSHA": "a6c9eb192618f8e8466c8d247450910132e7842a9f704cbf7b3e870e0dc35927",
+  "noOtherProductChanged": true,
+  "operationId": "AF.R77.DOCUMENT-ARCHITECTURE-FREEZE.20261108",
+  "projectCheckpointSHA": "733ed835001406728874b4c942b8b54bb8613c3216bbb0efb21bd7091e57ed1d",
+  "readmeSHA": "87e4bd81c42250f5c0d178669e771d42d9424cc1e82b964c3dd0809b3c2ffb4c",
+  "revisionId": "R77-HANDOFF-ARQUITECTURA-20261108",
+  "schema": 1,
+  "sixMotorsAreDesignNotBuilt": true,
+  "sourceFamiliesPending10": true,
+  "state": "RECORDED_ARCHITECTURE_NOT_IMPLEMENTED"
+}

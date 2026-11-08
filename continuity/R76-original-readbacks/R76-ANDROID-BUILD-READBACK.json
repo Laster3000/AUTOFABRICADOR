@@ -1,0 +1,40 @@
+{
+  "apks": [
+    {
+      "androidManifestPresent": true,
+      "nativeLibraries": true,
+      "path": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\bin\\Debug\\net11.0-android\\com.autofabricador.r76labyrinth-Signed.apk",
+      "sha": "ce33408272e14db655cb3137b7f568755b5dc4c59e8a109b35b9f47020e0295a",
+      "size": 12131783,
+      "zipCRC": true
+    },
+    {
+      "androidManifestPresent": true,
+      "nativeLibraries": true,
+      "path": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\bin\\Debug\\net11.0-android\\com.autofabricador.r76labyrinth.apk",
+      "sha": "7965d9e3c689df9390504d6aa648535b937ef50b8ccdf062cd33f9256282f75a",
+      "size": 12118994,
+      "zipCRC": true
+    }
+  ],
+  "atUtc": "2026-11-08T16:01:39.611112+00:00",
+  "deviceE2EPASS": false,
+  "deviceStatus": "NO_EMULATOR_OR_PHYSICAL_DEVICE",
+  "dotnetExecutableSHA": "07678ce60dd20ed36f1d25b88f6f51d8bf5a880442680a664690154ebe976ad9",
+  "javaExecutableSHA": "a9604872170258865e88ef4a754744e8853dbce2161d4dc3ac5820fb449ab3ad",
+  "logSHA": "bbd43ad0767265858fd5440d5af9d83f2efb06aee35d6bc0f41de1da6bbf2511",
+  "logTail": "ty.cs(71,13): warning CS8602: Desreferencia de una referencia posiblemente NULL. [D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\ANDROID-R76.csproj]\nD:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\MainActivity.cs(94,25): warning CS8604: Posible argumento de referencia nulo para el parámetro \"canvas\" en \"void View.OnDraw(Canvas canvas)\". [D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\ANDROID-R76.csproj]\n  ANDROID-R76 -> D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\bin\\Debug\\net11.0-android\\ANDROID-R76.dll\nC:\\Program Files\\dotnet\\sdk\\11.0.100-rc.2.26504.105\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: Está usando una versión preliminar de .NET. Visite: https://aka.ms/dotnet-support-policy [D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\ANDROID-R76.csproj]\n\nCompilación correcta.\n\nD:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\MainActivity.cs(71,13): warning CS8602: Desreferencia de una referencia posiblemente NULL. [D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\ANDROID-R76.csproj]\nD:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\MainActivity.cs(94,25): warning CS8604: Posible argumento de referencia nulo para el parámetro \"canvas\" en \"void View.OnDraw(Canvas canvas)\". [D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\ANDROID-R76\\ANDROID-R76.csproj]\n    2 Advertencia(s)\n    0 Errores\n\nTiempo transcurrido 00:00:12.68\n",
+  "noMMCNoF": true,
+  "noSystemInstallation": true,
+  "operationId": "AF.R76.ANDROID-NATIVE-DOTNET-APK-COMPILE.20261108",
+  "returnCode": 0,
+  "schema": 1,
+  "sdkRoot": "C:\\Program Files (x86)\\Android\\android-sdk",
+  "sourceSHA": {
+    "ANDROID-R76.csproj": "e60cdaf1e132f6b1119b19413369bc67f55562524f2036451f00fc743981c586",
+    "AndroidManifest.xml": "1992970007ad53ead742c4953cd3dc58bbedec174a42d284998ebfeb908e4b43",
+    "MainActivity.cs": "1e098dcc9ffdecaab403bb7ac44f360cf010a92a7cbf16624850123fc993ddee",
+    "MazeLogic.cs": "b1b3e7c98f2037b119d0f20f5f59fb882a53a2d757312085fd7188d1cbf4395f"
+  },
+  "status": "PASS_NATIVE_ANDROID_APK_BUILT_DEVICE_E2E_BLOCKED"
+}

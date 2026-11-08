@@ -1,0 +1,77 @@
+{
+  "atUtc": "2026-11-07T13:13:51.960001+00:00",
+  "compilerEnvironment": "Node process executes trusted esbuild wasm wrapper and WASM compiler only",
+  "files": {
+    "LICENSE.md": {
+      "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681",
+      "size": 1069
+    },
+    "README.md": {
+      "sha256": "6bfb2272db99a435b490effa7c65034cfcce13a17555c4c3bb66aa458a27ffcb",
+      "size": 226
+    },
+    "bin/esbuild": {
+      "sha256": "b3cdaf234fd51a7908b2ffc4a84b3baa466656ccb2586498de4cc2f77b6f1e1e",
+      "size": 3504
+    },
+    "esbuild.wasm": {
+      "sha256": "92c182cd141115f33ad08ad1d29b38f00f6292d38c3fe7ef85c11775407b54fb",
+      "size": 12332677
+    },
+    "esm/browser.d.ts": {
+      "sha256": "161c8e0690c46021506e32fda85956d785b70f309ae97011fd27374c065cac9b",
+      "size": 23392
+    },
+    "esm/browser.js": {
+      "sha256": "3717abfe08f1a7d6a9339deca65b9f2c6428431f3c14e84e9e8c961254035c94",
+      "size": 120631
+    },
+    "esm/browser.min.js": {
+      "sha256": "a31435f3d4e8008ec05ca0299fd7a58696e3a65c00e080c319385859d118f4d6",
+      "size": 49892
+    },
+    "lib/browser.d.ts": {
+      "sha256": "161c8e0690c46021506e32fda85956d785b70f309ae97011fd27374c065cac9b",
+      "size": 23392
+    },
+    "lib/browser.js": {
+      "sha256": "05943cb65d379ef5089e46e715f481a12737c43959c57efea8a424318c7d679c",
+      "size": 123884
+    },
+    "lib/browser.min.js": {
+      "sha256": "d41846f009fe664c898f8d6a46545fb58e019e6bbd25b637dbae04a79074bc69",
+      "size": 51014
+    },
+    "lib/main.d.ts": {
+      "sha256": "161c8e0690c46021506e32fda85956d785b70f309ae97011fd27374c065cac9b",
+      "size": 23392
+    },
+    "lib/main.js": {
+      "sha256": "18b154677d0965c21748afe9b5f56fb11a664a9a6e21dd5fd5ecf9791384e700",
+      "size": 80495
+    },
+    "package.json": {
+      "sha256": "e12121cea45a15628447142367000a2016477d0d2113f1e15b192ad1553b6ad7",
+      "size": 426
+    },
+    "wasm_exec.js": {
+      "sha256": "45ce9dfe7211247544ab6f4268eb8cb5b6f3d5ae602dc3b51447b7eada99c229",
+      "size": 16687
+    },
+    "wasm_exec_node.js": {
+      "sha256": "c91e20cf70dc4ab76b633f392676e9f1b22d849ba5fca4f80422391705a26638",
+      "size": 1151
+    }
+  },
+  "filesCount": 15,
+  "modelSourceRuntime": "Javy/Wasmtime wasi-preview1 no filesystem/network grants",
+  "name": "esbuild-wasm",
+  "nativeEditorLaunched": false,
+  "nativelyRunsUntrustedCode": false,
+  "origin": "npm registry",
+  "packageLifecycleScriptsExecuted": false,
+  "packageTarSha256": "e0712c0e7a9bcfb53c648f63222b07d6ef052897da093498441b8ac5fcfc5342",
+  "registrySRI": "sha512-rZqkjL3Y6FwLpSHzLnaEy8Ps6veCNo1kZa9EOfJvmWtBq5dJH4iVjfmOO6Mlkv9B0tt9WFPFmb/VxlgJOnueNg==",
+  "schema": 1,
+  "version": "0.25.12"
+}

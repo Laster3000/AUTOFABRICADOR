@@ -1,0 +1,12 @@
+AUTOFABRICADOR R70 - LEEME PRIMERO - 2026-11-08
+RESULTADO: PASS SOLO para app inventario Tkinter+SQLite acotada.
+IA CUDA7B original produjo app.py y store.py; primera QA guest Windows Sandbox 7/13.
+IA CUDA Qwen3.5 9B reparo store.py; misma QA original guest 13/13.
+ZIP portable con Python runtime SHA 62221eb638ec7602c2c902824b558b028ed1a12826fb9e7ade12c77f20c4497f
+Ruta ZIP: D:\AUTOFABRICADOR-RESCATE\R70-PRUEBA-AUTONOMA-GUI-20261108\R70C-SECOND-ACCEPTANCE\R70-GESTOR-INVENTARIO-WINDOWS-PORTABLE-CANDIDATE.zip
+La restauracion completa de 1965 archivos por SHA fue PASS, en el mismo ordenador.
+No es un EXE nativo monolitico, ni prueba autonomia universal de agentes, ni segundo PC.
+R69/0.9.17 sigue CANDIDATE_NOT_ACTIVE. No servicio, TaskScheduler original deshabilitado.
+Guest receipts son UNTRUSTED; owner verifica hashes y casos congelados.
+Punto de recuperacion: D:\AUTOFABRICADOR-RESCATE\R70-PRUEBA-AUTONOMA-GUI-20261108
+NEXT_ACTION: conectar esta ruta al supervisor original con reanudacion segura y pruebas extra; probar otro Windows real.

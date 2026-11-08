@@ -1,0 +1,13 @@
+{
+  "atUtc": "2026-11-08T14:01:55.696343+00:00",
+  "chatSha": "50ecdd62f1e1f4f1130e0665833dc12cda1bd09f723f7a72e13ff2f80760d6e1",
+  "fullTranscriptFalse": true,
+  "noHostOrProductRestorePoint": true,
+  "originalRegressionsReceiptSHA": "df22aae3f0f761944c99a5fe331d5071ec547c5a503a1a2d3b3cae19deb7ba7a",
+  "projectSha": "52647cf9ae80f877a3e8bbdfcfea90ca079846664eade705eacd20d220faecad",
+  "readmeSha": "d4603e3cebf9ac1bddfc7cf816693fa0fe610608ac306532d49ebc010f5ac366",
+  "rollbackPreimagesD": "D:\\AUTOFABRICADOR-RESCATE\\R71-INTEGRACION-GUI-SUPERVISOR-20261108",
+  "schema": 1,
+  "sourceSha": "cdff3174c5c5b1371bdf894bce74921ffeec12031abb136fe0b7bd3f04b9c00e",
+  "status": "CANDIDATE_NOT_ACTIVE_DO_NOT_PROMOTE"
+}

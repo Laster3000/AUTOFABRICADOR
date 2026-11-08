@@ -1,0 +1,17 @@
+AUTOFABRICADOR R68 | FACTORY PORTABLE | CANDIDATE_NOT_ACTIVE
+ABRIR-AUTOFABRICADOR.cmd abre consola factory GUI manual, NO Windows Startup.
+CONSTRUIR-PROYECTO-R68.cmd create  (crea contrato de ejemplo con QA independiente)
+CONSTRUIR-PROYECTO-R68.cmd run --job MR68-...  (modelo CUDA7B bajo demanda)
+CONSTRUIR-PROYECTO-R68.cmd status --job MR68-... (consulta readback)
+CONSTRUIR-PROYECTO-R68.cmd verify --job MR68-... (solo PASS autentico)
+M1-M6: mecanismos originales validos, GENERACION INDEPENDIENTE NUEVO ERP NO ACEPTADA.
+Es un generador acotado ESM/WASI, NO una fabrica universal de aplicaciones Windows.
+Modelo Qwen2.5 Coder 7B incluido; 14B bloqueado por RAM; Qwen3.5 9B incompatible con backend llama incluido.
+Node 24.20.0 empaquetado SHA 5c976096e04e5c2c1f091938926234cc9fbebfe9787ddd149351b3b0ecc707b5
+Python embebido, original WASI, sin servicios, sin instalacion ni registro Windows.
+ATENCION: exige Windows 64 bits y driver NVIDIA compatible para usar CUDA.
+Sin colas historicas, datos privados de usuario ni historial de editores.
+Los ejemplos del contrato incluyen casos de QA predefinidos; no son codigo generado ni pruebas ocultas en los trabajos de produccion.
+R68 contrato 19 casos, holdout 21. Los 3 trabajos originales R68 fallaron.
+Este paquete conserva codigo corregido y evidencias; no ACTIVE.
+Licencias Node.js y dependencias: consulte documentacion de los componentes en las distribuciones oficiales. La inclusion es para uso privado autorizado.

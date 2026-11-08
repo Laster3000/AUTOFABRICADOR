@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0e1726"><meta name="description" content="Suite local de referencia de AUTOFABRICADOR R76">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon-192.png" type="image/png">
+<link rel="stylesheet" href="/app.css">
+<title>AUTOFABRICADOR R76 · Aplicaciones verificadas</title>
+<script defer src="/logic-2d-r75.js"></script>
+<script defer src="/logic-3d-r75.js"></script>
+<script defer src="/game2d.js"></script>
+<script defer src="/game3d.js"></script>
+<script defer src="/logic-api-r76.js"></script>
+<script defer src="/app.js"></script>
+</head>
+<body>
+<div class="shell">
+<header class="masthead">
+  <div class="brand"><div class="glyph">AF</div><div><div class="eyebrow">FACTORÍA LOCAL · EDICIÓN R76</div><h1>AUTOFABRICADOR</h1></div></div>
+  <div class="topright"><span class="dot"></span><span id="server-pill">Conectando a localhost</span></div>
+</header>
+<div class="hero">
+  <div><div class="eyebrow">SUITE DE APLICACIONES REALES · REFERENCIA ACOTADA</div>
+  <h2>Del código probado a la <em>experiencia completa.</em></h2>
+  <p>Inventario con SQLite y sesiones, un juego 2D interactivo, un entorno WebGL2 y una interfaz de IA local bajo demanda. Sin servicios de arranque ni nube.</p>
+  </div><div class="hero-stamp"><strong>R76</strong><span>CANDIDATE<br>NO UNIVERSAL</span></div>
+</div>
+<nav class="tabs" aria-label="Aplicaciones">
+<button data-tab="inventory" class="active"><span>01</span> Inventario</button>
+<button data-tab="game2d"><span>02</span> Juego 2D</button>
+<button data-tab="game3d"><span>03</span> Mundo 3D</button>
+<button data-tab="ai"><span>04</span> IA local</button>
+<button data-tab="about"><span>05</span> Alcance</button>
+</nav>
+<main>
+<section id="tab-inventory" class="panel active">
+ <div class="panel-title"><div><div class="eyebrow">01 / APLICACIÓN DE DATOS</div><h3>Inventario persistente</h3><p>SQLite, altas, cambios con versión, eliminación, registro de auditoría y control de sesión.</p></div><div class="chip">LOCAL · SQL</div></div>
+ <div id="auth-login" class="surface">
+  <h4>Acceder al inventario</h4>
+  <form id="login-form" class="inline-form"><label>Usuario<input id="login-user" value="admin" autocomplete="username"></label><label>Contraseña<input id="login-password" type="password" autocomplete="current-password"></label><button type="submit" class="primary">Entrar</button></form>
+  <p id="login-msg" role="status"></p>
+ </div>
+ <div id="auth-content" hidden>
+  <div class="action-row"><span id="user-welcome"></span><button id="refresh-items">Actualizar</button><button id="logout">Cerrar sesión</button></div>
+  <form id="create-form" class="surface form-grid">
+   <label>SKU<input id="sku" maxlength="12" placeholder="PIEZA-01" required></label>
+   <label>Descripción<input id="item-name" maxlength="70" placeholder="Pieza de repuesto" required></label>
+   <label>Existencias<input id="item-qty" type="number" min="0" max="100000" value="5" required></label>
+   <button type="submit" class="primary">Añadir producto</button>
+  </form>
+  <div class="table-wrap"><table><thead><tr><th>SKU</th><th>Descripción</th><th>Cantidad</th><th>Versión</th><th>Acciones</th></tr></thead><tbody id="items-body"></tbody></table></div>
+  <p id="inventory-msg" role="status"></p>
+  <details class="surface"><summary>Registro de auditoría</summary><pre id="audit-log"></pre></details>
+ </div>
+</section>
+<section id="tab-game2d" class="panel" hidden>
+ <div class="panel-title"><div><div class="eyebrow">02 / JUEGO INTERACTIVO</div><h3>Labyrinth 2D</h3><p>Movimiento, colisión contra paredes, objetivos, contador y reinicio; usa la función <code>stepRobot</code> aceptada en R75.</p></div><div class="chip">CANVAS 2D</div></div>
+ <div class="game-layout">
+  <div class="canvas-frame"><canvas id="game2d-canvas" width="480" height="480" aria-label="Laberinto 2D"></canvas></div>
+  <div class="game-sidebar"><div class="score"><span>Objetivo</span><strong id="game2d-goal">Recoge la estrella</strong></div>
+   <div class="score"><span>Pasos</span><strong id="game2d-steps">0</strong></div>
+   <div class="score"><span>Estado</span><strong id="game2d-status">Preparado</strong></div>
+   <div class="pad"><button data-move="N">↑</button><div><button data-move="W">←</button><button data-move="S">↓</button><button data-move="E">→</button></div></div>
+   <button id="game2d-reset" class="primary">Reiniciar partida</button>
+   <p class="hint">Utiliza las flechas del teclado o los controles. Las paredes no pueden atravesarse.</p>
+  </div>
+ </div>
+</section>
+<section id="tab-game3d" class="panel" hidden>
+ <div class="panel-title"><div><div class="eyebrow">03 / GRÁFICOS ACELERADOS</div><h3>WebGL Explorer</h3><p>Escena 3D con cámara, cubo giratorio, interacción, proximidad al objetivo y proyección R75.</p></div><div class="chip">WEBGL2</div></div>
+ <div class="game-layout">
+  <div class="canvas-frame wide"><canvas id="game3d-canvas" width="640" height="420" aria-label="Escena WebGL2 3D"></canvas><div id="game3d-fail" hidden>WebGL2 no disponible en este equipo.</div></div>
+  <div class="game-sidebar"><div class="score"><span>Cámara X</span><strong id="game3d-x">0</strong></div>
+   <div class="score"><span>Distancia</span><strong id="game3d-dist">5</strong></div>
+   <div class="score"><span>Proyección del objetivo</span><strong id="game3d-projection">Calculando...</strong></div>
+   <div class="score"><span>Estado</span><strong id="game3d-status">Preparado</strong></div>
+   <div class="pad"><button data-3d="left">←</button><button data-3d="right">→</button><button data-3d="forward">↑</button><button data-3d="back">↓</button></div>
+   <button id="game3d-collect" class="primary">Recoger objetivo</button>
+   <button id="game3d-reset">Reiniciar escena</button>
+   <p class="hint">Acércate con flechas. Recoge el objetivo cuando estés suficientemente cerca.</p>
+  </div>
+ </div>
+</section>
+<section id="tab-ai" class="panel" hidden>
+ <div class="panel-title"><div><div class="eyebrow">04 / ASISTENCIA LOCAL</div><h3>IA por demanda</h3><p>Qwen 3.5 9B CUDA, sin credenciales cloud. Solo arranca ante una petición autorizada; cierre por recibo al terminar.</p></div><div class="chip">GPU · QWEN</div></div>
+ <div class="surface"><p id="ai-availability">Comprobando disponibilidad del motor...</p>
+ <form id="ai-form"><label>Tu consulta<textarea id="ai-prompt" rows="4" maxlength="450" placeholder="¿Cómo puedo organizar mi inventario?"></textarea></label>
+ <div class="action-row"><button type="submit" class="primary">Preguntar a la IA</button><span>Presupuesto limitado: 144 tokens</span></div></form>
+ <div id="ai-result" class="result-area" role="status">La respuesta aparecerá aquí.</div>
+ </div>
+ <p class="hint">En la configuración normal de la aplicación la IA permanece desactivada. Debe activarse explícitamente en el servidor local.</p>
+</section>
+<section id="tab-about" class="panel" hidden>
+ <div class="panel-title"><div><div class="eyebrow">05 / VERIFICACIÓN</div><h3>Alcance del producto</h3></div>
+ <div class="cards"><article class="surface"><h4>Demostrado aquí</h4><p>Base de datos SQLite con API y sesiones locales, interfaz de inventario, juego Canvas 2D, escena WebGL2 y conexión opcional con modelo Qwen instalado.</p></article>
+ <article class="surface"><h4>Limitaciones</h4><p>Ni APK Android nativa ni instalador Windows universal. Tampoco un compilador que convierta cualquier petición en cualquier aplicación. El contrato de la factoría sigue acotado.</p></article>
+ <article class="surface"><h4>Seguridad</h4><p>Servidor vinculado a 127.0.0.1, autenticación, CSRF, control de versiones y consultas SQL parametrizadas. El código generado en R75 procede de aceptación WASI previa y se ejecuta en Chromium.</p></article></div>
+</section>
+</main>
+<footer><span>AUTOFABRICADOR · R76 REFERENCE CANDIDATE</span><span>LOCALHOST ONLY · NO AUTOSTART · SOURCE + RECEIPTS</span></footer>
+</div>
+</body></html>

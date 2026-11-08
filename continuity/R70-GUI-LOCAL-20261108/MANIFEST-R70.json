@@ -1,0 +1,12 @@
+{
+  "createdAtUtc": "2026-11-08T13:22:31.622755+00:00",
+  "guestOriginalQAsha": "87b8566bc7310d050fc74acf71f1b7b5668b426a7c241aacc2175f4bb1425189",
+  "modelSourceSha": "882cf7c81c611810332a1aecc8e282270f329a930aedf5fcef458404138e620b",
+  "notFullTranscript": true,
+  "ownerReadbackSha": "17746755052e1167f86072b85857e8041887051d8e3b3bd72850b26442118887",
+  "portableZipSha": "62221eb638ec7602c2c902824b558b028ed1a12826fb9e7ade12c77f20c4497f",
+  "releaseNotActive": true,
+  "restoreSameComputer": true,
+  "schema": 1,
+  "status": "CANDIDATE_NOT_ACTIVE"
+}

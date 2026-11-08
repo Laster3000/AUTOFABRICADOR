@@ -1,0 +1,19 @@
+AUTOFABRICADOR R69 | FACTORY PORTABLE CANDIDATE_NOT_ACTIVE | 2026-11-08
+La IA local Qwen3.5 9B Q4_K_M CUDA genero un ERP Javascript ESM nuevo.
+Los 3 modulos de negocio pasaron 21+21+14 casos originales en WASI.
+La integracion fue reparada mecanicamente mediante fuentes y contratos
+originales, sin modificar casos de aceptacion ni reejecutar trabajos inciertos.
+ERP: 19 casos principales + 21 casos ocultos congelados + 6 invariantes PASS.
+Ejemplo de programa/artefacto: examples/ERP-R69-4MOD-MODEL-AUTOFIX-WASI-CANDIDATE.zip
+RESUMEN PUBLICO: examples/ERP-R69-ORIGINAL-ACCEPTANCE-SUMMARY.json
+Modelo Q4 requiere >=7200 MiB RAM LIBRE y >=8500 MiB GPU libre antes
+de arrancar; el modelo se descarga y ejecuta solo bajo demanda.
+Usar CONSTRUIR-PROYECTO-R69.cmd para create/run/status/verify.
+Node 24.20.0 y Python embebido, compilador Javy/esbuild y WASI incluidos.
+No necesita servicios ni TaskScheduler ni instalacion global de Windows.
+Este paquete es portable en Windows x64 con GPU NVIDIA compatible.
+No se ha probado en segundo ordenador real; no garantizada compatibilidad universal.
+LIMITE: generacion JavaScript/ESM/WASI acotada, NO fabrica universal de EXEs
+ni aplicacion grafica Windows generada por IA. No ACTIVE. No tocar MMC.
+Nunca ejecutar codigo generado fuera de WASI sin auditoria.
+No colas historicas, credenciales, historiales de editores o datos privados.

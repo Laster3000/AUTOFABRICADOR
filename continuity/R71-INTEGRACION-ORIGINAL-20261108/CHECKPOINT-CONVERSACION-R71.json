@@ -1,0 +1,18 @@
+{
+  "conversationId": "AUTOFABRICADOR-R71-CHAT-20261108-LOCAL-ALIAS",
+  "conversationIdType": "LOCAL_ALIAS_NOT_NATIVE",
+  "coverage": "PARTIAL_ACCESSIBLE_MESSAGES_NOT_FULL_TRANSCRIPT",
+  "errorsAvoid": "No replay of UNKNOWN job or SUCCEEDED; no model RAM gate bypass; no forced protected VM cleanup; no attribution of cached AI output to new generation",
+  "evidence": "D:\\AUTOFABRICADOR-RESCATE\\R71-INTEGRACION-GUI-SUPERVISOR-20261108\\CHECKPOINT-PROYECTO-R71.json",
+  "literalUserSegment": {
+    "kind": "LITERAL",
+    "role": "user",
+    "text": "hazlo en un solo bloque y dejalo terminado"
+  },
+  "nextAction": "Resolve leftover Windows Sandbox VM by authorized native process owner without unsafe kill, prove guest original owner QA + reproducible full portable restore, integrate general unknown desktop tasks with independent contracts, test on second physical Windows PC. Do not retry UNKNOWN jobs; create new intent only after resolving platform blocker.",
+  "schema": 1,
+  "summaryKind": "RESUMEN_NOT_LITERAL",
+  "tested": "Original queue 11/13 first guest, second guest UNKNOWN; 15/15 integration source tests, 473 regressions, safe pre-model STOP/resume E2E with unchanged task ID",
+  "what": "Integrate original portable AUTOFABRICADOR GUI generation after R70",
+  "why": "Demonstrate autonomous generation+tests using original supervisor without microsteps and make it portable"
+}

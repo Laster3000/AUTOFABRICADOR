@@ -1,0 +1,25 @@
+{
+  "R69OriginalReleaseNotPromoted": true,
+  "atUtc": "2026-11-08T13:46:52.095819+00:00",
+  "factoryUniversalNotAccepted": true,
+  "fullTranscriptFalse": true,
+  "noMMCNoFNoBootOrProdEffects": true,
+  "originalAcceptedScopeOnly": true,
+  "originalChatCheckpointSha": "3896661f6b058c79c11a736ad683b83fe80a68fa8136df3ed5031a3af4980e81",
+  "originalModelEvidenceSha": {
+    "FirstNativeGuestFailure": "0cd1ac0251f08e7c2af69a5a6a7fc01c3253c13715dadc7a23c84810b74b8cff",
+    "R70AcceptedOwner": "17746755052e1167f86072b85857e8041887051d8e3b3bd72850b26442118887",
+    "R71BLocalAIProvenSourceReuse": "3fc2cc48c449ab4f3245b86fe62118d8291fa3c1e22f53e418cbff2a97587967",
+    "R71FullOriginalRegression": "b3ff8265b9a01f95bbb68649cd75abfca974a695dfce9edfc31c0fde10c45092",
+    "R71OriginalRegressionLog": "4f350c9cc66a275082e1ab7e5f15bbc6ec13bbc67a5e492bc65d95a15c94ceb2",
+    "R71OriginalResumeE2E": "e433c102be41912c2ba11df29da8dea4e4b965a575f284a5148a30a226628362",
+    "R71ResumeCAS": "fb3a52e3d81b9d9cf61d61621e8014319e3897a3f37b3e64b0e22eac9b511cd6",
+    "R71SourceIntegration": "2585d8500465bb35b09fb831af52240cb2ee4ed6b08e1d29efc31d70bf89d63c",
+    "R71SourceTests15": "a82c4aedbfcdcbfab424802eae9a6235cf202c1472e3c8213ef3a454c7c81f31",
+    "SecondNativeGuestTimeoutIntent": "088973973f120a42150acafa425c0ef38e49b9f8d17f97bfa881ac27b6826469"
+  },
+  "originalProjectCheckpointSha": "d0ed37e05f67d5ec51af5f469997c2416882094fa8f8726013e19f241b18ed7c",
+  "originalReadmeSha": "32f6c70aa7e9c18c76e045dbba65b3383f41da3eefc99f1f5f0b0e3090c7cbb2",
+  "schema": 1,
+  "status": "CANDIDATE_NOT_ACTIVE"
+}

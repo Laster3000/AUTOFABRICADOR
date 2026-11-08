@@ -1,0 +1,23 @@
+# No publicar datos privados, entornos ni modelos
+.env*
+**/.env*
+**/VENDOR/
+**/DIST/
+**/runtime/
+**/node_modules/
+**/__pycache__/
+**/.venv/
+**/work/
+**/logs/
+**/sessions/
+**/holdouts/
+**/hidden/
+**/credentials*
+**/*secret*
+**/*token*
+*.sqlite*
+*.db
+*.gguf
+*.exe
+*.dll
+*.zip

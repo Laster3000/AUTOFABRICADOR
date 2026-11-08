@@ -1,0 +1,50 @@
+{
+  "artifactVersion": "0.3.0",
+  "deps": [
+    {
+      "dest": "VENDOR/llama-b12142-bin-win-cpu-x64.zip",
+      "id": "llama_cpp_cpu_windows",
+      "kind": "zip",
+      "sha256": "93662f543833e6b2965305d92e4aba44166bb9cc9b76d55fff0d731508765c91",
+      "size": 24731737,
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12142/llama-b12142-bin-win-cpu-x64.zip",
+      "version": "b12142"
+    },
+    {
+      "dest": "VENDOR/models/qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
+      "id": "qwen2_5_coder_1_5b_q4",
+      "kind": "gguf",
+      "sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+      "size": 1117320768,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF/resolve/main/qwen2.5-coder-1.5b-instruct-q4_k_m.gguf?download=true",
+      "version": "1.5B-Instruct-Q4_K_M"
+    },
+    {
+      "dest": "VENDOR/wheels/wasi_python-0.1.4-py3-none-any.whl",
+      "id": "wasi_python",
+      "kind": "wheel",
+      "sha256": "e34d6bf4c3c7ad6fbbcf3c81a6a418cfc24eb47129e715a23a7f8076a11da079",
+      "size": 112146034,
+      "url": "https://files.pythonhosted.org/packages/ce/3f/e60287fc2e8c2b8ec9152fc750c069e82a7ef1b8ebb846e42d4ad26212db/wasi_python-0.1.4-py3-none-any.whl",
+      "version": "0.1.4"
+    },
+    {
+      "dest": "VENDOR/wheels/wasmtime-50.0.1-py3-none-win_amd64.whl",
+      "id": "wasmtime",
+      "kind": "wheel",
+      "sha256": "a8999581230471f4ff62073b1111eff3a01d45ccec0a908da3f2ae3a499d459c",
+      "size": 7991861,
+      "url": "https://files.pythonhosted.org/packages/df/3a/e14287689ed571c9a001201a0349299d50bf6251ee09f4f6e467b4b1212b/wasmtime-50.0.1-py3-none-win_amd64.whl",
+      "version": "50.0.1"
+    }
+  ],
+  "installMode": "per-user/project-only",
+  "product": "AUTOFABRICADOR",
+  "requiresHostPrivilege": false,
+  "schema": 1,
+  "security": {
+    "execution": "WASI untrusted guest no host mounts, no host tools",
+    "network": "download pinned public assets only",
+    "notes": "Downloaded binaries are third-party; hashes attest to specific published bytes, not absolute safety or origin signature. No Windows feature, global pip, PATH or registry changes."
+  }
+}

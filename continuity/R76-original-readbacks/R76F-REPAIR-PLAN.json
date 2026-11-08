@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "operationId": "AF.R76F.SHA-GAP-AND-DETERMINISTIC-REPAIR.20261108",
+  "sourceSHA": "e1f3013343a5d2d0db8f31232964230fe7b068a19332d0a6ee4dc1bf3acac97e",
+  "newSourceSHA": "1066cfc6521055890ce31a5b3b254094a7f6675a8a704124965391d2eb326e5d",
+  "failedR76EStagedOnly": true,
+  "oldWrapperSHA_GAP": true,
+  "oldSourceUserReportsNeverOverwritten": true
+}

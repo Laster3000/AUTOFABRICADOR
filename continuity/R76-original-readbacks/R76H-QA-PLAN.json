@@ -1,0 +1,12 @@
+{
+  "newBrowserSourceSHA": "86540b4f93e0d631b2536c098965c11477509f84df4c474f1d16730568a98a57",
+  "newE2ERunnerSHA": "767bb4518c658dcee4006d68be65b8fc97f2f9c6e54498058bdfbb5486adafb8",
+  "operationId": "AF.R76H.BROWSER-REPAIRED-API-E2E-NEW.20261108",
+  "originalStagnatedModelJobNotReplayed": true,
+  "priorQAJobsPreserved": true,
+  "priorR76CReceiptSHA": "047aeb34b9f7b6edba95b1b2ba3ff4a468979f382b33d70b1f77d8fcdea0986e",
+  "repairedModelApiSourceSHA": "4c02da570012293726767ae21360456beafb68ccfecabfbec641080e7788a663",
+  "schema": 1,
+  "serviceWorkerPreimageSHA": "671cc6fb08fdb2e055ca88289899ee27f463b0163ac434646f830f39fb2e8337",
+  "serviceWorkerReadbackSHA": "4756392b82e8de8d3ad8b9e27dc87ef56b641f9c9e45c11093a4fa68b53c83bc"
+}

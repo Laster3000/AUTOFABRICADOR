@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "operationId": "AF.R76J.RESTORED-ZIP-NEW-E2E.20261108",
+  "originalPackageSHA": "80a1eabc202926a1690df840732899bce2f015f65b0d86efe1e82e3413c359e6",
+  "RESTORED_FILE_COUNT": 29,
+  "newRunnerSHA": "9cae1950d136ee77431d15df35623d1dcdf3aa37afdc739e5ca9dc70f30c18fa",
+  "newBrowserSHA": "86540b4f93e0d631b2536c098965c11477509f84df4c474f1d16730568a98a57",
+  "oldSuccessfulWorkNotReplayed": true
+}

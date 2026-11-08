@@ -1,0 +1,13 @@
+AUTOFABRICADOR R65 - FACTORY PORTABLE - CANDIDATO NO ACTIVE
+IMPORTANTE: Esta carpeta contiene LA FABRICA y sus agentes originales, NO SOLO las 3 aplicaciones R64.
+ARRANQUE: doble clic ABRIR-AUTOFABRICADOR.cmd: el supervisor original se inicia por esa ACCION del usuario, no al iniciar Windows.
+SEPARADO: INICIAR-AGENTES.cmd / ESTADO-AGENTES.cmd / PARAR-AGENTES.cmd.
+NO registra tareas en el Programador, NO Windows Services, NO requiere Python global, NO requiere red para el modo CUDA7B local.
+La GPU se carga BAJO DEMANDA para un encargo y se descarga al terminar.
+RUTA: mueva/copie TODA la carpeta; launcher deriva ruta de %~dp0 y python312._pth importa los modulos del propio paquete.
+VENDOR: modelos locales, runtimes aislados, proveedores/equipos editores existentes; excluidos SOLO caches desechables regenerables.
+REQUIERE Windows x64 funcionando y para CUDA7B GPU NVIDIA compatible y driver CUDA/NVIDIA instalado en el PC. El sistema operativo NO puede ejecutar una aplicacion cuando esta apagado; lo que eliminamos es el arranque AUTOMATICO por Windows.
+Use USB/NTFS o exFAT: el modelo GGUF 7B pesa >4 GiB y FAT32 no soporta ese archivo.
+Contiene root/journal propios; NO importa, borra ni repite trabajos del AUTOFABRICADOR original. NO modifica otros MMC ni usa F:.
+ACEPTACION: 3 familias GUI locales, no creacion universal arbitraria.
+Sus pesos/modelos y dependencias fueron incluidos, pero el estado definitivo de algunas herramientas opcionales requiere pruebas E2E en un segundo ordenador distinto. Source first party R63 SHA a14ef6c7ebde7d1b7a9e5bdef76750a272f793d457a37186d9ae0d6caa8013be

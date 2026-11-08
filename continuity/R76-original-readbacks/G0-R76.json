@@ -1,0 +1,121 @@
+{
+  "R75FinalReadbackSha": "9b1b8327dfabf4c7cc8581001f726858df6ae4f625cd579252b516c32afbe379",
+  "android": {
+    "Gradle": false,
+    "JDK": false,
+    "SDK": false,
+    "adb": false,
+    "nativeAPKNotYetBuilt": true
+  },
+  "atUtc": "2026-11-08T15:51:56.256725+00:00",
+  "chrome": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "fullProductRestoreNotYetBuilt": true,
+  "lastKnownGoodReadOnly": true,
+  "live": {
+    "C:\\AF-PORTABLE": {
+      "cpu": {
+        "state": "NOT_STARTED"
+      },
+      "model7b": {
+        "state": "NOT_STARTED"
+      },
+      "model9b": {
+        "state": "NOT_STARTED"
+      },
+      "supervisor": {
+        "control": {
+          "atUtc": "2026-11-08T15:44:42.075570+00:00",
+          "command": "STOP",
+          "previousSha": "3bf6d1762edc98303278ada7fe6d8c009dbfc7357f919a7566c71e7d30e05f50",
+          "schema": 1
+        },
+        "lease": {
+          "atUtc": "2026-11-08T15:44:42.283587+00:00",
+          "cliSha256": "3cf3dafc920d6b2406fc9ccc52da30ec8d1276a0703fcc05ee33b543a92238b6",
+          "exe": "C:\\AF-PORTABLE\\runtime\\python.exe",
+          "exeSha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+          "pid": 17160,
+          "previousSha": "7c3654f5672e75fd10418b0900e10ee587bb25c51eae3e4d846efa5fea24742a",
+          "processBornFiletime": 134386257689101262,
+          "schema": 1,
+          "status": "STOPPED"
+        },
+        "pendingQueue": 0,
+        "processIdentityBirthVerified": false,
+        "status": "STOPPED"
+      }
+    },
+    "C:\\AUTOFABRICADOR": {
+      "cpu": {
+        "state": "NOT_STARTED"
+      },
+      "model7b": {
+        "state": "NOT_STARTED"
+      },
+      "model9b": {
+        "state": "NOT_STARTED"
+      },
+      "supervisor": {
+        "control": {
+          "atUtc": "2026-11-08T14:41:41.045783+00:00",
+          "command": "STOP",
+          "previousSha": "867b61a503b810273c0d58b675905cd8a9a6020b0bf1c669d64a5ab7c3822268",
+          "schema": 1
+        },
+        "lease": {
+          "atUtc": "2026-11-08T14:41:41.268960+00:00",
+          "cliSha256": "2e1fdba76da0998c9da1e913654ee793e5e4c218b0ae5cbb5d87d3a4fc3e8343",
+          "exe": "C:\\Users\\laste\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "exeSha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+          "pid": 13544,
+          "previousSha": "c616ea215009629e8c92b086ca64a300844d848bf6f2b324b9c8c01a7c1a986b",
+          "processBornFiletime": 134386221871358590,
+          "schema": 1,
+          "status": "STOPPED"
+        },
+        "pendingQueue": 0,
+        "processIdentityBirthVerified": false,
+        "status": "STOPPED"
+      }
+    }
+  },
+  "noBootNoMMCNoF": true,
+  "node": "C:\\Program Files\\nodejs\\node.exe",
+  "operationId": "AF.R76.G0.20261108",
+  "originalR75SourceArchives": {
+    "2d": {
+      "archive": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-47a21768a96e4393.zip",
+      "sha": "cf2229dfcb9331f061e3eba52c3bc94940f0226299452cb6e16ddde816d793f9"
+    },
+    "3d": {
+      "archive": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-3d7ce50e579b4318.zip",
+      "sha": "cb76a6781d1c888e862311cf440a484cc319abd7296beb38e26ce9b983c8d292"
+    },
+    "agent": {
+      "archive": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-5474edc89bf24a80.zip",
+      "sha": "301ba6fdacc3c87ab8f2927f8bb38ceb8f825e7f79c98bef7741b48640f6c3e3"
+    },
+    "api": {
+      "archive": "C:\\AF-PORTABLE\\repoexports\\AF-REPO-RJ-842dded7b68c4192.zip",
+      "sha": "299a198c7a5bbd3a9171f06042719caa12a67d5eed9ed413d3cabd052ec7b601"
+    }
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "pythonExecutableSHA": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+  "sandbox": {
+    "clipboardPolicy": "DISABLE",
+    "feature": "Containers-DisposableClientVM",
+    "featureState": "Enabled",
+    "guestUntrustedReportsAreAcceptance": false,
+    "mappingPolicy": "EXACTLY_PRIVATE_SOURCE_READ_ONLY_PLUS_EMPTY_OUTPUT",
+    "nativeHostCodeExecutionAllowed": false,
+    "networkPolicy": "DISABLE",
+    "realGuestBootProven": false,
+    "schema": 1,
+    "status": "AVAILABLE_NOT_YET_E2E_PROVEN",
+    "windowsSandboxExe": "C:\\WINDOWS\\System32\\WindowsSandbox.exe",
+    "windowsSandboxExePresent": true,
+    "workspaceRoot": "C:\\AF-PORTABLE"
+  },
+  "schema": 1
+}

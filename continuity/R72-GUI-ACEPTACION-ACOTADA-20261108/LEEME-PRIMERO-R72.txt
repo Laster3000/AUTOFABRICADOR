@@ -1,0 +1,15 @@
+AUTOFABRICADOR R72 | ENTREGA FUNCIONAL ACOTADA | 2026-11-08
+OBJETIVO: fabricar inventario Windows con IA local + GUI Tkinter SQLite con supervisor original.
+ACEPTACION ORIGINAL: GI-c42329a7378d48dc, SQ-0680bf1a1d38441c SUCCEEDED.
+OWNER INDEPENDIENTE: 13/13 primer Windows Sandbox y 13/13 segunda Sandbox limpia usando ZIP restaurado.
+RELEVO: CUDA7b genero store.py del trabajo R72; app.py GUI fue LKG IA de R70 por SHA. No se fingio nueva GUI.
+PRUEBAS: 10/10 unit R72B, 473 regresiones originales (25 omitidas), restauracion 1964 archivos y SHA.
+SALIDA: D:\AUTOFABRICADOR-RESCATE\R72-WSB-SYSTEM-CIERRE-20261108\ENTREGA-R72\GI-c42329a7378d48dc-GUI-PORTABLE-CANDIDATE.zip
+SHA256: 9151f3c5c6ad79103e9ed6baa84e4ff8e517f22760007e42d8060759ca10497e
+ABRIR: extrae ZIP completo y ejecuta ABRIR-GESTOR.cmd en Windows compatible.
+NO ES EL FABRICADOR GENERAL FINAL: solo perfil INVENTORY/TKINTER/SQLITE.
+NO 2do PC fisico probado, no .exe unico, no producto general ACTIVE.
+SERVICIOS: supervisor STOP, IA STOP, WSB STOP, autoinicio Windows deshabilitado.
+NO MMC, NO F. R71 UNKNOWN no reintentados.
+NEXT_ACTION: For universal AUTOFABRICADOR completion: add general unseen application contract/oracles and independent end-to-end acceptance across several GUI projects, then validate the portable factory and generated app on another physical Windows PC. Do not falsely mark the overall product ACTIVE or replay historical UNKNOWN jobs.
+DIRECTORIO DE EVIDENCIAS: D:\AUTOFABRICADOR-RESCATE\R72-WSB-SYSTEM-CIERRE-20261108

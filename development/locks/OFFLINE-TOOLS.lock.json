@@ -1,0 +1,51 @@
+{
+  "FRescueNoLongerExists": true,
+  "currentRescueDrive": "D",
+  "directInferenceServer": {
+    "exeSha256": "adf06772b919f299d71656b481736544752657b5266fd484744b7db08e3665c2",
+    "host": "127.0.0.1",
+    "modelSha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+    "originalActiveCancellation": "CP-6be9f4d5874c4405",
+    "port": 11435
+  },
+  "fullyOfflineOnCleanWindowsProven": false,
+  "languages": {
+    "javyBinarySha256": "4b298b147ba2d8656af174e266ca8f9de1a4d963795a95f4ce82f685b34d3c73",
+    "pinnedNpmUmdLockSha256": "da999ca7301ed28daf515157dae8c06b57a715e46664c269b4df3f7bb0f762b9",
+    "pinnedOriginal0_7LockSha256": "8ecc868713af1b43e6c1058a2f43fe009763032d76ec69bae8150a0b9bcd3797",
+    "typescriptCompilerSha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675",
+    "wasmtimeCliSha256": "d10847f5cbcdabcb455ca46a5c8d6999fd56955cdd058e46d8028fb9d0b9ed42"
+  },
+  "oldFVendorArchiveLocationHistoricalOnly": "F:\\AUTOFABRICADOR-RESCATE\\AUTOFABRICADOR-0.8.0-PRIVATE-VENDOR.zip",
+  "original0_7FinalReceiptSha256": "51cefeffb2858d7788e63c622902ba85f86582389065caacdc1fa9bc562c76ad",
+  "original0_7LkgZipSha256": "12c98f3ae1131c6293d6101c46c1e5ed2da49a91a7f35d37051e5ed6d0080be6",
+  "originalArchiveSha256RemainsIdentical": true,
+  "originalMigrationReceiptSha256": "319bbe5dd2ec53d92411ac14beeda02e07b2937359c00ff275f8e0d6aba3f63b",
+  "physicalRestoreReceipt": "CONTINUIDAD/R036/OFFLINE-RESTORE-RECEIPT.json",
+  "privateVendorArchive": "D:\\AUTOFABRICADOR-RESCATE\\AUTOFABRICADOR-0.8.0-PRIVATE-VENDOR.zip",
+  "privateVendorArchiveFormat": "ZIP64 with original source-file SHA256",
+  "privateVendorArchiveSha256": "45d7a2a246ae36d7d93f04d735500b75641c508b64bf063128fb19d940d010de",
+  "privateVendorFileCount": 38439,
+  "privateVendorManifestSha256": "597c2489a84bf0df5037ce89119b6ddcd828cec8630513780824b504b3caaea0",
+  "privateVendorSourceBytes": 6024638929,
+  "readbackShaOfDArchive": "45d7a2a246ae36d7d93f04d735500b75641c508b64bf063128fb19d940d010de",
+  "releaseId": "AUTOFABRICADOR-0.8.1-CANDIDATE",
+  "schema": 1,
+  "sourceCodeAcceptedOnlyAfterOriginalOwnerTests": true,
+  "sourceZIPMustNotIncludeModelWeights": true,
+  "status": "VENDOR_ARCHIVE_PINNED_REQUIRES_PHYSICAL_RESTORE_RECEIPT",
+  "systemRuntimesNotBundled": [
+    "Windows",
+    "Python 3.12",
+    "Node 24",
+    "dotnet SDK 10.0.401",
+    "Chrome 156"
+  ],
+  "testBrowsers": {
+    "chromeExeSha256": "46461accbdc87dc88a5bdd6d611be095dd6147db009863d794f742ca90662efa",
+    "nodeExeSha256": "5c976096e04e5c2c1f091938926234cc9fbebfe9787ddd149351b3b0ecc707b5",
+    "ownerTestsOriginalWebApps": 23,
+    "playwrightCoreVersion": "1.56.1",
+    "playwrightPackageSha256": "428ba2490bb4eec3a9bf62838207d35318ecfb6677801ae770445bfa52007c27"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "avoided": [
+    "No UNKNOWN replay",
+    "No source tests called universal PASS",
+    "No direct kill of protected vmmem",
+    "No modification to MMC/F"
+  ],
+  "checkpointProjectPath": "D:\\AUTOFABRICADOR-RESCATE\\R71-INTEGRACION-GUI-SUPERVISOR-20261108\\R71H-EXPLICIT-GUEST\\CHECKPOINT-PROYECTO-R71H.json",
+  "conversationId": "AF-R71H-20261108-LOCAL-ALIAS",
+  "conversationIdType": "LOCAL_ALIAS_NOT_NATIVE",
+  "coverage": "PARTIAL_ACCESSIBLE_NOT_FULL_TRANSCRIPT",
+  "decisions": [
+    "Use R69 original CUDA and supervisor, not new factory",
+    "First-party frozen criteria, no model-authored owner tests",
+    "Stop sandbox via official WSB CLI with original owned session ID",
+    "No model or generated code executed on Host"
+  ],
+  "literalUserSegment": {
+    "kind": "LITERAL",
+    "role": "user",
+    "text": "hazlo en un solo bloque y dejalo terminado"
+  },
+  "nextAction": "Fix isolated guest original executor context using a new scoped first-party WSB System session or authenticated user session; prove original owner 13/13 and ZIP restore with a new id (no retry UNKNOWN). Then test general unseen complex GUI tasks and another physical Windows computer before final release. Never change boot/service/MMC without original protected procedure.",
+  "schema": 1,
+  "summaryKind": "RESUMEN_NOT_LITERAL",
+  "why": "Original AUTOFABRICADOR creates and tests portable GUI programs without manual micromanagement, portable and no Windows autostart"
+}

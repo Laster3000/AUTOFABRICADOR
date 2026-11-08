@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "scope": "SHA-pinned UMD-only npm bundles, no lifecycle scripts, no generic npm runtime",
+  "packages": [
+    {
+      "name": "dayjs",
+      "version": "1.11.13",
+      "registryTarball": "https://registry.npmjs.org/dayjs/-/dayjs-1.11.13.tgz",
+      "registrySRI": "sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==",
+      "tarballSha256": "be0396c0f91583421b68f9a034227fb552eb87d93e59add775d533a65f70e47e",
+      "relativeFile": "VENDOR/npm-pin/dayjs/1.11.13/dayjs.min.js",
+      "fileSha256": "9cfdb93f38afcf2d076abecd66d32bfd3383cdf1967654ebc26a26605daf4173",
+      "global": "dayjs",
+      "licenses": [
+        "LICENSE"
+      ],
+      "scriptExecution": false,
+      "installStatus": "VETTED_UMD_SINGLE_SOURCE_ONLY"
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.21",
+      "registryTarball": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+      "registrySRI": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
+      "tarballSha256": "6a087ac9e5702a0c9d60fbcd48696012646ec8df1491dea472b150e79fcaf804",
+      "relativeFile": "VENDOR/npm-pin/lodash/4.17.21/lodash.min.js",
+      "fileSha256": "a9705dfc47c0763380d851ab1801be6f76019f6b67e40e9b873f8b4a0603f7a9",
+      "global": "_",
+      "licenses": [
+        "LICENSE"
+      ],
+      "scriptExecution": false,
+      "installStatus": "VETTED_UMD_SINGLE_SOURCE_ONLY"
+    }
+  ]
+}

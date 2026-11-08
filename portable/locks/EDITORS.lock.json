@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "product": "AUTOFABRICADOR",
+  "platform": "win32-x64",
+  "installScope": "C:\\AUTOFABRICADOR\\VENDOR\\editors only",
+  "components": [
+    {
+      "id": "aider",
+      "source": "https://pypi.org/project/aider-chat/0.86.2/",
+      "version": "0.86.2",
+      "package": "aider-chat==0.86.2",
+      "backend": "isolated-venv",
+      "provenRole": "single-source-proposal"
+    },
+    {
+      "id": "codex",
+      "source": "https://www.npmjs.com/package/@openai/codex/v/0.167.0",
+      "version": "0.167.0",
+      "package": "@openai/codex@0.167.0",
+      "backend": "npm-ignore-scripts",
+      "binaryRel": "node/node_modules/@openai/codex/bin/codex.js",
+      "binarySha256": "e14fc83739c13c1074b12bd1acce4010c893c7f6fbfc1593b4a31d74cabb57af",
+      "provenRole": "read-only-local-advice"
+    },
+    {
+      "id": "opencode",
+      "source": "https://www.npmjs.com/package/opencode-ai/v/1.19.5",
+      "version": "1.19.5",
+      "package": "opencode-ai@1.19.5",
+      "backend": "npm-ignore-scripts",
+      "binaryRel": "node/node_modules/opencode-windows-x64/bin/opencode.exe",
+      "binarySha256": "d7b473388cb62555970e400ce54cdfb6d6573608beea6f8fdf382cd1a698a3fa",
+      "provenRole": "read-only-local-advice"
+    }
+  ],
+  "security": {
+    "noGlobalPath": true,
+    "noHostFeatureChanges": true,
+    "doNotRunNpmLifecycleScripts": true,
+    "thirdPartyNoHostDirectModelCommands": true,
+    "notes": "Dependencies are third-party, not bundled in source ZIP. Aider transitive wheels are versioned at install time but not yet frozen with per-wheel SHA; do not assert full offline bit-for-bit reproducibility."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "modelAcceptedNewApiBundleSHA": "4c02da570012293726767ae21360456beafb68ccfecabfbec641080e7788a663",
+  "operationId": "AF.R76G.MODEL-API-BROWSER-INTEGRATION-CAS.20261108",
+  "rollbackRestoredBytesTest": true,
+  "schema": 1,
+  "scope": "first-party R76 candidate browser only; prior R75 immutable",
+  "sourceRepairSHA": "78d6dced9e39968b3b95176b6aa7dce4bcb28ad4324832a3222ea96b250e7a5e",
+  "stages": [
+    {
+      "file": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\APP-SOURCE\\index.html",
+      "newSHA": "e7ff8c529d65c2bf3ad0383663bb9018cbad6b0ed224585cbb1c633ae1e4706f",
+      "oldSHA": "9e4b255a2ccf037a582d05347cc1224a82fc7493548b24d022b4f79ccd43ee4b",
+      "preimage": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\R76G-PREIMAGE\\index.html",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\R76G-STAGING\\index.html"
+    },
+    {
+      "file": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\APP-SOURCE\\app.js",
+      "newSHA": "b9679491ca2a3c60681daf6e59056b55a52f9f3853d0b64b077936a5e5ff5498",
+      "oldSHA": "ca8f40e3f792cf786b5f7329d68504761d9c260f780bf5157511c7e3ac2d368f",
+      "preimage": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\R76G-PREIMAGE\\app.js",
+      "staged": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\R76G-STAGING\\app.js"
+    }
+  ]
+}

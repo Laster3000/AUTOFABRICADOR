@@ -1,0 +1,95 @@
+{
+  "R71IntegrationSourceSha256": {
+    "C:\\AF-PORTABLE\\autofab\\gui_pipeline.py": "7130b1c2f8f5df9544938166ebca6906cee0847b475eaa916b36e4e281f7c3ce",
+    "C:\\AF-PORTABLE\\autofab\\supervisor.py": "6c51f760f970129331aa012846fe0479dd68ff53c0469378e0ac60897d9188c1",
+    "C:\\AF-PORTABLE\\autofabricador.py": "2e1fdba76da0998c9da1e913654ee793e5e4c218b0ae5cbb5d87d3a4fc3e8343",
+    "C:\\AUTOFABRICADOR\\autofab\\gui_pipeline.py": "7130b1c2f8f5df9544938166ebca6906cee0847b475eaa916b36e4e281f7c3ce",
+    "C:\\AUTOFABRICADOR\\autofab\\supervisor.py": "6c51f760f970129331aa012846fe0479dd68ff53c0469378e0ac60897d9188c1",
+    "C:\\AUTOFABRICADOR\\autofabricador.py": "2e1fdba76da0998c9da1e913654ee793e5e4c218b0ae5cbb5d87d3a4fc3e8343"
+  },
+  "TaskSchedulerAutostartDisabled": true,
+  "acceptedM1toM6": {
+    "M1": "PASS_SCOPED_ORIGINAL_SOURCE_INTEGRATION",
+    "M2": "PASS_SCOPED_SUPERVISOR_QUEUE_AND_SHA_CAS",
+    "M3": "PASS_473_REGRESSIONS_AND_SAFE_PREMODEL_RESUME; GUI_INDEPENDENT_OWNER_R71_BLOCKED",
+    "M4": "NOT_APPLICABLE_NO_PROTECTED_INSTALL",
+    "M5": "NOT_APPLICABLE_NO_NEW_FULL_STANDALONE_FACTORY_RELEASE",
+    "M6": "BLOCKED_NEW_R71_NATIVE_GUEST_TIMEOUT_ORIGINAL_OWNER_NOT_APPROVED"
+  },
+  "atUtc": "2026-11-08T13:46:52.080026+00:00",
+  "chatSaturationInternal": "DESCONOCIDA",
+  "coverage": "Original result receipts and hashes, not full native chat transcript",
+  "decisionRationale": "Use existing queue, controller, local CUDA provider, original frozen owner tests and R70 previously model-produced SHA-pin LKG instead of uncontrolled retries; static integration and premodel safe resume must be verified.",
+  "evidence": {
+    "FirstNativeGuestFailure": "0cd1ac0251f08e7c2af69a5a6a7fc01c3253c13715dadc7a23c84810b74b8cff",
+    "R70AcceptedOwner": "17746755052e1167f86072b85857e8041887051d8e3b3bd72850b26442118887",
+    "R71BLocalAIProvenSourceReuse": "3fc2cc48c449ab4f3245b86fe62118d8291fa3c1e22f53e418cbff2a97587967",
+    "R71FullOriginalRegression": "b3ff8265b9a01f95bbb68649cd75abfca974a695dfce9edfc31c0fde10c45092",
+    "R71OriginalRegressionLog": "4f350c9cc66a275082e1ab7e5f15bbc6ec13bbc67a5e492bc65d95a15c94ceb2",
+    "R71OriginalResumeE2E": "e433c102be41912c2ba11df29da8dea4e4b965a575f284a5148a30a226628362",
+    "R71ResumeCAS": "fb3a52e3d81b9d9cf61d61621e8014319e3897a3f37b3e64b0e22eac9b511cd6",
+    "R71SourceIntegration": "2585d8500465bb35b09fb831af52240cb2ee4ed6b08e1d29efc31d70bf89d63c",
+    "R71SourceTests15": "a82c4aedbfcdcbfab424802eae9a6235cf202c1472e3c8213ef3a454c7c81f31",
+    "SecondNativeGuestTimeoutIntent": "088973973f120a42150acafa425c0ef38e49b9f8d17f97bfa881ac27b6826469"
+  },
+  "functionalId": "AF.FACTORY",
+  "knownCleanupObstacle": "kill_process EPERM on authenticated vmmemWindowsSandbox PID 33544; no unsafe retry or arbitrary termination",
+  "modelLeaseStatuses": {
+    "original": {
+      "cpu": "NOT_STARTED",
+      "cuda7b": "NOT_STARTED",
+      "cuda9b": "NOT_STARTED"
+    },
+    "portable": {
+      "cpu": "NOT_STARTED",
+      "cuda7b": "NOT_STARTED",
+      "cuda9b": "NOT_STARTED"
+    }
+  },
+  "nextAction": "Resolve leftover Windows Sandbox VM by authorized native process owner without unsafe kill, prove guest original owner QA + reproducible full portable restore, integrate general unknown desktop tasks with independent contracts, test on second physical Windows PC. Do not retry UNKNOWN jobs; create new intent only after resolving platform blocker.",
+  "notProven": "Universal autonomous desktop application building, post-model or mid-WindowsSandbox resume, independent second physical Windows PC, native standalone .exe, globally activated release",
+  "objectiveId": "autofabricador-independent-reusable-local-ai-factory-20261107",
+  "operationIds": [
+    "AF.R71.ORIGINAL-SUPERVISOR-GUI-INTEGRATION-CAS.20261108",
+    "AF.R71B.ORIGINAL-GUI-REUSE-PROVEN-R70-CAS.20261108",
+    "AF.R71.ORIGINAL-GUI-SAFE-RESUME-SHA-CAS.20261108",
+    "AF.R71.SUPERVISOR.SAFE-PREMODEL-RESUME-REAL-E2E.20261108",
+    "AF.R71S.ORIGINAL-FULL-REGRESSION-POST-GUI-INTEGRATION.20261108"
+  ],
+  "originalJobStatuses": {
+    "first": "UNKNOWN_NO_REPLAY",
+    "safeResume": "STOPPED_SAFE_BOUNDARY",
+    "second": "UNKNOWN_NO_REPLAY"
+  },
+  "originalPendingQueue": 0,
+  "originalQueues": {
+    "SQ-61df6450333845ca": {
+      "kind": "gui",
+      "originalStatus": "UNKNOWN_NO_REPLAY",
+      "ref": "GI-86492cd9a03e4731",
+      "status": "UNKNOWN"
+    },
+    "SQ-a879e75e599b427d": {
+      "kind": "gui",
+      "originalStatus": "UNKNOWN_NO_REPLAY",
+      "ref": "GI-8b82b82d08414467",
+      "status": "UNKNOWN"
+    },
+    "SQ-ecc37a1fcce944e0": {
+      "kind": "gui",
+      "originalStatus": "STOPPED_SAFE_BOUNDARY",
+      "ref": "GI-9a595845c5bd4890",
+      "status": "STOPPED"
+    }
+  },
+  "originalReleaseStillCandidate": true,
+  "originalSupervisor": "STOPPED",
+  "productRestorationPointVerified": false,
+  "purpose": "Make R70 model generated desktop GUI cycle an available original AUTOFABRICADOR supervisor job, not create another factory.",
+  "releaseId": "AUTOFABRICADOR-0.9.17-CANDIDATE_NOT_ACTIVE",
+  "residualDisposableWindowsSandboxVMsOriginalReadback": "",
+  "restoreReadback": "R71 source preimage physical restore rehearsed, not full Windows/product image",
+  "revisionId": "R71-B-SAFE-SUPERVISOR-AND-GUI-SCOPED-CANDIDATE",
+  "schema": 1,
+  "status": "CANDIDATE_NOT_ACTIVE_R71_GUI_SCOPED"
+}

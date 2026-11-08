@@ -1,0 +1,18 @@
+{
+  "checkpointConversationSHA": "70ee7076f85e84b4d51199b4ec42af02e2efa721e7ecefa12640614bf6384a7f",
+  "checkpointProjectSHA": "2e10c559b90a6bb593077ff5fc1e9cc43a7f38cdb367d02516226bf7938f6640",
+  "contractOriginalReportSHA": "599c9740db4b53ddddee3501f637075843dc50f4c735bfef7cd6c8ca53bd4366",
+  "contractPlanSHA": "47d5ba5328e28c025a32c65328d4a358b58810030e39c7a36845a40aadfc08a2",
+  "createdAtUtc": "2026-11-08T14:42:29.756474+00:00",
+  "diagnosticSHA": "5ec8911af703ed82966a6c18442751faa3d3c6c61fe08cf1b94d0c1203a07f3d",
+  "e2eOriginalReportSHA": "f413895404304bb804c6eaf4cc1b61032af381d9b39ff2b357cb54a4dfd54bb8",
+  "fullTranscriptFalse": true,
+  "matrixCsvSHA": "a15f9f93da885224973b2860f88b84e1e356e6749ee5de875023f0f04cfb2134",
+  "noGeneralFactoryRelease": true,
+  "noWindowsBootChanges": true,
+  "originalContractBlackbox": "BB-49065b886e0548d0",
+  "originalE2EBlackbox": "BB-275f58c1026d45af",
+  "readmeSHA": "a452bca5716e91e49b6c26315293e35176d241fa0cf478740fbf8db56d1e74a8",
+  "schema": 1,
+  "status": "DIAGNOSTIC_COMPLETE_NOT_GENERAL_FACTORY_ACCEPTANCE"
+}

@@ -1,0 +1,42 @@
+{
+  "atUtc": "2026-11-08T14:42:29.744809+00:00",
+  "chatSaturationInternal": "DESCONOCIDA",
+  "conversationIdType": "LOCAL_ALIAS_NOT_NATIVE",
+  "conversationLiteralFragment": {
+    "kind": "LITERAL",
+    "role": "user",
+    "text": "hazlo en un solo bloque y dejalo terminado"
+  },
+  "coverage": "PARTIAL_ACCESSIBLE_ONLY",
+  "decisions": [
+    "Contract acceptance is NOT program acceptance; count separately",
+    "Use original supervisor sequentially; no parallel GPU",
+    "Do not replay FAILED, UNKNOWN or SUCCEEDED",
+    "Keep GUI R72 historical accepted but not attribute to R73",
+    "Do not use Host to execute generated model source"
+  ],
+  "functionalId": "AF.FACTORY",
+  "liveState": {
+    "WindowsAutostartDisabled": true,
+    "fullProductRestorationTested": false,
+    "noGeneratedCodeExecutedOnHost": true,
+    "noMMC5_MMC7_or_F_Changes": true,
+    "originalModels": {
+      "cpu": "NOT_STARTED",
+      "cuda7b": "NOT_STARTED",
+      "cuda9b": "NOT_STARTED"
+    },
+    "originalWSBSessions": [],
+    "pendingQueue": 0,
+    "sourceByteRestoreRehearsed": true,
+    "supervisor": "STOPPED",
+    "unknownOrFailedOriginalJobsNeverReplayed": true
+  },
+  "nextAction": "First fix P0 code generation on new bounded ESM tasks using held-out owner cases; then expand first-party contract+isolated toolchains by family (web full-stack, desktop, game2D/3D, Android, AI). Only run new original operations after SHA-pinned code revision; keep old UNKNOWN. Re-run R73 matrix and true cross-device portable factory acceptance before promoting product.",
+  "objectiveId": "autofabricador-capability-boundaries-36-20261108",
+  "resultsReference": "D:\\AUTOFABRICADOR-RESCATE\\R73-SUPERPRUEBA-36-TIPOS-20261108\\R73-DIAGNOSTICO-COMPLETO.json",
+  "revisionId": "R73-36-CAPABILITY-AND-4-ACTUAL-E2E",
+  "schema": 1,
+  "what": "36 original contract probes and 4 actual original local-model factory jobs with preowned acceptance; 473 regression",
+  "why": "User wanted one supertest of many software families to identify actual boundaries and missing implementation."
+}

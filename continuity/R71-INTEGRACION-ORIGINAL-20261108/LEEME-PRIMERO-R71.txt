@@ -1,0 +1,11 @@
+AUTOFABRICADOR R71 | 2026-11-08 | CANDIDATE_NOT_ACTIVE
+NO es final general. Integrado R70 acotado en original supervisor C:\AUTOFABRICADOR y C:\AF-PORTABLE.
+RESULTADOS: 15 pruebas de fuente PASS, 473 regresiones PASS (25 omitidas), reanudacion segura premodelo misma cola PASS.
+ACEPTACION R71 GUI: 11/13 primer intento; segundo guest UNKNOWN_TIMEOUT sin recibo; NO PASS final.
+CAS+SHA/preimagenes y restauracion fuente ensayada. Codigo original 0.9.17 sigue candidato.
+AUTOSTART Windows DESHABILITADO. Original supervisor STOPPED.
+R70 GUI y paquete portable anterior si tienen 13/13, no atribuirlos a la nueva ejecucion R71.
+R71 UNKNOWN originales GI-86492cd9a03e4731 y GI-8b82b82d08414467 no reintentar.
+Dos vmmemWindowsSandbox residuales identificados, Windows nego kill EPERM. No reintento ciego.
+Siguiente accion: Resolve leftover Windows Sandbox VM by authorized native process owner without unsafe kill, prove guest original owner QA + reproducible full portable restore, integrate general unknown desktop tasks with independent contracts, test on second physical Windows PC. Do not retry UNKNOWN jobs; create new intent only after resolving platform blocker.
+EVIDENCIA Y RESTORE FUENTE: D:\AUTOFABRICADOR-RESCATE\R71-INTEGRACION-GUI-SUPERVISOR-20261108

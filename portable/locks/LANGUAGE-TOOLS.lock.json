@@ -1,0 +1,68 @@
+{
+  "isolation": {
+    "csharp": {
+      "acceptance": "COMPILE_ONLY_NO_UNTRUSTED_ASSEMBLY_EXECUTION",
+      "compiler": "Roslyn .NET 10.0.401",
+      "compilerSha256": "89c788f615634094cc441593d167d9fba9a9f049a5d1ddea87d4fde222d6f42c",
+      "fullFunctionalTests": "BLOCKED",
+      "refPack": "Microsoft.NETCore.App.Ref 10.0.13"
+    },
+    "javascript": {
+      "backend": "WASI preview1 core module with no preopened directory, sockets, environment, or host tools",
+      "fuel": 350000000,
+      "memoryBytes": 201326592,
+      "runtime": "Wasmtime Python 50.0.1 pre-existing project vendor"
+    },
+    "typescript": {
+      "compiler": "TypeScript 5.9.3",
+      "compilerSha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675",
+      "execution": "transpile to JS, execute in Javy WASI guest"
+    }
+  },
+  "platform": "windows-x64",
+  "r035": {
+    "componentizeVersion": "0.8.0-preview00011",
+    "dotnetSdkPinned": "10.0.401",
+    "note": "Trusted componentize may bootstrap reusable WASI SDK in user cache; source ZIP never embeds huge vendor artifacts.",
+    "npmUmdLockSha256": "da999ca7301ed28daf515157dae8c06b57a715e46664c269b4df3f7bb0f762b9",
+    "npmUmdSourceReceipts": {
+      "dayjs": {
+        "fileSha256": "9cfdb93f38afcf2d076abecd66d32bfd3383cdf1967654ebc26a26605daf4173",
+        "registrySRI": "sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==",
+        "version": "1.11.13"
+      },
+      "lodash": {
+        "fileSha256": "a9705dfc47c0763380d851ab1801be6f76019f6b67e40e9b873f8b4a0603f7a9",
+        "registrySRI": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
+        "version": "4.17.21"
+      }
+    },
+    "offlineRestorationFullyProved": false,
+    "schema": 1,
+    "testScope": "owner-pinned WASI2 C# and SRI-pinned UMD JS source globals only",
+    "toolchain": "trusted C# componentize-dotnet SDK0.8.0-preview00011 + Wasmtime50.0.1",
+    "trustedCsharpNugetConfigSha256": "2fca2d3a467dbbdf8c6ccd4111ee39a600030f0316d5dc604a37bf1b43caf387",
+    "trustedCsharpProbeWasmSha256": "87bc2b6f4f4f64fe4bedd64d718101c5f191d01332628e31d0aa08a53d483a57",
+    "trustedCsharpProjectSha256": "51956656259577a7f05eb4400957cfdbbd8b247c87589efbbf5b8cca0af1b2e2",
+    "wasiSdkHomeCache": "%USERPROFILE%\\.wasi-sdk",
+    "wasmtimeArchiveSha256": "c3646ee2de8cfcefe532e75852e1fd2728d78c3fcc43251794803a698d1c30ca",
+    "wasmtimeCliSha256": "d10847f5cbcdabcb455ca46a5c8d6999fd56955cdd058e46d8028fb9d0b9ed42"
+  },
+  "release": "AUTOFABRICADOR-0.7.0-CANDIDATE",
+  "schema": 1,
+  "vendors": {
+    "javy": {
+      "archiveSha256": "7148baab85d7426e8c18e2cc4deed4e9f03270cf3245dba5617a5be25a1de836",
+      "binarySha256": "4b298b147ba2d8656af174e266ca8f9de1a4d963795a95f4ce82f685b34d3c73",
+      "localBin": "VENDOR/javy-v9.1.0-windows-x64/javy.exe",
+      "source": "https://github.com/bytecodealliance/javy/releases/download/v9.1.0/javy-x86_64-windows-v9.1.0.gz",
+      "version": "9.1.0"
+    },
+    "typescript": {
+      "install": "npm.cmd install --prefix C:\\AUTOFABRICADOR\\VENDOR\\typescript --ignore-scripts --no-audit --no-fund --no-save typescript@5.9.3",
+      "jsSha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675",
+      "source": "npm typescript@5.9.3",
+      "version": "5.9.3"
+    }
+  }
+}

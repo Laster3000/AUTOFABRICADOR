@@ -1,0 +1,27 @@
+{
+  "atUtc": "2026-11-08T14:15:13.846551+00:00",
+  "chatSha": "67678d0ffec3956ce72a11b0e758fae123f5bc9e3218200ae56add4e0866d9f0",
+  "fullTranscriptFalse": true,
+  "noFullProductRestorePoint": true,
+  "noUniversalReleasePromotion": true,
+  "originalPackageSHA": "9151f3c5c6ad79103e9ed6baa84e4ff8e517f22760007e42d8060759ca10497e",
+  "originalQueueSHA": "227220f535efe1e7dcf82af44b718bd332ad0f4f7b9eb6f576e54b7fd6b4e84b",
+  "originalRegressionsSHA": "ff447c31a434789f6e98c9f68eb3b06526d842ac47216a764852bd4cecd8625a",
+  "originalTwoIndependentSandboxReceipts": [
+    "2681d1e912153a5bb5b1ee14d50fb6e285719de1b6288eccbdbf1806c69ed3eb",
+    "2b905e78048ae0aa4c43af27509b0caa0334694fada2412f5188193860aa7632"
+  ],
+  "projectSha": "0b21fd0ba329f2682a4facbc147aaa02070dd5023441c9023654816f3c6299ee",
+  "readmeSha": "0ff1686fea88e42c1896076eff309206878c57b0717c8f66420ebf793320c689",
+  "restoreSourceBytesVerified": true,
+  "schema": 1,
+  "sourceSHA": {
+    "C:\\AF-PORTABLE\\autofab\\gui_pipeline.py": "9f2c52a4f1171a4db22b54c96d79669873012f77f21a35eeaec5a7055b1f53dd",
+    "C:\\AF-PORTABLE\\autofab\\supervisor.py": "6c51f760f970129331aa012846fe0479dd68ff53c0469378e0ac60897d9188c1",
+    "C:\\AF-PORTABLE\\autofabricador.py": "2e1fdba76da0998c9da1e913654ee793e5e4c218b0ae5cbb5d87d3a4fc3e8343",
+    "C:\\AUTOFABRICADOR\\autofab\\gui_pipeline.py": "9f2c52a4f1171a4db22b54c96d79669873012f77f21a35eeaec5a7055b1f53dd",
+    "C:\\AUTOFABRICADOR\\autofab\\supervisor.py": "6c51f760f970129331aa012846fe0479dd68ff53c0469378e0ac60897d9188c1",
+    "C:\\AUTOFABRICADOR\\autofabricador.py": "2e1fdba76da0998c9da1e913654ee793e5e4c218b0ae5cbb5d87d3a4fc3e8343"
+  },
+  "status": "SCOPED_GUI_PORTABLE_PASS_GENERAL_FACTORY_STILL_CANDIDATE"
+}

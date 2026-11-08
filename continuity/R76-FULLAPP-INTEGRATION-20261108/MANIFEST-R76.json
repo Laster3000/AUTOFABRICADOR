@@ -1,0 +1,25 @@
+{
+  "R75LkgSHA": "795aa499b97de0fe2ad7d12395f49e0ba5cddd87eee953faddce629956a2bf60",
+  "atUtc": "2026-11-08T16:14:41.831362+00:00",
+  "checkpointChatSHA": "a50e6389ca8da1c76de2f71b0c8036ff4cc6d686245200a2007889db79c39537",
+  "checkpointProjectSHA": "ab9c7dc409457be43f493e83fed5749d42db7961e1142454aab69246326c4d6d",
+  "evidenceSHA": {
+    "android": "2e3af68ec36e8315144e2d9abcd40d5eff51f9b3a4421dfe3121e307b1b5f963",
+    "androidLogic": "15a70dab9e13b4333cc49ec5bc0ba828369b4883f5f458c279d2c99537c6509e",
+    "apiRepair": "78d6dced9e39968b3b95176b6aa7dce4bcb28ad4324832a3222ea96b250e7a5e",
+    "browserRestored": "8bf6e9cfdff82c6b057324b12301e4030bd6b9914bb5d3b676430800ddf92ee1",
+    "browserSource": "641ed706f18ec30459a3e0508cdd4dcca78723709face3fd4e097a3061fcf79c",
+    "realAIGPU": "215a2c1812e71f559e24d1c7a3d8f267b67a620350d0f7ea493f9f860436e1c3",
+    "regression": "3ecbba0375637446cff01e164f52446e7eaae15678cb0f4763d5242377311242",
+    "restoration": "a797f7d8db705d62e6ae8484ddb863899faf67da748e84d73622babcc49a075f",
+    "sourceCAS": "2641b84a7139d151b18b718dcbe10f63ed1c2d989991a8e39e33d6d0d1d15841"
+  },
+  "functionalId": "AF.FACTORY",
+  "generalFactoryNotActive": true,
+  "liveReconciledStopped": true,
+  "originalSourceCandidateCASPlanSHA": "ab6093d1c5fc7bf59b6d2af124f67c81e262ebafe4ce53b76e986ac9155c65c8",
+  "readmeSHA": "61c7abcc36a097ed0a226f3be2b8eb2a2af73184d38c10ec4c8b34424436fcc8",
+  "schema": 1,
+  "sourceReferenceArchiveSHA": "80a1eabc202926a1690df840732899bce2f015f65b0d86efe1e82e3413c359e6",
+  "status": "PASS_BOUNDED_REFERENCE_FIVE_FAMILIES_NOT_UNIVERSAL"
+}

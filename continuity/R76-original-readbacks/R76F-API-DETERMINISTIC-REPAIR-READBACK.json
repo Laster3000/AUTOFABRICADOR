@@ -1,0 +1,34 @@
+{
+  "atUtc": "2026-11-08T16:05:44.579868+00:00",
+  "intentSHA": "3b5b93d68c2d4c1a896b8f9562128380fc9f84cfd1df75764eabcc759a9088f5",
+  "modelCalls": 0,
+  "modelCodeNeverExecutedOnUnrestrictedHost": true,
+  "newBrowserBundleSHA": "4c02da570012293726767ae21360456beafb68ccfecabfbec641080e7788a663",
+  "newSourceSHA": "53ce2dee44d8d07b70a05d3c0e69f6209f511c060b95124b8f7e4a5f8e1fb1e9",
+  "oldJobStillStagnatedNotReplayed": true,
+  "oldSourceSHA": "afcbd343ce4fde223ffe5bedc2d195edda44652bd88cdce5a6d7f776d152f60a",
+  "operationId": "AF.R76F.MODEL-SOURCE-DELTA-ROOTCAUSE-REPAIR.20261108",
+  "ownerGroups": [
+    {
+      "cases": 29,
+      "group": "original29",
+      "receiptSHA": "090ff561d7f6a791d2ed4d5edf1af3388842d9ecdb555c8a724d8186aa483e26",
+      "status": "PASS"
+    },
+    {
+      "cases": 16,
+      "group": "frozenHidden16",
+      "receiptSHA": "b81e2b2eacb6df72b627fc942addefeec089a0a445f67ab53bbaf0c8066a68da",
+      "status": "PASS"
+    },
+    {
+      "cases": 8,
+      "group": "newEdge8",
+      "receiptSHA": "fc38e4795c919d11469a70286b78eaa6a5bafee5f5d213d395da54b17708321e",
+      "status": "PASS"
+    }
+  ],
+  "schema": 1,
+  "sourceFile": "D:\\AUTOFABRICADOR-RESCATE\\R76-FULLAPP-INTEGRATION-20261108\\APP-SOURCE\\logic-api-r76.js",
+  "status": "PASS_ORIGINAL_PLUS_HIDDEN_ADVERSARIAL_WASI_REPAIRED"
+}

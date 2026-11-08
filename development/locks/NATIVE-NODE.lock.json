@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "name": "Node.js",
+  "version": "24.20.0",
+  "path": "C:\\Program Files\\nodejs\\node.exe",
+  "nodeSha256": "5c976096e04e5c2c1f091938926234cc9fbebfe9787ddd149351b3b0ecc707b5",
+  "size": 93381448,
+  "publisher": "OpenJS Foundation",
+  "signatureVerifiedOnOriginalHost": "Valid",
+  "mode": "COPY_ONLY_TO_WINDOWS_SANDBOX",
+  "runtimeBytesBundledInPortableAUTOFABRICADOR": false,
+  "redistributionLicenseCheckPending": true,
+  "canRunOnHostByBridge": false
+}
