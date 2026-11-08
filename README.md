@@ -1,5 +1,24 @@
 # AUTOFABRICADOR
 
+## R91B — Aventura Godot HD 16:9 y navegación segura (candidato jugable)
+
+AUTOFABRICADOR, no MMC7. *La Luz de Bruma* R91B es una **aventura original, portable y jugable**, con tres habitaciones, el guardafaro de barba blanca, puzles, inventario, guardado/carga, 11 recursos PNG y **11 OpenRaster editables con 6+ capas**.
+
+**Corrección del problema observado por el usuario:** el protagonista ahora camina con **AStarGrid2D sobre zonas válidas**, evita el anciano y obstáculos, conserva los pies dentro del suelo, no entra en mar/paredes al hacer clic, se escala según distancia y se ordena delante/detrás del NPC. El formato es 16:9 nativo **640×360, visualización 1280×720**, con más detalle de píxeles. F1 ayuda; F5 guardar; F9 cargar. Las pruebas tienen guardados aislados de la partida personal.
+
+**Evidencia local y restaurada:** 35/35 pruebas jugables + 207/207 comprobaciones de movimiento (1.709 pasos) + 24 unitarias del módulo de navegación reutilizable + 136 regresiones anteriores; regeneración doble de 22 PNG/ORA byte a byte; ZIP extraído y probado; **22 fuentes públicas descargadas de GitHub** que reconstruyen el juego con otras 35 + 207 pruebas Godot. Godot oficial 4.6.3 incluido y SHA verificado. El flujo de GitHub Actions está configurado, **no ejecutado/aceptado remotamente**.
+
+**ZIP portable verificado:** `C:\AUTOFABRICADOR\DIST\AUTOFABRICADOR-R91B-AVENTURA-HD-NAV-16x9-PORTABLE-CANDIDATE.zip`, SHA-256 `14b7ea48325cb41ff713cba27bc83ece5ae6fcd544b3327497cb8c1a2468e331`. En el PC está extraído y abierto con acceso directo **JUGAR - La Luz de Bruma R91B** en el Escritorio. La versión anterior R90C continúa intacta.
+
+- [Detalles y límites de aceptación R91B](design/R91B-HD-NAV-PORTABLE-RELEASE.md)
+- [Fuente R91B y documentación jugable](examples/adventure-godot-r91b/LEEME-PRIMERO.md)
+- [Motor AStar y colisiones](examples/adventure-godot-r91b/adventure_nav_r91.gd)
+- [Generador HD reproducible](examples/adventure-godot-r91b/art/r91_hd_art.py)
+- [Auditoría reusable integrada en AUTOFABRICADOR](development/autofab/adventure_navigation_r91.py)
+- [GitHub Actions de prueba manual](.github/workflows/r91b-godot-hd-nav.yml)
+
+**Candidato, NO `ACTIVE`.** Falta aceptación visual humana del nivel artístico, prueba independiente en otro PC, Pixelorama export fiable, integración plena de salas Popochiu y demostrar la fabricación autónoma de una nueva aplicación completa por IA local; la narrativa de IA usada antes no cuenta como creación completa del juego.
+
 ## R90C — Resultados visuales reales, Godot 16:9, arte editable y ZIP portable
 
 **Estado: CANDIDATE, NO ACTIVE.** La aventura original *La Luz de Bruma* se ejecuta en Godot 4.6.3 con resolución lógica **320 × 180 y salida 640 × 360 (16:9)**. Incluye tres habitaciones jugables, inventario, puzles y conversación; un protagonista y guardafaro de barba blanca con hojas de 14 fotogramas. Los **11 activos PNG con 4–5 capas OpenRaster editables** son originales y se han regenerado dos veces con hashes idénticos. La interfaz muestra los verbos **IR, MIRAR, COGER, USAR, HABLAR**, y admite F5/F9 para guardar y recuperar.
