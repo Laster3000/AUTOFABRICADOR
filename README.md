@@ -1,5 +1,18 @@
 # AUTOFABRICADOR
 
+## R89E — Juego Godot portable, arte reconstruible y prueba local GPU
+
+La prioridad es **AUTOFABRICADOR**; MMC7 continúa suspendido. La aventura original **La Luz de Bruma** usa formato **16:9 nativo** (320×180 de arte → 640×360 en pantalla), tres escenarios y un anciano original de barba blanca. El candidato R89E se ha probado desde un ZIP restaurado con el Godot oficial 4.6.3 y **30 casos jugables originales PASS**. Su código, diálogos y recursos se separan por identificador, con 11 PNG y 11 OpenRaster de dos capas. **Dos reconstrucciones limpias** produjeron los mismos SHA-256 para los 22 archivos artísticos. La IA local GPU 7B produjo y se verificó un fragmento narrativo original; **no** generó autónomamente el juego completo.
+
+**Estado: CANDIDATE, NO ACTIVE.** La calidad artística sigue sin aprobación humana y los recursos continúan siendo una demostración procedimental. Godot y Popochiu 2.1.1 se validaron juntos en el editor de desarrollo, pero la distribución portable R89E utiliza el adaptador propio Godot y no incorpora el plugin ni sus fuentes tipográficas. Pixelorama 1.2.2 se ejecutó en entorno portable; su exportación automática aún no se verificó. Falta la aceptación independiente en otro ordenador.
+
+- [Código original reproducible y juego Godot](examples/adventure-godot-r89e/LEEME-PRIMERO.md)
+- [Motor jugable Godot 16:9](examples/adventure-godot-r89e/game.gd)
+- [Generadores pixel art por capas](examples/adventure-godot-r89e/art/generate_assets.py) y [cuatro capas nuevas](examples/adventure-godot-r89e/art/generate_new_art.py)
+- [Validador de reproducción artística con SHA](examples/adventure-godot-r89e/ci_verify_art.py)
+- [Prueba independiente de 30 acciones](examples/adventure-godot-r89e/qa/standalone_owner_test.gd)
+- [GitHub Actions manual para reconstruir y verificar Godot](.github/workflows/r89e-godot-repro-169.yml)
+
 ## Contrato vigente: aventuras 16:9 (R88B)
 
 **Cambio explícito de formato:** los videojuegos nuevos usan **16:9 nativo**, no 4:3. Arte lógico 320×180 y presentación 640×360 con escalado pixelado, sin deformación. Las especificaciones 4:3 de R86/R87 solo sirven como documentación histórica.
