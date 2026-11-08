@@ -1,0 +1,634 @@
+{
+  "AIOriginalNarrative": {
+    "elderHint": "Las estrellas son los ojos del cielo. Busca la lente que refleja la luz correcta.",
+    "modelSHA": "509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c",
+    "ownerSha": "8e87ed5470f1f189ba04e943140dc12643dcc95635c049b5868f9267b0312eec",
+    "sceneId": "old_observatory",
+    "sha256": "090d971aa52aaf57bc2a37936fa5573a6482f6ec9cd84dd5715fdee76a3c3526",
+    "source": "offline_cuda7b_frozen_owner",
+    "successLine": "Has descubierto la carta celeste oculta en el observatorio.",
+    "summary": "Un observatorio abandonado con instrumentos antiguos y una bruma misteriosa.",
+    "title": "Observatorio Antiguo"
+  },
+  "assets": {
+    "compass": "assets/compass.png",
+    "elder_whitebeard": "assets/elder_whitebeard.png",
+    "harbor_back": "assets/harbor_back.png",
+    "harbor_front": "assets/harbor_front.png",
+    "interface": "assets/interface.png",
+    "lens": "assets/lens.png",
+    "observatory_back": "assets/observatory_back.png",
+    "observatory_front": "assets/observatory_front.png",
+    "workshop_back": "assets/workshop_back.png",
+    "workshop_front": "assets/workshop_front.png",
+    "young_sailor": "assets/young_sailor.png"
+  },
+  "characters": [
+    {
+      "animations": {
+        "idle": [
+          0,
+          1
+        ],
+        "look": [
+          8
+        ],
+        "pick": [
+          9
+        ],
+        "react": [
+          12,
+          13
+        ],
+        "talk": [
+          6,
+          7
+        ],
+        "use": [
+          10,
+          11
+        ],
+        "walk": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "asset": "young_sailor",
+      "baselineY": 112,
+      "id": "young_sailor",
+      "pivot": [
+        12,
+        47
+      ]
+    },
+    {
+      "animations": {
+        "idle": [
+          0,
+          1
+        ],
+        "look": [
+          8
+        ],
+        "pick": [
+          9
+        ],
+        "react": [
+          12,
+          13
+        ],
+        "talk": [
+          6,
+          7
+        ],
+        "use": [
+          10,
+          11
+        ],
+        "walk": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "asset": "elder_whitebeard",
+      "baselineY": 112,
+      "id": "elder_whitebeard",
+      "pivot": [
+        12,
+        47
+      ]
+    }
+  ],
+  "fictionalOriginalArt": true,
+  "humanArtApproved": false,
+  "nativeRender": [
+    640,
+    360
+  ],
+  "navigationContract": "navigation_r91.json",
+  "sceneBackgrounds": {
+    "harbor": "harbor_back",
+    "old_observatory": "observatory_back",
+    "workshop": "workshop_back"
+  },
+  "sceneOrder": [
+    "harbor",
+    "workshop"
+  ],
+  "scenes": {
+    "harbor": {
+      "background": "harbor_back",
+      "hotspots": [
+        {
+          "feedback": "Una lente cubierta de salitre.",
+          "id": "lens_pickup",
+          "name": "Lente de laton",
+          "polygon": [
+            [
+              98,
+              96
+            ],
+            [
+              114,
+              96
+            ],
+            [
+              114,
+              112
+            ],
+            [
+              98,
+              112
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "TAKE",
+            "USE"
+          ],
+          "walkTo": [
+            114,
+            116
+          ]
+        },
+        {
+          "feedback": "El guardafaro observa el mar.",
+          "id": "elder",
+          "name": "Anciano de barba blanca",
+          "polygon": [
+            [
+              158,
+              66
+            ],
+            [
+              178,
+              66
+            ],
+            [
+              178,
+              122
+            ],
+            [
+              158,
+              122
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "TALK",
+            "GIVE"
+          ],
+          "walkTo": [
+            150,
+            112
+          ]
+        },
+        {
+          "feedback": "Una puerta da al taller del puerto.",
+          "id": "tavern_door",
+          "name": "Puerta del taller",
+          "polygon": [
+            [
+              53,
+              74
+            ],
+            [
+              70,
+              74
+            ],
+            [
+              70,
+              116
+            ],
+            [
+              53,
+              116
+            ]
+          ],
+          "verbs": [
+            "WALK",
+            "OPEN",
+            "LOOK"
+          ],
+          "walkTo": [
+            74,
+            115
+          ]
+        },
+        {
+          "feedback": "El faro lleva tiempo apagado.",
+          "id": "lighthouse",
+          "name": "Faro de Bruma",
+          "polygon": [
+            [
+              271,
+              38
+            ],
+            [
+              303,
+              38
+            ],
+            [
+              303,
+              111
+            ],
+            [
+              271,
+              111
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "USE"
+          ],
+          "walkTo": [
+            247,
+            112
+          ]
+        }
+      ],
+      "id": "harbor",
+      "playerStart": [
+        45,
+        116
+      ],
+      "walkable": [
+        [
+          14,
+          108
+        ],
+        [
+          70,
+          108
+        ],
+        [
+          142,
+          108
+        ],
+        [
+          208,
+          109
+        ],
+        [
+          306,
+          106
+        ],
+        [
+          306,
+          126
+        ],
+        [
+          14,
+          126
+        ]
+      ]
+    },
+    "old_observatory": {
+      "background": "observatory_back",
+      "hotspots": [
+        {
+          "feedback": "El tubo de bronce apunta hacia la constelacion perdida.",
+          "id": "telescope",
+          "name": "Telescopio de bronce",
+          "polygon": [
+            [
+              160,
+              62
+            ],
+            [
+              203,
+              62
+            ],
+            [
+              203,
+              88
+            ],
+            [
+              160,
+              88
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "USE"
+          ],
+          "walkTo": [
+            161,
+            113
+          ]
+        },
+        {
+          "feedback": "Un pergamino de estrellas gastado por los inviernos.",
+          "id": "star_chart",
+          "name": "Carta celeste",
+          "polygon": [
+            [
+              224,
+              92
+            ],
+            [
+              276,
+              92
+            ],
+            [
+              276,
+              108
+            ],
+            [
+              224,
+              108
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "TAKE",
+            "USE"
+          ],
+          "walkTo": [
+            235,
+            113
+          ]
+        },
+        {
+          "feedback": "Escaleras de vuelta al taller.",
+          "id": "back_stairs",
+          "name": "Escalera al taller",
+          "polygon": [
+            [
+              17,
+              67
+            ],
+            [
+              46,
+              67
+            ],
+            [
+              46,
+              122
+            ],
+            [
+              17,
+              122
+            ]
+          ],
+          "verbs": [
+            "WALK",
+            "OPEN",
+            "LOOK"
+          ],
+          "walkTo": [
+            50,
+            114
+          ]
+        },
+        {
+          "feedback": "Los puntos luminosos se unen formando un camino secreto.",
+          "id": "constellations",
+          "name": "Cielo enmarcado",
+          "polygon": [
+            [
+              85,
+              17
+            ],
+            [
+              150,
+              17
+            ],
+            [
+              150,
+              76
+            ],
+            [
+              85,
+              76
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "USE"
+          ],
+          "walkTo": [
+            121,
+            108
+          ]
+        }
+      ],
+      "id": "old_observatory",
+      "playerStart": [
+        45,
+        113
+      ],
+      "walkable": [
+        [
+          14,
+          103
+        ],
+        [
+          306,
+          103
+        ],
+        [
+          306,
+          126
+        ],
+        [
+          14,
+          126
+        ]
+      ]
+    },
+    "workshop": {
+      "background": "workshop_back",
+      "hotspots": [
+        {
+          "feedback": "Las ruedas dentadas esperan su lente.",
+          "id": "mechanism",
+          "name": "Mecanismo de orientacion",
+          "polygon": [
+            [
+              233,
+              63
+            ],
+            [
+              270,
+              63
+            ],
+            [
+              270,
+              104
+            ],
+            [
+              233,
+              104
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "USE"
+          ],
+          "walkTo": [
+            225,
+            113
+          ]
+        },
+        {
+          "feedback": "Una brujula olvidada.",
+          "id": "compass_pickup",
+          "name": "Brujula de mar",
+          "polygon": [
+            [
+              81,
+              93
+            ],
+            [
+              99,
+              93
+            ],
+            [
+              99,
+              117
+            ],
+            [
+              81,
+              117
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "TAKE"
+          ],
+          "walkTo": [
+            117,
+            116
+          ]
+        },
+        {
+          "feedback": "Se oye el mar desde fuera.",
+          "id": "exit_door",
+          "name": "Regresar al puerto",
+          "polygon": [
+            [
+              298,
+              72
+            ],
+            [
+              319,
+              72
+            ],
+            [
+              319,
+              125
+            ],
+            [
+              298,
+              125
+            ]
+          ],
+          "verbs": [
+            "WALK",
+            "OPEN"
+          ],
+          "walkTo": [
+            282,
+            116
+          ]
+        },
+        {
+          "feedback": "Manuales de cartografia y relojeria.",
+          "id": "bookshelf",
+          "name": "Biblioteca del maestro",
+          "polygon": [
+            [
+              11,
+              31
+            ],
+            [
+              105,
+              31
+            ],
+            [
+              105,
+              98
+            ],
+            [
+              11,
+              98
+            ]
+          ],
+          "verbs": [
+            "LOOK",
+            "USE"
+          ],
+          "walkTo": [
+            106,
+            112
+          ]
+        },
+        {
+          "feedback": "Tras la ventana hay una escalera de piedra que sube hacia la cupula.",
+          "id": "observatory_stairs",
+          "name": "Escalera al observatorio",
+          "polygon": [
+            [
+              134,
+              45
+            ],
+            [
+              161,
+              45
+            ],
+            [
+              161,
+              84
+            ],
+            [
+              134,
+              84
+            ]
+          ],
+          "verbs": [
+            "WALK",
+            "LOOK",
+            "OPEN"
+          ],
+          "walkTo": [
+            154,
+            116
+          ]
+        }
+      ],
+      "id": "workshop",
+      "playerStart": [
+        45,
+        116
+      ],
+      "walkable": [
+        [
+          14,
+          104
+        ],
+        [
+          306,
+          104
+        ],
+        [
+          306,
+          126
+        ],
+        [
+          14,
+          126
+        ]
+      ]
+    }
+  },
+  "schema": 1,
+  "storyGoal": "Restaurar la luz del faro con una lente y una brujula.",
+  "title": "LA LUZ DE BRUMA",
+  "versionR91": "High-definition art and physically constrained walkmesh navigation",
+  "versionR92": "One shot interactions, popup map, compact panel and handcrafted full-frame actors"
+}
