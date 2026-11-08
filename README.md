@@ -1,5 +1,24 @@
 # AUTOFABRICADOR
 
+## R92B — Corrección del arte, acciones temporales, mapa y pixel art 16:9
+
+**Prioridad AUTOFABRICADOR.** El videojuego original *La Luz de Bruma* R92B es un **candidato portable jugable, NO `ACTIVE`**. Conserva intactas las versiones anteriores y MMC7 sigue suspendido.
+
+**Problemas reales tratados:** rayas geométricas del generador R91 eliminadas mediante reconstrucción de capas, personajes completamente redibujados a 48×96 píxeles por fotograma, 14 fotogramas por personaje, **69 capas OpenRaster editables** en 11 recursos. Estado de acciones reparado para vaciar verbo, cola, destino, ruta, diálogo e inventario seleccionado cuando termina una interacción; los objetos recogidos dejan de activarse y las operaciones repetidas son idempotentes. Fondos ocupan **145/180** del alto lógico (antes 130/180), HUD compacto ocupa 35/180; tecla M abre mapa ampliado, F11 alterna pantalla completa. El lienzo sigue **640×360 (16:9)** con ventana **1280×720 y escala entera 2×** para evitar rayas visuales de grosor desigual; filtro NEAREST.
+
+**Aceptación original comprobada:** 35 controles jugables, 207 controles de walkboxes/navegación con 1.709 pasos simulados, 49 casos nuevos sobre acciones/menús, 136 regresiones existentes y 24 unitarias del validador reutilizable (**451 comprobaciones diferentes**). ZIP extraído y probado desde su raíz con 291 Godot PASS y 22 archivos artísticos SHA idénticos reconstruidos dos veces. Se descargaron 26 fuentes públicas desde GitHub, se reconstruyó la cadena R90→R91→R92 y se volvieron a ejecutar **291 casos Godot PASS**. Cinco capturas proceden de Godot OpenGL real, no son bocetos. **GitHub Actions configurado, sin ejecución remota aún certificada.**
+
+**ZIP local:** `C:\AUTOFABRICADOR\DIST\AUTOFABRICADOR-R92B-ARTE-ACCIONES-16x9-PORTABLE-CANDIDATE.zip` (80.590.949 bytes), SHA-256 `a64eef2d9947fdcf60ada43fed92fbff756d55b6d0d5f7f2f33eade39343f36b`; copia idéntica en D. Está extraído y abierto con acceso directo **JUGAR - La Luz de Bruma R92B** en Escritorio. Godot 4.6.3 oficial incluido, sin instalación de Windows ni servicios.
+
+- [Revisión, decisiones, pruebas, límites y recuperación R92B](design/R92B-QUALITY-STATE-ART-PORTABLE-CLOSEOUT.md)
+- [Código original del juego R92B](examples/adventure-godot-r92b/LEEME-PRIMERO.md)
+- [Motor de estados y renderizado](examples/adventure-godot-r92b/game.gd)
+- [Generador artístico editable R92](examples/adventure-godot-r92b/art/r92_polish.py)
+- [Auditoría reusable del AUTOFABRICADOR](development/autofab/adventure_quality_r92.py)
+- [Workflow Windows para arte y 291 pruebas Godot](.github/workflows/r92b-godot-quality-169.yml)
+
+**Límites:** estética aún sin aprobación humana, no probado en otro ordenador, faltan aceptación general de fábrica autónoma por IA local y la eventual exportación automática Pixelorama/arquitectura de salas Popochiu. El oráculo técnico no debe confundirse con calidad final comercial.
+
 ## R91B — Aventura Godot HD 16:9 y navegación segura (candidato jugable)
 
 AUTOFABRICADOR, no MMC7. *La Luz de Bruma* R91B es una **aventura original, portable y jugable**, con tres habitaciones, el guardafaro de barba blanca, puzles, inventario, guardado/carga, 11 recursos PNG y **11 OpenRaster editables con 6+ capas**.
