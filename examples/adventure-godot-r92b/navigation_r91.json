@@ -1,0 +1,196 @@
+{
+  "acceptance": {
+    "footYMax": 126,
+    "footYMin": 103,
+    "forbiddenCellClearance": 1,
+    "interpolationInsideWalkmesh": true
+  },
+  "avatar": {
+    "footClearanceX": 12,
+    "logicalFrame": [
+      24,
+      48
+    ],
+    "sourceFrame": [
+      48,
+      96
+    ],
+    "sourceFrames": 14,
+    "speed": 62
+  },
+  "logicalGrid": [
+    320,
+    180
+  ],
+  "nativeGrid": [
+    640,
+    360
+  ],
+  "notes": "Walkmesh in 320x180 logical pixels, translated 2x to 640x360 native render. Polygon obstacles block foot collisions; click outside projects into reachable floor. Separate asset/art scaling.",
+  "objectiveId": "AF.R91.REUSABLE_NAVIGATION_169",
+  "pixelScale": 2,
+  "presentationGrid": [
+    1280,
+    720
+  ],
+  "scenes": {
+    "harbor": {
+      "elder": {
+        "foot": [
+          168,
+          117
+        ],
+        "obstacle": 0
+      },
+      "obstacles": [
+        [
+          [
+            160,
+            115
+          ],
+          [
+            180,
+            115
+          ],
+          [
+            180,
+            126
+          ],
+          [
+            160,
+            126
+          ]
+        ]
+      ],
+      "start": [
+        43,
+        116
+      ],
+      "walkable": [
+        [
+          [
+            14,
+            108
+          ],
+          [
+            70,
+            108
+          ],
+          [
+            142,
+            108
+          ],
+          [
+            208,
+            109
+          ],
+          [
+            306,
+            106
+          ],
+          [
+            306,
+            126
+          ],
+          [
+            14,
+            126
+          ]
+        ]
+      ]
+    },
+    "old_observatory": {
+      "obstacles": [
+        [
+          [
+            174,
+            121
+          ],
+          [
+            194,
+            121
+          ],
+          [
+            194,
+            126
+          ],
+          [
+            174,
+            126
+          ]
+        ]
+      ],
+      "start": [
+        45,
+        113
+      ],
+      "walkable": [
+        [
+          [
+            14,
+            103
+          ],
+          [
+            306,
+            103
+          ],
+          [
+            306,
+            126
+          ],
+          [
+            14,
+            126
+          ]
+        ]
+      ]
+    },
+    "workshop": {
+      "obstacles": [
+        [
+          [
+            237,
+            120
+          ],
+          [
+            265,
+            120
+          ],
+          [
+            265,
+            126
+          ],
+          [
+            237,
+            126
+          ]
+        ]
+      ],
+      "start": [
+        286,
+        116
+      ],
+      "walkable": [
+        [
+          [
+            14,
+            104
+          ],
+          [
+            306,
+            104
+          ],
+          [
+            306,
+            126
+          ],
+          [
+            14,
+            126
+          ]
+        ]
+      ]
+    }
+  },
+  "schema": 1
+}
