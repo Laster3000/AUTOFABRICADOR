@@ -1,5 +1,22 @@
 # AUTOFABRICADOR
 
+## R90C — Resultados visuales reales, Godot 16:9, arte editable y ZIP portable
+
+**Estado: CANDIDATE, NO ACTIVE.** La aventura original *La Luz de Bruma* se ejecuta en Godot 4.6.3 con resolución lógica **320 × 180 y salida 640 × 360 (16:9)**. Incluye tres habitaciones jugables, inventario, puzles y conversación; un protagonista y guardafaro de barba blanca con hojas de 14 fotogramas. Los **11 activos PNG con 4–5 capas OpenRaster editables** son originales y se han regenerado dos veces con hashes idénticos. La interfaz muestra los verbos **IR, MIRAR, COGER, USAR, HABLAR**, y admite F5/F9 para guardar y recuperar.
+
+**Verificado:** 35/35 controles originales de Godot, tres contratos visuales técnicos (no aprobación artística humana), 22 PNG/ORA reconstruidos por SHA desde un ZIP extraído en carpeta aislada y 17 fuentes públicas descargadas de GitHub regeneradas y probadas con otras 35 condiciones. Las **cuatro capturas publicadas al usuario** son del motor Godot OpenGL 3.3 real en RTX 3060, no composiciones conceptuales. El resultado sigue siendo un pixel art técnico y **no alcanza todavía el acabado visual de una aventura comercial clásica**.
+
+**ZIP local en el PC:** `C:\AUTOFABRICADOR\DIST\AUTOFABRICADOR-R90C-GODOT-16x9-VISUAL-PORTABLE-CANDIDATE.zip` (**80.349.755 bytes**), SHA-256 `0518ecc18b8c670e124d3366aecf751dbc3786dfe2b7b1a17bb2b2cfc2318529`. Contiene ejecutable Godot oficial, licencia, fuentes gráficas y **los lanzadores correctos en la raíz**: `INICIAR-JUEGO.cmd`, `ABRIR-EDITOR.cmd`, `PROBAR-PORTABILIDAD.cmd`. Copia de rescate SHA-idéntica en `D:\AUTOFABRICADOR-RESCATE\R90-VISUAL-FACTORY-20261108`. No requiere red, instalador, privilegios elevados ni autoinicio.
+
+**Repositorios y pruebas:**
+- [Fuente R90C, escenas, IA local acotada y generador determinista](examples/adventure-godot-r90c/LEEME-PRIMERO.md)
+- [Arte 4–5 capas reeditable para once recursos](examples/adventure-godot-r90c/art/r90_illustrate.py)
+- [Oráculo independiente de reconstrucción SHA](examples/adventure-godot-r90c/ci_verify_art.py)
+- [Pruebas originales de 35 condiciones jugables Godot](examples/adventure-godot-r90c/qa/owner_test_r90.gd)
+- [Workflow manual de GitHub Actions en Windows](.github/workflows/r90c-godot-art-169.yml) (configurado; ejecución remota en Actions aún sin recibo).
+
+**Límites:** la IA GPU 7B anterior generó una parte narrativa original que funciona dentro del observatorio, **no todo el juego**; la fábrica general autónoma no ha superado aceptación de aplicaciones arbitrarias; falta aprobación visual humana, exportación automatizada desde Pixelorama y prueba independiente en otro equipo. MMC7 sigue suspendido. Ningún juego ajeno ni release protegido se ha promovido.
+
 ## R89E — Juego Godot portable, arte reconstruible y prueba local GPU
 
 La prioridad es **AUTOFABRICADOR**; MMC7 continúa suspendido. La aventura original **La Luz de Bruma** usa formato **16:9 nativo** (320×180 de arte → 640×360 en pantalla), tres escenarios y un anciano original de barba blanca. El candidato R89E se ha probado desde un ZIP restaurado con el Godot oficial 4.6.3 y **30 casos jugables originales PASS**. Su código, diálogos y recursos se separan por identificador, con 11 PNG y 11 OpenRaster de dos capas. **Dos reconstrucciones limpias** produjeron los mismos SHA-256 para los 22 archivos artísticos. La IA local GPU 7B produjo y se verificó un fragmento narrativo original; **no** generó autónomamente el juego completo.
