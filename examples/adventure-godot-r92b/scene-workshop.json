@@ -1,0 +1,386 @@
+{
+  "assets": [
+    {
+      "frame": null,
+      "id": "workshop_back",
+      "kind": "background",
+      "master": "source/workshop_back.ora",
+      "masterSHA256": "a039cca8e5d9f9f9c5733dfb445b33e1e14324883fa8957ed9689cc589ac5fbe",
+      "png": "assets/workshop_back.png",
+      "pngSHA256": "ec8a2fcb76bbfd1864677375ff0dd802ff68a60ec930d1612184adaf8093ccd5"
+    },
+    {
+      "frame": null,
+      "id": "interface",
+      "kind": "ui",
+      "master": "source/interface.ora",
+      "masterSHA256": "43d96d3e10b8e0310a47491206893e580de875d6e67ed4519b4bde418158a68f",
+      "png": "assets/interface.png",
+      "pngSHA256": "3dbc63b23cbfe219ddfb77897d14ba28f10a7bb971225a5ddf1467813ada2367"
+    },
+    {
+      "frame": {
+        "count": 14,
+        "height": 96,
+        "width": 48
+      },
+      "id": "young_sailor",
+      "kind": "character",
+      "master": "source/young_sailor.ora",
+      "masterSHA256": "5e04282c3b99e539736330088e72fbba6191ed08a4b5fa0cb5246b151ae0b04d",
+      "png": "assets/young_sailor.png",
+      "pngSHA256": "b740c0823d1954c30c10a73d8440c816b0ddb71c671b6a1efe1e9bdaf1f57111"
+    },
+    {
+      "frame": {
+        "count": 14,
+        "height": 96,
+        "width": 48
+      },
+      "id": "elder_whitebeard",
+      "kind": "character",
+      "master": "source/elder_whitebeard.ora",
+      "masterSHA256": "303ba4620a92284205042789dd9a24d53a0160407531963abfb94729375ccbb6",
+      "png": "assets/elder_whitebeard.png",
+      "pngSHA256": "ed595f8f0980c30a3e416ffea1d838662b625e99d5217b92ccb35ca5af6738ec"
+    },
+    {
+      "frame": {
+        "count": 1,
+        "height": 32,
+        "width": 32
+      },
+      "id": "lens",
+      "kind": "object",
+      "master": "source/lens.ora",
+      "masterSHA256": "4e7eabce05c857a552749d81aee0b31304c57a8fb082b54fa80c1cc55adaef7b",
+      "png": "assets/lens.png",
+      "pngSHA256": "dcde6fffcdac5a9a047663299ac0b37e0090343f18979f9f481f64a40d0fb0ce"
+    },
+    {
+      "frame": {
+        "count": 1,
+        "height": 32,
+        "width": 32
+      },
+      "id": "compass",
+      "kind": "object",
+      "master": "source/compass.ora",
+      "masterSHA256": "6deb5b45cebcbaa66f9fd71cb96b0daddb731344abfb36a18d440c077a4994ab",
+      "png": "assets/compass.png",
+      "pngSHA256": "ac4340e0da8d39ee5cea96ea561c00dd8b5aa03b20cca89a44cad92911a078b8"
+    },
+    {
+      "frame": null,
+      "id": "workshop_front",
+      "kind": "foreground",
+      "master": "source/workshop_front.ora",
+      "masterSHA256": "e8431690bb55916301538d2500e54ef257fad8f2ba6a3bf83bedf6e8b2fe3136",
+      "png": "assets/workshop_front.png",
+      "pngSHA256": "c07bdc97d9bbb831abc6ffcd17d5efa384ddd33e3534496eda766f26454d8439"
+    }
+  ],
+  "characters": [
+    {
+      "animations": {
+        "idle": [
+          0,
+          1
+        ],
+        "look": [
+          8
+        ],
+        "pick": [
+          9
+        ],
+        "react": [
+          12,
+          13
+        ],
+        "talk": [
+          6,
+          7
+        ],
+        "use": [
+          10,
+          11
+        ],
+        "walk": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "asset": "young_sailor",
+      "baselineY": 112,
+      "id": "young_sailor",
+      "pivot": [
+        12,
+        47
+      ]
+    },
+    {
+      "animations": {
+        "idle": [
+          0,
+          1
+        ],
+        "look": [
+          8
+        ],
+        "pick": [
+          9
+        ],
+        "react": [
+          12,
+          13
+        ],
+        "talk": [
+          6,
+          7
+        ],
+        "use": [
+          10,
+          11
+        ],
+        "walk": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "asset": "elder_whitebeard",
+      "baselineY": 112,
+      "id": "elder_whitebeard",
+      "pivot": [
+        12,
+        47
+      ]
+    }
+  ],
+  "interfaceHeight": 70,
+  "logicalInteractionCanvas": [
+    320,
+    180
+  ],
+  "navigationContract": "navigation_r91.json",
+  "profile": {
+    "aspect": "16:9",
+    "canvas": [
+      640,
+      360
+    ],
+    "pixelArt": true,
+    "presentation": [
+      1280,
+      720
+    ],
+    "renderScale": 2,
+    "sampling": "nearest",
+    "sceneHeight": 290,
+    "startMode": "manual"
+  },
+  "revision": "R92-COMPACT-UI-NEAREST-PIXEL",
+  "scene": {
+    "background": "workshop_back",
+    "hotspots": [
+      {
+        "feedback": "Las ruedas dentadas esperan su lente.",
+        "id": "mechanism",
+        "name": "Mecanismo de orientacion",
+        "polygon": [
+          [
+            233,
+            63
+          ],
+          [
+            270,
+            63
+          ],
+          [
+            270,
+            104
+          ],
+          [
+            233,
+            104
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "USE"
+        ],
+        "walkTo": [
+          225,
+          113
+        ]
+      },
+      {
+        "feedback": "Una brujula olvidada.",
+        "id": "compass_pickup",
+        "name": "Brujula de mar",
+        "polygon": [
+          [
+            81,
+            93
+          ],
+          [
+            99,
+            93
+          ],
+          [
+            99,
+            117
+          ],
+          [
+            81,
+            117
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "TAKE"
+        ],
+        "walkTo": [
+          117,
+          116
+        ]
+      },
+      {
+        "feedback": "Se oye el mar desde fuera.",
+        "id": "exit_door",
+        "name": "Regresar al puerto",
+        "polygon": [
+          [
+            298,
+            72
+          ],
+          [
+            319,
+            72
+          ],
+          [
+            319,
+            125
+          ],
+          [
+            298,
+            125
+          ]
+        ],
+        "verbs": [
+          "WALK",
+          "OPEN"
+        ],
+        "walkTo": [
+          282,
+          116
+        ]
+      },
+      {
+        "feedback": "Manuales de cartografia y relojeria.",
+        "id": "bookshelf",
+        "name": "Biblioteca del maestro",
+        "polygon": [
+          [
+            11,
+            31
+          ],
+          [
+            105,
+            31
+          ],
+          [
+            105,
+            98
+          ],
+          [
+            11,
+            98
+          ]
+        ],
+        "verbs": [
+          "LOOK",
+          "USE"
+        ],
+        "walkTo": [
+          106,
+          112
+        ]
+      },
+      {
+        "feedback": "Tras la ventana hay una escalera de piedra que sube hacia la cupula.",
+        "id": "observatory_stairs",
+        "name": "Escalera al observatorio",
+        "polygon": [
+          [
+            134,
+            45
+          ],
+          [
+            161,
+            45
+          ],
+          [
+            161,
+            84
+          ],
+          [
+            134,
+            84
+          ]
+        ],
+        "verbs": [
+          "WALK",
+          "LOOK",
+          "OPEN"
+        ],
+        "walkTo": [
+          154,
+          116
+        ]
+      }
+    ],
+    "id": "workshop",
+    "playerStart": [
+      45,
+      116
+    ],
+    "walkable": [
+      [
+        14,
+        104
+      ],
+      [
+        306,
+        104
+      ],
+      [
+        306,
+        126
+      ],
+      [
+        14,
+        126
+      ]
+    ]
+  },
+  "schema": 1,
+  "ui": {
+    "asset": "interface",
+    "fontPx": 7,
+    "inventorySlots": 6,
+    "minTargetPx": 12,
+    "verbs": [
+      "WALK",
+      "LOOK",
+      "TAKE",
+      "USE",
+      "TALK",
+      "OPEN",
+      "GIVE"
+    ]
+  }
+}
