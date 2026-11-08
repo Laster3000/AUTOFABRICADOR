@@ -1,5 +1,17 @@
 # AUTOFABRICADOR
 
+## Contrato vigente: aventuras 16:9 (R88B)
+
+**Cambio explícito de formato:** los videojuegos nuevos usan **16:9 nativo**, no 4:3. Arte lógico 320×180 y presentación 640×360 con escalado pixelado, sin deformación. Las especificaciones 4:3 de R86/R87 solo sirven como documentación histórica.
+
+Se ha construido una aventura original de dos escenas, «La Luz de Bruma», empaquetada y restaurada con **25 comprobaciones reales de Chrome** tanto en el proyecto como desde el ZIP extraído. Los sprites y fondos tienen fuentes OpenRaster editables; el CLI `adventure-visual-audit` aplica por defecto el contrato 16:9 y `adventure-visual-audit-r87` conserva la compatibilidad histórica. La calidad artística sigue pendiente de aprobación y este resultado **no demuestra fabricación autónoma completa por IA local**.
+
+- [Especificación y límites 16:9](design/R88-WIDESCREEN-169-ACCEPTANCE.md)
+- [Ejemplo original y generador por fuentes](examples/adventure-169-r88b/LEEME-PRIMERO.md)
+- [Validador 16:9](development/autofab/adventure_visual_gate_r88.py)
+- [Pruebas del validador](development/tests/test_adventure_visual_gate_r88.py)
+- [Flujo de generación desde GitHub](.github/workflows/adventure-169-r88b.yml)
+
 ## Prioridad vigente: fabrica de aplicaciones y direccion artistica (R87)
 
 AUTOFABRICADOR es el proyecto principal. MMC7 esta suspendido. Para aventuras clasicas, la calidad visual y la experiencia son una condicion independiente de la aprobacion funcional: la referencia es la estetica VGA de los noventa con personajes originales, no copias de sprites protegidos. El nuevo control **R87** audita PNG y maestros OpenRaster, hojas de animacion, interaccion y escena 320x200 con hashes, pero **NO aprueba automaticamente la calidad artistica ni implica juego completo**.
